@@ -1,0 +1,2067 @@
+E [10/Dec/2019:17:08:24 +0530] [Job 48] Unable to queue job for destination "printer".
+E [10/Dec/2019:17:08:24 +0530] Unable to open listen socket for address [v1.::1]:631 - Address already in use.
+E [10/Dec/2019:17:08:24 +0530] Unable to open listen socket for address 127.0.0.1:631 - Address already in use.
+W [10/Dec/2019:17:08:28 +0530] add_job(0x558c0d16cba0[1], 0x558c0d1f77b0(printer), (nil)(none/none))
+W [10/Dec/2019:17:08:28 +0530] Custom Log Added: USER-JAI generates a warning
+E [10/Dec/2019:17:08:28 +0530] Custom Log Added: USER-JAI it's error
+I [10/Dec/2019:17:10:29 +0530] Listening to [v1.::1]:631 (IPv6)
+I [10/Dec/2019:17:10:29 +0530] Listening to 127.0.0.1:631 (IPv4)
+I [10/Dec/2019:17:10:29 +0530] Listening to /run/cups/cups.sock (Domain)
+I [10/Dec/2019:17:10:29 +0530] Remote access is disabled.
+D [10/Dec/2019:17:10:29 +0530] Added auto ServerAlias jai-HP-Pavilion-Laptop-15-cc1xx
+I [10/Dec/2019:17:10:29 +0530] Loaded configuration file "/etc/cups/cupsd.conf"
+D [10/Dec/2019:17:10:29 +0530] Using keychain "/etc/cups/ssl" for server name "jai-HP-Pavilion-Laptop-15-cc1xx".
+I [10/Dec/2019:17:10:29 +0530] Using default TempDir of /var/spool/cups/tmp...
+I [10/Dec/2019:17:10:29 +0530] Configured for up to 100 clients.
+I [10/Dec/2019:17:10:29 +0530] Allowing up to 100 client connections per host.
+I [10/Dec/2019:17:10:29 +0530] Using policy "default" as the default.
+I [10/Dec/2019:17:10:29 +0530] Full reload is required.
+I [10/Dec/2019:17:10:29 +0530] Loaded MIME database from "/usr/share/cups/mime" and "/etc/cups": 78 types, 118 filters...
+I [10/Dec/2019:17:10:29 +0530] Generating printcap /etc/printcap...
+I [10/Dec/2019:17:10:29 +0530] Loading job cache file "/var/cache/cups/job.cache"...
+E [10/Dec/2019:17:10:29 +0530] [Job 48] Files have gone away.
+D [10/Dec/2019:17:10:29 +0530] Scanning /var/spool/cups for jobs...
+D [10/Dec/2019:17:10:29 +0530] [Job 49] Loading attributes...
+E [10/Dec/2019:17:10:29 +0530] [Job 49] Unable to queue job for destination "ipp://jai-HP-Pavilion-Laptop-15-cc1xx/printers/printer".
+D [10/Dec/2019:17:10:29 +0530] cupsdAddSubscription(mask=0, dest=(nil)(), job=(nil)(0), uri="(null)")
+I [10/Dec/2019:17:10:29 +0530] Full reload complete.
+D [10/Dec/2019:17:10:29 +0530] cupsdCleanFiles(path="/var/spool/cups/tmp", pattern="(null)")
+I [10/Dec/2019:17:10:29 +0530] Cleaning out old files in "/var/spool/cups/tmp".
+D [10/Dec/2019:17:10:29 +0530] cupsdCleanFiles(path="/var/cache/cups", pattern="*.ipp")
+I [10/Dec/2019:17:10:29 +0530] Cleaning out old files in "/var/cache/cups".
+D [10/Dec/2019:17:10:29 +0530] service_checkin: pid=8942
+D [10/Dec/2019:17:10:29 +0530] Creating KeepAlive/PID file "/var/run/cups/cupsd.pid".
+E [10/Dec/2019:17:10:29 +0530] Unable to open listen socket for address [v1.::1]:631 - Address already in use.
+E [10/Dec/2019:17:10:29 +0530] Unable to open listen socket for address 127.0.0.1:631 - Address already in use.
+I [10/Dec/2019:17:10:29 +0530] Listening to /run/cups/cups.sock on fd 6...
+I [10/Dec/2019:17:10:29 +0530] Resuming new connection processing...
+D [10/Dec/2019:17:10:29 +0530] cupsdSetBusyState: newbusy="Not busy", busy="Active clients"
+D [10/Dec/2019:17:10:29 +0530] cupsdAddCert: Adding certificate for PID 0
+D [10/Dec/2019:17:10:29 +0530] Discarding unused server-started event...
+D [10/Dec/2019:17:10:29 +0530] cupsdSetBusyState: newbusy="Not busy", busy="Not busy"
+I [10/Dec/2019:17:10:30 +0530] Expiring subscriptions...
+D [10/Dec/2019:17:10:30 +0530] Report: clients=0
+D [10/Dec/2019:17:10:30 +0530] Report: jobs=0
+D [10/Dec/2019:17:10:30 +0530] Report: jobs-active=0
+D [10/Dec/2019:17:10:30 +0530] Report: printers=0
+D [10/Dec/2019:17:10:30 +0530] Report: stringpool-string-count=333
+D [10/Dec/2019:17:10:30 +0530] Report: stringpool-alloc-bytes=5264
+D [10/Dec/2019:17:10:30 +0530] Report: stringpool-total-bytes=5704
+D [10/Dec/2019:17:10:46 +0530] cupsdSetBusyState: newbusy="Active clients", busy="Not busy"
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Server address is "/run/cups/cups.sock".
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Accepted from localhost (Domain)
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Waiting for request.
+I [10/Dec/2019:17:10:46 +0530] Expiring subscriptions...
+D [10/Dec/2019:17:10:46 +0530] [Client 1] POST / HTTP/1.1
+D [10/Dec/2019:17:10:46 +0530] cupsdSetBusyState: newbusy="Active clients", busy="Active clients"
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Read: status=200, state=6
+D [10/Dec/2019:17:10:46 +0530] [Client 1] No authentication data provided.
+D [10/Dec/2019:17:10:46 +0530] [Client 1] 2.0 Get-Printer-Attributes 1
+D [10/Dec/2019:17:10:46 +0530] Get-Printer-Attributes ipp://localhost:631/printers/printer
+D [10/Dec/2019:17:10:46 +0530] Get-Printer-Attributes client-error-not-found: The printer or class does not exist.
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Returning IPP client-error-not-found for Get-Printer-Attributes (ipp://localhost:631/printers/printer) from localhost.
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Content-Length: 130
+D [10/Dec/2019:17:10:46 +0530] [Client 1] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:46 +0530] [Client 1] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:10:46 +0530] [Client 1] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=130, response=0x5634bec45300(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:46 +0530] [Client 1] bytes=0, http_state=0, data_remaining=130
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Flushing write buffer.
+D [10/Dec/2019:17:10:46 +0530] [Client 1] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Waiting for request.
+D [10/Dec/2019:17:10:46 +0530] cupsdSetBusyState: newbusy="Not busy", busy="Active clients"
+D [10/Dec/2019:17:10:46 +0530] [Client 1] POST / HTTP/1.1
+D [10/Dec/2019:17:10:46 +0530] cupsdSetBusyState: newbusy="Active clients", busy="Not busy"
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Read: status=200, state=6
+D [10/Dec/2019:17:10:46 +0530] [Client 1] No authentication data provided.
+D [10/Dec/2019:17:10:46 +0530] [Client 1] 2.0 CUPS-Get-Default 2
+D [10/Dec/2019:17:10:46 +0530] CUPS-Get-Default
+D [10/Dec/2019:17:10:46 +0530] CUPS-Get-Default client-error-not-found: No default printer.
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Returning IPP client-error-not-found for CUPS-Get-Default (no URI) from localhost.
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Content-Length: 113
+D [10/Dec/2019:17:10:46 +0530] [Client 1] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:46 +0530] [Client 1] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:10:46 +0530] [Client 1] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=113, response=0x5634bec454c0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:46 +0530] [Client 1] bytes=0, http_state=0, data_remaining=113
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Flushing write buffer.
+D [10/Dec/2019:17:10:46 +0530] [Client 1] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Waiting for request.
+D [10/Dec/2019:17:10:46 +0530] cupsdSetBusyState: newbusy="Not busy", busy="Active clients"
+D [10/Dec/2019:17:10:46 +0530] [Client 1] POST / HTTP/1.1
+D [10/Dec/2019:17:10:46 +0530] cupsdSetBusyState: newbusy="Active clients", busy="Not busy"
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Read: status=200, state=6
+D [10/Dec/2019:17:10:46 +0530] [Client 1] No authentication data provided.
+D [10/Dec/2019:17:10:46 +0530] [Client 1] 2.0 CUPS-Get-Printers 3
+D [10/Dec/2019:17:10:46 +0530] CUPS-Get-Printers
+D [10/Dec/2019:17:10:46 +0530] CUPS-Get-Printers client-error-not-found: No destinations added.
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Returning IPP client-error-not-found for CUPS-Get-Printers (no URI) from localhost.
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Content-Length: 116
+D [10/Dec/2019:17:10:46 +0530] [Client 1] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:46 +0530] [Client 1] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:10:46 +0530] [Client 1] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=116, response=0x5634bec45bb0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:46 +0530] [Client 1] bytes=0, http_state=0, data_remaining=116
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Flushing write buffer.
+D [10/Dec/2019:17:10:46 +0530] [Client 1] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Waiting for request.
+D [10/Dec/2019:17:10:46 +0530] cupsdSetBusyState: newbusy="Not busy", busy="Active clients"
+D [10/Dec/2019:17:10:46 +0530] [Client 1] POST / HTTP/1.1
+D [10/Dec/2019:17:10:46 +0530] cupsdSetBusyState: newbusy="Active clients", busy="Not busy"
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Read: status=200, state=6
+D [10/Dec/2019:17:10:46 +0530] [Client 1] No authentication data provided.
+D [10/Dec/2019:17:10:46 +0530] [Client 1] 2.0 Get-Printer-Attributes 4
+D [10/Dec/2019:17:10:46 +0530] Get-Printer-Attributes ipp://localhost:631/printers/printer
+D [10/Dec/2019:17:10:46 +0530] Get-Printer-Attributes client-error-not-found: The printer or class does not exist.
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Returning IPP client-error-not-found for Get-Printer-Attributes (ipp://localhost:631/printers/printer) from localhost.
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Content-Length: 130
+D [10/Dec/2019:17:10:46 +0530] [Client 1] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:46 +0530] [Client 1] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:10:46 +0530] [Client 1] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=130, response=0x5634bec45f10(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:46 +0530] [Client 1] bytes=0, http_state=0, data_remaining=130
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Flushing write buffer.
+D [10/Dec/2019:17:10:46 +0530] [Client 1] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Waiting for request.
+D [10/Dec/2019:17:10:46 +0530] cupsdSetBusyState: newbusy="Not busy", busy="Active clients"
+D [10/Dec/2019:17:10:46 +0530] [Client 1] POST / HTTP/1.1
+D [10/Dec/2019:17:10:46 +0530] cupsdSetBusyState: newbusy="Active clients", busy="Not busy"
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Read: status=200, state=6
+D [10/Dec/2019:17:10:46 +0530] [Client 1] No authentication data provided.
+D [10/Dec/2019:17:10:46 +0530] [Client 1] 2.0 CUPS-Get-Default 5
+D [10/Dec/2019:17:10:46 +0530] CUPS-Get-Default
+D [10/Dec/2019:17:10:46 +0530] CUPS-Get-Default client-error-not-found: No default printer.
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Returning IPP client-error-not-found for CUPS-Get-Default (no URI) from localhost.
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Content-Length: 113
+D [10/Dec/2019:17:10:46 +0530] [Client 1] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:46 +0530] [Client 1] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:10:46 +0530] [Client 1] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=113, response=0x5634bec46040(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:46 +0530] [Client 1] bytes=0, http_state=0, data_remaining=113
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Flushing write buffer.
+D [10/Dec/2019:17:10:46 +0530] [Client 1] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Waiting for request.
+D [10/Dec/2019:17:10:46 +0530] cupsdSetBusyState: newbusy="Not busy", busy="Active clients"
+D [10/Dec/2019:17:10:46 +0530] [Client 1] POST / HTTP/1.1
+D [10/Dec/2019:17:10:46 +0530] cupsdSetBusyState: newbusy="Active clients", busy="Not busy"
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Read: status=200, state=6
+D [10/Dec/2019:17:10:46 +0530] [Client 1] No authentication data provided.
+D [10/Dec/2019:17:10:46 +0530] [Client 1] 2.0 CUPS-Get-Printers 6
+D [10/Dec/2019:17:10:46 +0530] CUPS-Get-Printers
+D [10/Dec/2019:17:10:46 +0530] CUPS-Get-Printers client-error-not-found: No destinations added.
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Returning IPP client-error-not-found for CUPS-Get-Printers (no URI) from localhost.
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Content-Length: 116
+D [10/Dec/2019:17:10:46 +0530] [Client 1] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:46 +0530] [Client 1] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:10:46 +0530] [Client 1] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=116, response=0x5634bec45f10(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:46 +0530] [Client 1] bytes=0, http_state=0, data_remaining=116
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Flushing write buffer.
+D [10/Dec/2019:17:10:46 +0530] [Client 1] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:46 +0530] [Client 1] Waiting for request.
+D [10/Dec/2019:17:10:46 +0530] cupsdSetBusyState: newbusy="Not busy", busy="Active clients"
+D [10/Dec/2019:17:10:46 +0530] cupsdSetBusyState: newbusy="Active clients", busy="Not busy"
+D [10/Dec/2019:17:10:46 +0530] [Client 2] Server address is "/run/cups/cups.sock".
+D [10/Dec/2019:17:10:46 +0530] [Client 2] Accepted from localhost (Domain)
+D [10/Dec/2019:17:10:46 +0530] [Client 2] Waiting for request.
+D [10/Dec/2019:17:10:46 +0530] [Client 2] POST / HTTP/1.1
+D [10/Dec/2019:17:10:46 +0530] cupsdSetBusyState: newbusy="Active clients", busy="Active clients"
+D [10/Dec/2019:17:10:46 +0530] [Client 2] Read: status=200, state=6
+D [10/Dec/2019:17:10:46 +0530] [Client 2] No authentication data provided.
+D [10/Dec/2019:17:10:46 +0530] [Client 2] 2.0 CUPS-Create-Local-Printer 7
+D [10/Dec/2019:17:10:46 +0530] CUPS-Create-Local-Printer ipp://localhost/
+D [10/Dec/2019:17:10:46 +0530] load_ppd: Loading /var/cache/cups/printer.data...
+D [10/Dec/2019:17:10:46 +0530] cupsdRegisterPrinter(p=0x5634becd1880(printer))
+D [10/Dec/2019:17:10:46 +0530] CUPS-Create-Local-Printer successful-ok: Local printer created.
+D [10/Dec/2019:17:10:46 +0530] [Client 2] Returning IPP successful-ok for CUPS-Create-Local-Printer (ipp://localhost/) from localhost.
+D [10/Dec/2019:17:10:46 +0530] [Client 2] Content-Length: 258
+D [10/Dec/2019:17:10:46 +0530] [Client 2] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:46 +0530] [Client 2] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:46 +0530] [Client 2] con->http=0x5634becce1e0
+D [10/Dec/2019:17:10:46 +0530] [Client 2] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=258, response=0x5634bec457f0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:46 +0530] [Client 2] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:46 +0530] [Client 2] bytes=0, http_state=0, data_remaining=258
+D [10/Dec/2019:17:10:46 +0530] [Client 2] Flushing write buffer.
+D [10/Dec/2019:17:10:46 +0530] [Client 2] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:46 +0530] [Client 2] Waiting for request.
+D [10/Dec/2019:17:10:46 +0530] cupsdSetBusyState: newbusy="Not busy", busy="Active clients"
+D [10/Dec/2019:17:10:46 +0530] printer: Connected to jai-HP-Pavilion-Laptop-15-cc1xx.local:8880, sending Get-Printer-Attributes request...
+D [10/Dec/2019:17:10:46 +0530] printer: Get-Printer-Attributes returned successful-ok (successful-ok)
+D [10/Dec/2019:17:10:46 +0530] cupsdMarkDirty(P----)
+D [10/Dec/2019:17:10:46 +0530] cupsdSetBusyState: newbusy="Dirty files", busy="Not busy"
+D [10/Dec/2019:17:10:46 +0530] load_ppd: Loading /etc/cups/ppd/printer.ppd...
+D [10/Dec/2019:17:10:46 +0530] load_ppd: Saving /var/cache/cups/printer.data...
+D [10/Dec/2019:17:10:46 +0530] cupsdRegisterPrinter(p=0x5634becd1880(printer))
+D [10/Dec/2019:17:10:46 +0530] Discarding unused printer-config-changed event...
+I [10/Dec/2019:17:10:46 +0530] Printer "printer" is now available.
+D [10/Dec/2019:17:10:47 +0530] [Client 2] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 2] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 2] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 2] 2.0 Get-Printer-Attributes 8
+D [10/Dec/2019:17:10:47 +0530] Get-Printer-Attributes ipp://localhost/printers/printer
+D [10/Dec/2019:17:10:47 +0530] [Client 2] Returning IPP successful-ok for Get-Printer-Attributes (ipp://localhost/printers/printer) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 2] Content-Length: 98
+D [10/Dec/2019:17:10:47 +0530] [Client 2] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+I [10/Dec/2019:17:10:47 +0530] Expiring subscriptions...
+D [10/Dec/2019:17:10:47 +0530] [Client 2] con->http=0x5634becce1e0
+D [10/Dec/2019:17:10:47 +0530] [Client 2] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=98, response=0x5634becdf1c0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 2] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 2] bytes=0, http_state=0, data_remaining=98
+D [10/Dec/2019:17:10:47 +0530] [Client 2] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 2] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 2] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 2] HTTP_STATE_WAITING Closing for error 32 (Broken pipe)
+D [10/Dec/2019:17:10:47 +0530] [Client 2] Closing connection.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Dirty files", busy="Dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 1] POST /printers/printer HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 1] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 1] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 1] 2.0 Get-Printer-Attributes 9
+D [10/Dec/2019:17:10:47 +0530] Get-Printer-Attributes ipp://localhost/printers/printer
+D [10/Dec/2019:17:10:47 +0530] [Client 1] Returning IPP successful-ok for Get-Printer-Attributes (ipp://localhost/printers/printer) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 1] Content-Length: 11250
+D [10/Dec/2019:17:10:47 +0530] [Client 1] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 1] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:10:47 +0530] [Client 1] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=11250, response=0x5634becefa50(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 1] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 1] bytes=0, http_state=0, data_remaining=11250
+D [10/Dec/2019:17:10:47 +0530] [Client 1] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 1] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 1] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 1] POST /printers/printer HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 1] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 1] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 1] 2.0 Create-Job 10
+D [10/Dec/2019:17:10:47 +0530] Create-Job ipp://localhost/printers/printer
+W [10/Dec/2019:17:10:47 +0530] add_job(0x5634bec28560[1], 0x5634becd1880(printer), (nil)(none/none))
+W [10/Dec/2019:17:10:47 +0530] Custom Log Added: USER-JAI generates a warning
+E [10/Dec/2019:17:10:47 +0530] Custom Log Added: USER-JAI it's error
+D [10/Dec/2019:17:10:47 +0530] cupsdMarkDirty(---J-)
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Applying default options...
+D [10/Dec/2019:17:10:47 +0530] add_job: requesting-user-name="root"
+D [10/Dec/2019:17:10:47 +0530] Adding default job-sheets values "none,none"...
+I [10/Dec/2019:17:10:47 +0530] [Job 50] Adding start banner page "none".
+D [10/Dec/2019:17:10:47 +0530] Notifier dbus started - PID = 8949
+D [10/Dec/2019:17:10:47 +0530] cupsdMarkDirty(----S)
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Active clients and dirty files"
+I [10/Dec/2019:17:10:47 +0530] [Job 50] Queued on "printer" by "root".
+D [10/Dec/2019:17:10:47 +0530] [Client 1] Returning IPP successful-ok for Create-Job (ipp://localhost/printers/printer) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 1] Content-Length: 200
+D [10/Dec/2019:17:10:47 +0530] [Client 1] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 1] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:10:47 +0530] [Client 1] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=200, response=0x5634bec45870(IPP_STATE_IDLE), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 1] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 1] bytes=0, http_state=0, data_remaining=200
+D [10/Dec/2019:17:10:47 +0530] [Client 1] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 1] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 1] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 1] POST /printers/printer HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 1] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 1] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 1] 2.0 Send-Document 11
+D [10/Dec/2019:17:10:47 +0530] Send-Document ipp://localhost:631/printers/printer
+D [10/Dec/2019:17:10:47 +0530] cupsdIsAuthorized: requesting-user-name="root"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Auto-typing file...
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Request file type is text/plain.
+D [10/Dec/2019:17:10:47 +0530] cupsdMarkDirty(---J-)
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Active clients and dirty files"
+I [10/Dec/2019:17:10:47 +0530] [Job 50] File of type text/plain queued by "root".
+I [10/Dec/2019:17:10:47 +0530] [Job 50] Adding end banner page "none".
+D [10/Dec/2019:17:10:47 +0530] cupsdMarkDirty(---J-)
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] time-at-processing=1575978047
+D [10/Dec/2019:17:10:47 +0530] cupsdMarkDirty(---J-)
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:10:47 +0530] cupsdMarkDirty(----S)
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] 4 filters for job:
+D [10/Dec/2019:17:10:47 +0530] [Job 50] texttopdf (text/plain to application/pdf, cost 32)
+D [10/Dec/2019:17:10:47 +0530] [Job 50] pdftopdf (application/pdf to application/vnd.cups-pdf, cost 66)
+D [10/Dec/2019:17:10:47 +0530] [Job 50] - (application/vnd.cups-pdf to printer/printer/application/pdf, cost 10)
+D [10/Dec/2019:17:10:47 +0530] [Job 50] - (printer/printer/application/pdf to printer/printer, cost 0)
+D [10/Dec/2019:17:10:47 +0530] [Job 50] job-sheets=none,none
+D [10/Dec/2019:17:10:47 +0530] [Job 50] argv[0]="printer"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] argv[1]="50"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] argv[2]="root"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] argv[3]="a.txt"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] argv[4]="1"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] argv[5]="job-uuid=urn:uuid:bbe90ecb-88c4-395f-6e70-19d8f42bbcd5 job-originating-host-name=localhost date-time-at-creation= date-time-at-processing= time-at-creation=1575978047 time-at-processing=1575978047 document-name-supplied=a.txt"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] argv[6]="/var/spool/cups/d00050-001"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[0]="CUPS_CACHEDIR=/var/cache/cups"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[1]="CUPS_DATADIR=/usr/share/cups"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[2]="CUPS_DOCROOT=/usr/share/doc/cups"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[3]="CUPS_FONTPATH=/usr/share/cups/fonts"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[4]="CUPS_REQUESTROOT=/var/spool/cups"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[5]="CUPS_SERVERBIN=/usr/lib/cups"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[6]="CUPS_SERVERROOT=/etc/cups"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[7]="CUPS_STATEDIR=/var/run/cups"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[8]="HOME=/var/spool/cups/tmp"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[9]="PATH=/usr/lib/cups/filter:/usr/bin:/usr/sbin:/bin:/usr/bin"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[10]="SERVER_ADMIN=root@jai-HP-Pavilion-Laptop-15-cc1xx"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[11]="SOFTWARE=CUPS/2.3.1"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[12]="TMPDIR=/var/spool/cups/tmp"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[13]="USER=root"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[14]="CUPS_MAX_MESSAGE=2047"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[15]="CUPS_SERVER=/run/cups/cups.sock"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[16]="CUPS_ENCRYPTION=IfRequested"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[17]="CHARSET=utf-8"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[18]="LANG=en_IN.UTF-8"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[19]="PPD=/etc/cups/ppd/printer.ppd"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[20]="RIP_MAX_CACHE=128m"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[21]="CONTENT_TYPE=text/plain"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[22]="DEVICE_URI=ipps://jai-HP-Pavilion-Laptop-15-cc1xx.local:8880/ipp/print"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[23]="PRINTER_INFO=printer"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[24]="PRINTER_LOCATION="
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[25]="PRINTER=printer"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[26]="PRINTER_STATE_REASONS=none"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[27]="CUPS_FILETYPE=document"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[28]="FINAL_CONTENT_TYPE=application/pdf"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] envp[29]="AUTH_I****"
+I [10/Dec/2019:17:10:47 +0530] [Job 50] Started filter /usr/lib/cups/filter/texttopdf (PID 8950)
+I [10/Dec/2019:17:10:47 +0530] [Job 50] Started filter /usr/lib/cups/filter/pdftopdf (PID 8951)
+I [10/Dec/2019:17:10:47 +0530] [Job 50] Started backend /usr/lib/cups/backend/ipps (PID 8952)
+D [10/Dec/2019:17:10:47 +0530] Discarding unused job-state-changed event...
+D [10/Dec/2019:17:10:47 +0530] [Client 1] Returning IPP successful-ok for Send-Document (ipp://localhost:631/printers/printer) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 1] Content-Length: 170
+D [10/Dec/2019:17:10:47 +0530] [Client 1] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 1] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:10:47 +0530] [Client 1] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=170, response=0x5634bece7290(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 1] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 1] bytes=0, http_state=0, data_remaining=170
+D [10/Dec/2019:17:10:47 +0530] [Client 1] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 1] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 1] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Notifier] state=3
+D [10/Dec/2019:17:10:47 +0530] [Notifier] Connected to D-BUS
+D [10/Dec/2019:17:10:47 +0530] [Notifier] JobCreated
+D [10/Dec/2019:17:10:47 +0530] [Notifier] state=3
+D [10/Dec/2019:17:10:47 +0530] [Notifier] PrinterStateChanged
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Server address is "/run/cups/cups.sock".
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Accepted from localhost (Domain)
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Server address is "/run/cups/cups.sock".
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Accepted from localhost (Domain)
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Sending stdin for job...
+D [10/Dec/2019:17:10:47 +0530] [Job 50] STATE: +connecting-to-device
+D [10/Dec/2019:17:10:47 +0530] cupsdMarkDirty(---J-)
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Looking up \"jai-HP-Pavilion-Laptop-15-cc1xx.local\"...
+D [10/Dec/2019:17:10:47 +0530] cupsdMarkDirty(----S)
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Dirty files", busy="Dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 3] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 3] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 3] 2.0 Get-Job-Attributes 1158
+D [10/Dec/2019:17:10:47 +0530] Get-Job-Attributes ipp://localhost/jobs/50
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Returning IPP successful-ok for Get-Job-Attributes (ipp://localhost/jobs/50) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Content-Length: 162
+D [10/Dec/2019:17:10:47 +0530] [Client 3] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Server address is "/run/cups/cups.sock".
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Accepted from localhost (Domain)
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] [Job 50] STATE: -connecting-to-device
+D [10/Dec/2019:17:10:47 +0530] cupsdMarkDirty(---J-)
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] jai-HP-Pavilion-Laptop-15-cc1xx.local=192.168.43.178
+D [10/Dec/2019:17:10:47 +0530] [Job 50] backendWaitLoop(snmp_fd=5, addr=0x55eeaff3c6e8, side_cb=0x55eeaf6cbbc8)
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Page = 595x842; 18,18 to 577,824
+D [10/Dec/2019:17:10:47 +0530] [Job 50] pdftopdf: Last filter determined by the PPD: -; FINAL_CONTENT_TYPE: application/pdf => pdftopdf will log pages in page_log.
+D [10/Dec/2019:17:10:47 +0530] cupsdMarkDirty(----S)
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 3] con->http=0x5634becd9ec0
+D [10/Dec/2019:17:10:47 +0530] [Client 3] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=162, response=0x5634bec45fa0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 3] bytes=0, http_state=0, data_remaining=162
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 3] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 4] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 4] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 4] 2.0 CUPS-Get-Printers 1159
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Printers
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Returning IPP successful-ok for CUPS-Get-Printers (no URI) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Content-Length: 1196
+D [10/Dec/2019:17:10:47 +0530] [Client 4] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Notifier] state=3
+D [10/Dec/2019:17:10:47 +0530] [Notifier] PrinterStateChanged
+D [10/Dec/2019:17:10:47 +0530] [Notifier] state=3
+D [10/Dec/2019:17:10:47 +0530] [Notifier] PrinterStateChanged
+D [10/Dec/2019:17:10:47 +0530] [Client 4] con->http=0x5634becf1150
+D [10/Dec/2019:17:10:47 +0530] [Client 4] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=1196, response=0x5634becefdc0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 4] bytes=0, http_state=0, data_remaining=1196
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 4] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 5] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 5] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 5] 2.0 CUPS-Get-Printers 1160
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Printers
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Returning IPP successful-ok for CUPS-Get-Printers (no URI) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Content-Length: 1196
+D [10/Dec/2019:17:10:47 +0530] [Client 5] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 5] con->http=0x5634becf59b0
+D [10/Dec/2019:17:10:47 +0530] [Client 5] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=1196, response=0x5634bec45fa0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 5] bytes=0, http_state=0, data_remaining=1196
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 5] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 1] HTTP_STATE_WAITING Closing for error 32 (Broken pipe)
+D [10/Dec/2019:17:10:47 +0530] [Client 1] Closing connection.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 3] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 3] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 3] 2.0 CUPS-Get-Printers 1161
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Printers
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Returning IPP successful-ok for CUPS-Get-Printers (no URI) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Content-Length: 1196
+D [10/Dec/2019:17:10:47 +0530] [Client 3] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 3] con->http=0x5634becd9ec0
+D [10/Dec/2019:17:10:47 +0530] [Client 3] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=1196, response=0x5634becefdc0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 3] bytes=0, http_state=0, data_remaining=1196
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 3] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 5] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 5] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 5] 2.0 CUPS-Get-Default 1162
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default client-error-not-found: No default printer.
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Returning IPP client-error-not-found for CUPS-Get-Default (no URI) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Content-Length: 113
+D [10/Dec/2019:17:10:47 +0530] [Client 5] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 5] con->http=0x5634becf59b0
+D [10/Dec/2019:17:10:47 +0530] [Client 5] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=113, response=0x5634bec45fa0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 5] bytes=0, http_state=0, data_remaining=113
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 5] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 3] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 3] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 3] 2.0 CUPS-Get-Default 1163
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default client-error-not-found: No default printer.
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Returning IPP client-error-not-found for CUPS-Get-Default (no URI) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Content-Length: 113
+D [10/Dec/2019:17:10:47 +0530] [Client 3] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 3] con->http=0x5634becd9ec0
+D [10/Dec/2019:17:10:47 +0530] [Client 3] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=113, response=0x5634becefdc0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 3] bytes=0, http_state=0, data_remaining=113
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 3] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 4] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 4] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 4] 2.0 CUPS-Get-Default 1164
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default client-error-not-found: No default printer.
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Returning IPP client-error-not-found for CUPS-Get-Default (no URI) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Content-Length: 113
+D [10/Dec/2019:17:10:47 +0530] [Client 4] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 4] con->http=0x5634becf1150
+D [10/Dec/2019:17:10:47 +0530] [Client 4] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=113, response=0x5634bec45fa0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 4] bytes=0, http_state=0, data_remaining=113
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 4] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] PID 8950 (/usr/lib/cups/filter/texttopdf) exited with no errors.
+D [10/Dec/2019:17:10:47 +0530] [Job 50] PAGE: 1 1
+D [10/Dec/2019:17:10:47 +0530] Discarding unused job-progress event...
+D [10/Dec/2019:17:10:47 +0530] cupsdMarkDirty(---J-)
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Connecting to jai-HP-Pavilion-Laptop-15-cc1xx.local:8880
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Connecting to printer.
+D [10/Dec/2019:17:10:47 +0530] cupsdMarkDirty(---J-)
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Set job-printer-state-message to "Connecting to printer.", current level=INFO
+D [10/Dec/2019:17:10:47 +0530] Discarding unused job-progress event...
+D [10/Dec/2019:17:10:47 +0530] cupsdMarkDirty(----S)
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Notifier] state=3
+D [10/Dec/2019:17:10:47 +0530] [Notifier] PrinterStateChanged
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Server address is "/run/cups/cups.sock".
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Accepted from localhost (Domain)
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] [Client 6] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 6] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 6] 2.0 CUPS-Get-Printers 1165
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Printers
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Returning IPP successful-ok for CUPS-Get-Printers (no URI) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Content-Length: 1196
+D [10/Dec/2019:17:10:47 +0530] [Client 6] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 6] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:10:47 +0530] [Client 6] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=1196, response=0x5634becd4520(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 6] bytes=0, http_state=0, data_remaining=1196
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 6] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 6] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 6] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 6] 2.0 CUPS-Get-Default 1166
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default client-error-not-found: No default printer.
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Returning IPP client-error-not-found for CUPS-Get-Default (no URI) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Content-Length: 113
+D [10/Dec/2019:17:10:47 +0530] [Client 6] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 6] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:10:47 +0530] [Client 6] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=113, response=0x5634becefdc0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 6] bytes=0, http_state=0, data_remaining=113
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 6] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] PID 8951 (/usr/lib/cups/filter/pdftopdf) exited with no errors.
+D [10/Dec/2019:17:10:47 +0530] [Job 50] update_reasons(attr=0(), s=\"-cups-certificate-error\")
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Connection is encrypted.
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Credentials are OK/trusted ((null))
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Printer credentials: jai-HP-Pavilion-Laptop-15-cc1xx / Sun, 02 Dec 2029 17:50:05 GMT / 688AAEACA2DBF4541C6FE664C2BB82ED
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Stored credentials: jai-HP-Pavilion-Laptop-15-cc1xx / Sun, 02 Dec 2029 17:50:05 GMT / 688AAEACA2DBF4541C6FE664C2BB82ED
+D [10/Dec/2019:17:10:47 +0530] [Job 50] update_reasons(attr=0(), s=\"-cups-pki-invalid,cups-pki-changed,cups-pki-expired,cups-pki-unknown\")
+D [10/Dec/2019:17:10:47 +0530] [Job 50] update_reasons(attr=0(), s=\"-connecting-to-device\")
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Connected to printer.
+D [10/Dec/2019:17:10:47 +0530] cupsdMarkDirty(---J-)
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Set job-printer-state-message to "Connected to printer.", current level=INFO
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Connected to 192.168.43.178:8880...
+D [10/Dec/2019:17:10:47 +0530] Discarding unused job-progress event...
+D [10/Dec/2019:17:10:47 +0530] cupsdMarkDirty(----S)
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Getting supported attributes...
+D [10/Dec/2019:17:10:47 +0530] [Notifier] state=3
+D [10/Dec/2019:17:10:47 +0530] [Notifier] PrinterStateChanged
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Get-Printer-Attributes: successful-ok (successful-ok)
+D [10/Dec/2019:17:10:47 +0530] [Job 50] copies-supported=1-999
+D [10/Dec/2019:17:10:47 +0530] [Job 50] document-format-supported (3 values)
+D [10/Dec/2019:17:10:47 +0530] [Job 50] [0] = \"application/pdf\"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] [1] = \"image/jpeg\"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] [2] = \"image/pwg-raster\"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] media-col-supported (7 values)
+D [10/Dec/2019:17:10:47 +0530] [Job 50] [0] = \"media-bottom-margin\"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] [1] = \"media-left-margin\"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] [2] = \"media-right-margin\"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] [3] = \"media-size\"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] [4] = \"media-source\"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] [5] = \"media-top-margin\"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] [6] = \"media-type\"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] operations-supported (13 values)
+D [10/Dec/2019:17:10:47 +0530] [Job 50] [0] = Print-Job
+D [10/Dec/2019:17:10:47 +0530] [Job 50] [1] = Print-URI
+D [10/Dec/2019:17:10:47 +0530] [Job 50] [2] = Validate-Job
+D [10/Dec/2019:17:10:47 +0530] [Job 50] [3] = Create-Job
+D [10/Dec/2019:17:10:47 +0530] [Job 50] [4] = Send-Document
+D [10/Dec/2019:17:10:47 +0530] [Job 50] [5] = Send-URI
+D [10/Dec/2019:17:10:47 +0530] [Job 50] [6] = Cancel-Job
+D [10/Dec/2019:17:10:47 +0530] [Job 50] [7] = Get-Job-Attributes
+D [10/Dec/2019:17:10:47 +0530] [Job 50] [8] = Get-Jobs
+D [10/Dec/2019:17:10:47 +0530] [Job 50] [9] = Get-Printer-Attributes
+D [10/Dec/2019:17:10:47 +0530] [Job 50] [10] = Cancel-My-Jobs
+D [10/Dec/2019:17:10:47 +0530] [Job 50] [11] = Close-Job
+D [10/Dec/2019:17:10:47 +0530] [Job 50] [12] = Identify-Printer
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Idle.
+D [10/Dec/2019:17:10:47 +0530] cupsdMarkDirty(---J-)
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Set job-printer-state-message to "Idle.", current level=INFO
+D [10/Dec/2019:17:10:47 +0530] [Job 50] update_reasons(attr=1(none), s=\"(null)\")
+D [10/Dec/2019:17:10:47 +0530] Discarding unused job-progress event...
+D [10/Dec/2019:17:10:47 +0530] cupsdMarkDirty(----S)
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] STATE: -none
+D [10/Dec/2019:17:10:47 +0530] [Notifier] state=3
+D [10/Dec/2019:17:10:47 +0530] [Notifier] PrinterStateChanged
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Server address is "/run/cups/cups.sock".
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Accepted from localhost (Domain)
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] [Client 7] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 7] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 7] 2.0 CUPS-Get-Printers 1167
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Printers
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Returning IPP successful-ok for CUPS-Get-Printers (no URI) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Content-Length: 1196
+D [10/Dec/2019:17:10:47 +0530] [Client 7] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 7] con->http=0x5634becfb990
+D [10/Dec/2019:17:10:47 +0530] [Client 7] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=1196, response=0x5634beccf2d0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 7] bytes=0, http_state=0, data_remaining=1196
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 7] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Server address is "/run/cups/cups.sock".
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Accepted from localhost (Domain)
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] [Client 8] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 8] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 8] 2.0 CUPS-Get-Printers 1168
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Printers
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Returning IPP successful-ok for CUPS-Get-Printers (no URI) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Content-Length: 1196
+D [10/Dec/2019:17:10:47 +0530] [Client 8] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 8] con->http=0x5634bed001f0
+D [10/Dec/2019:17:10:47 +0530] [Client 8] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=1196, response=0x5634bed03900(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 8] bytes=0, http_state=0, data_remaining=1196
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 8] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] final_content_type=\"application/pdf\", document_format=\"application/pdf\"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] retryable=1
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Validate-Job IPP/2.0
+D [10/Dec/2019:17:10:47 +0530] [Job 50] printer-uri=\"ipps://jai-HP-Pavilion-Laptop-15-cc1xx.local:8880/ipp/print\"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] requesting-user-name=\"root\"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] job-name=\"a.txt\"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] document-format=\"application/pdf\"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Adding standard IPP operation/job attributes.
+D [10/Dec/2019:17:10:47 +0530] [Job 50] IPP/2.0 Validate-Job #2
+D [10/Dec/2019:17:10:47 +0530] [Job 50] ---- operation-attributes-tag ----
+D [10/Dec/2019:17:10:47 +0530] [Job 50] attributes-charset charset utf-8
+D [10/Dec/2019:17:10:47 +0530] [Job 50] attributes-natural-language naturalLanguage en-in
+D [10/Dec/2019:17:10:47 +0530] [Job 50] printer-uri uri ipps://jai-HP-Pavilion-Laptop-15-cc1xx.local:8880/ipp/print
+D [10/Dec/2019:17:10:47 +0530] [Job 50] requesting-user-name nameWithoutLanguage root
+D [10/Dec/2019:17:10:47 +0530] [Job 50] job-name nameWithoutLanguage a.txt
+D [10/Dec/2019:17:10:47 +0530] [Job 50] document-format mimeMediaType application/pdf
+D [10/Dec/2019:17:10:47 +0530] [Job 50] ---- job-attributes-tag ----
+D [10/Dec/2019:17:10:47 +0530] [Job 50] job-accounting-user-id nameWithoutLanguage root
+D [10/Dec/2019:17:10:47 +0530] [Job 50] print-color-mode keyword color
+D [10/Dec/2019:17:10:47 +0530] [Job 50] print-quality enum normal
+D [10/Dec/2019:17:10:47 +0530] [Job 50] multiple-document-handling keyword separate-documents-collated-copies
+D [10/Dec/2019:17:10:47 +0530] [Job 50] ---- end-of-attributes-tag ----
+D [10/Dec/2019:17:10:47 +0530] [Client 7] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 7] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 7] 2.0 CUPS-Get-Default 1169
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default client-error-not-found: No default printer.
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Returning IPP client-error-not-found for CUPS-Get-Default (no URI) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Content-Length: 113
+D [10/Dec/2019:17:10:47 +0530] [Client 7] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 8] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 8] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 8] 2.0 CUPS-Get-Default 1170
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default client-error-not-found: No default printer.
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Returning IPP client-error-not-found for CUPS-Get-Default (no URI) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Content-Length: 113
+D [10/Dec/2019:17:10:47 +0530] [Client 8] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Validate-Job: successful-ok (successful-ok)
+D [10/Dec/2019:17:10:47 +0530] [Job 50] ---- operation-attributes-tag ----
+D [10/Dec/2019:17:10:47 +0530] [Job 50] attributes-charset charset utf-8
+D [10/Dec/2019:17:10:47 +0530] [Job 50] attributes-natural-language naturalLanguage en-in
+D [10/Dec/2019:17:10:47 +0530] [Job 50] ---- end-of-attributes-tag ----
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Create-Job IPP/2.0
+D [10/Dec/2019:17:10:47 +0530] [Job 50] printer-uri=\"ipps://jai-HP-Pavilion-Laptop-15-cc1xx.local:8880/ipp/print\"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] requesting-user-name=\"root\"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] job-name=\"a.txt\"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Adding standard IPP operation/job attributes.
+D [10/Dec/2019:17:10:47 +0530] [Job 50] IPP/2.0 Create-Job #3
+D [10/Dec/2019:17:10:47 +0530] [Job 50] ---- operation-attributes-tag ----
+D [10/Dec/2019:17:10:47 +0530] [Job 50] attributes-charset charset utf-8
+D [10/Dec/2019:17:10:47 +0530] [Job 50] attributes-natural-language naturalLanguage en-in
+D [10/Dec/2019:17:10:47 +0530] [Job 50] printer-uri uri ipps://jai-HP-Pavilion-Laptop-15-cc1xx.local:8880/ipp/print
+D [10/Dec/2019:17:10:47 +0530] [Job 50] requesting-user-name nameWithoutLanguage root
+D [10/Dec/2019:17:10:47 +0530] [Job 50] job-name nameWithoutLanguage a.txt
+D [10/Dec/2019:17:10:47 +0530] [Job 50] ---- job-attributes-tag ----
+D [10/Dec/2019:17:10:47 +0530] [Job 50] job-accounting-user-id nameWithoutLanguage root
+D [10/Dec/2019:17:10:47 +0530] [Job 50] print-color-mode keyword color
+D [10/Dec/2019:17:10:47 +0530] [Job 50] print-quality enum normal
+D [10/Dec/2019:17:10:47 +0530] [Job 50] multiple-document-handling keyword separate-documents-collated-copies
+D [10/Dec/2019:17:10:47 +0530] [Job 50] ---- end-of-attributes-tag ----
+D [10/Dec/2019:17:10:47 +0530] [Client 7] con->http=0x5634becfb990
+D [10/Dec/2019:17:10:47 +0530] [Client 7] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=113, response=0x5634bec45ff0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 7] bytes=0, http_state=0, data_remaining=113
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 7] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 8] con->http=0x5634bed001f0
+D [10/Dec/2019:17:10:47 +0530] [Client 8] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=113, response=0x5634bed04290(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 8] bytes=0, http_state=0, data_remaining=113
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 8] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Create-Job: successful-ok (successful-ok)
+D [10/Dec/2019:17:10:47 +0530] [Job 50] ---- operation-attributes-tag ----
+D [10/Dec/2019:17:10:47 +0530] [Job 50] attributes-charset charset utf-8
+D [10/Dec/2019:17:10:47 +0530] [Job 50] attributes-natural-language naturalLanguage en-in
+D [10/Dec/2019:17:10:47 +0530] [Job 50] ---- job-attributes-tag ----
+D [10/Dec/2019:17:10:47 +0530] [Job 50] job-id integer 5
+D [10/Dec/2019:17:10:47 +0530] [Job 50] job-uri uri ipp://jai-hp-pavilion-laptop-15-cc1xx:8880/ipp/print/5
+D [10/Dec/2019:17:10:47 +0530] [Job 50] job-state enum pending-held
+D [10/Dec/2019:17:10:47 +0530] [Job 50] job-state-message textWithoutLanguage Job created.
+D [10/Dec/2019:17:10:47 +0530] [Job 50] job-state-reasons keyword job-data-insufficient
+D [10/Dec/2019:17:10:47 +0530] [Job 50] ---- end-of-attributes-tag ----
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Print job accepted - job ID 5.
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Sending file 1 using chunking...
+D [10/Dec/2019:17:10:47 +0530] [Job 50] IPP/2.0 Send-Document #4
+D [10/Dec/2019:17:10:47 +0530] [Job 50] ---- operation-attributes-tag ----
+D [10/Dec/2019:17:10:47 +0530] [Job 50] attributes-charset charset utf-8
+D [10/Dec/2019:17:10:47 +0530] [Job 50] attributes-natural-language naturalLanguage en-in
+D [10/Dec/2019:17:10:47 +0530] [Job 50] printer-uri uri ipps://jai-HP-Pavilion-Laptop-15-cc1xx.local:8880/ipp/print
+D [10/Dec/2019:17:10:47 +0530] [Job 50] job-id integer 5
+D [10/Dec/2019:17:10:47 +0530] [Job 50] requesting-user-name nameWithoutLanguage root
+D [10/Dec/2019:17:10:47 +0530] [Job 50] last-document boolean true
+D [10/Dec/2019:17:10:47 +0530] [Job 50] document-format mimeMediaType application/pdf
+D [10/Dec/2019:17:10:47 +0530] [Job 50] ---- end-of-attributes-tag ----
+D [10/Dec/2019:17:10:47 +0530] [Job 50] IPP/2.0 Get-Printer-Attributes #5
+D [10/Dec/2019:17:10:47 +0530] [Job 50] ---- operation-attributes-tag ----
+D [10/Dec/2019:17:10:47 +0530] [Job 50] attributes-charset charset utf-8
+D [10/Dec/2019:17:10:47 +0530] [Job 50] attributes-natural-language naturalLanguage en-in
+D [10/Dec/2019:17:10:47 +0530] [Job 50] printer-uri uri ipps://jai-HP-Pavilion-Laptop-15-cc1xx.local:8880/ipp/print
+D [10/Dec/2019:17:10:47 +0530] [Job 50] requesting-user-name nameWithoutLanguage root
+D [10/Dec/2019:17:10:47 +0530] [Job 50] requested-attributes 1setOf keyword compression-supported,copies-supported,cups-version,document-format-supported,job-password-encryption-supported,marker-colors,marker-high-levels,marker-levels,marker-low-levels,marker-message,marker-names,marker-types,media-col-supported,multiple-document-handling-supported,operations-supported,print-color-mode-supported,printer-alert,printer-alert-description,printer-is-accepting-jobs,printer-mandatory-job-attributes,printer-state,printer-state-message,printer-state-reasons
+D [10/Dec/2019:17:10:47 +0530] [Job 50] ---- end-of-attributes-tag ----
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Printing.
+D [10/Dec/2019:17:10:47 +0530] cupsdMarkDirty(---J-)
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Set job-printer-state-message to "Printing.", current level=INFO
+D [10/Dec/2019:17:10:47 +0530] [Job 50] update_reasons(attr=1(none), s=\"(null)\")
+D [10/Dec/2019:17:10:47 +0530] [Job 50] Get-Printer-Attributes: successful-ok (successful-ok)
+D [10/Dec/2019:17:10:47 +0530] [Job 50] ---- operation-attributes-tag ----
+D [10/Dec/2019:17:10:47 +0530] [Job 50] attributes-charset charset utf-8
+D [10/Dec/2019:17:10:47 +0530] [Job 50] attributes-natural-language naturalLanguage en-in
+D [10/Dec/2019:17:10:47 +0530] [Job 50] ---- printer-attributes-tag ----
+D [10/Dec/2019:17:10:47 +0530] [Job 50] compression-supported 1setOf keyword deflate,gzip,none
+D [10/Dec/2019:17:10:47 +0530] [Job 50] copies-supported rangeOfInteger 1-999
+D [10/Dec/2019:17:10:47 +0530] [Job 50] document-format-supported 1setOf mimeMediaType application/pdf,image/jpeg,image/pwg-raster
+D [10/Dec/2019:17:10:47 +0530] [Job 50] media-col-supported 1setOf keyword media-bottom-margin,media-left-margin,media-right-margin,media-size,media-source,media-top-margin,media-type
+D [10/Dec/2019:17:10:47 +0530] [Job 50] multiple-document-handling-supported 1setOf keyword separate-documents-uncollated-copies,separate-documents-collated-copies
+D [10/Dec/2019:17:10:47 +0530] [Job 50] operations-supported 1setOf enum Print-Job,Print-URI,Validate-Job,Create-Job,Send-Document,Send-URI,Cancel-Job,Get-Job-Attributes,Get-Jobs,Get-Printer-Attributes,Cancel-My-Jobs,Close-Job,Identify-Printer
+D [10/Dec/2019:17:10:47 +0530] [Job 50] print-color-mode-supported 1setOf keyword auto,color,monochrome
+D [10/Dec/2019:17:10:47 +0530] [Job 50] printer-is-accepting-jobs boolean true
+D [10/Dec/2019:17:10:47 +0530] [Job 50] printer-state enum processing
+D [10/Dec/2019:17:10:47 +0530] [Job 50] printer-state-message textWithoutLanguage Printing.
+D [10/Dec/2019:17:10:47 +0530] [Job 50] printer-state-reasons keyword none
+D [10/Dec/2019:17:10:47 +0530] [Job 50] ---- end-of-attributes-tag ----
+D [10/Dec/2019:17:10:47 +0530] Discarding unused job-progress event...
+D [10/Dec/2019:17:10:47 +0530] cupsdMarkDirty(----S)
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Notifier] state=3
+D [10/Dec/2019:17:10:47 +0530] [Notifier] PrinterStateChanged
+D [10/Dec/2019:17:10:47 +0530] [Job 50] (monitor) Get-Job-Attributes: successful-ok (successful-ok)
+D [10/Dec/2019:17:10:47 +0530] [Job 50] (monitor) job-state = processing
+D [10/Dec/2019:17:10:47 +0530] [Job 50] (monitor) job-state = processing
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 9] Server address is "/run/cups/cups.sock".
+D [10/Dec/2019:17:10:47 +0530] [Client 9] Accepted from localhost (Domain)
+D [10/Dec/2019:17:10:47 +0530] [Client 9] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] [Client 9] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 9] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 9] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 9] 2.0 CUPS-Get-Printers 1171
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Printers
+D [10/Dec/2019:17:10:47 +0530] [Client 9] Returning IPP successful-ok for CUPS-Get-Printers (no URI) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 9] Content-Length: 1196
+D [10/Dec/2019:17:10:47 +0530] [Client 9] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 9] con->http=0x5634bed05870
+D [10/Dec/2019:17:10:47 +0530] [Client 9] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=1196, response=0x5634bed03920(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 9] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 9] bytes=0, http_state=0, data_remaining=1196
+D [10/Dec/2019:17:10:47 +0530] [Client 9] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 9] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 9] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 9] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 9] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 9] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 9] 2.0 CUPS-Get-Default 1172
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default client-error-not-found: No default printer.
+D [10/Dec/2019:17:10:47 +0530] [Client 9] Returning IPP client-error-not-found for CUPS-Get-Default (no URI) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 9] Content-Length: 113
+D [10/Dec/2019:17:10:47 +0530] [Client 9] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 9] con->http=0x5634bed05870
+D [10/Dec/2019:17:10:47 +0530] [Client 9] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=113, response=0x5634bed042f0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 9] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 9] bytes=0, http_state=0, data_remaining=113
+D [10/Dec/2019:17:10:47 +0530] [Client 9] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 9] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 9] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 5] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 5] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 5] 2.0 CUPS-Get-Default 1173
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default client-error-not-found: No default printer.
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Returning IPP client-error-not-found for CUPS-Get-Default (no URI) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Content-Length: 113
+D [10/Dec/2019:17:10:47 +0530] [Client 5] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 5] con->http=0x5634becf59b0
+D [10/Dec/2019:17:10:47 +0530] [Client 5] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=113, response=0x5634bed03920(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 5] bytes=0, http_state=0, data_remaining=113
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 5] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 7] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 7] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 7] 2.0 CUPS-Get-Default 1174
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default client-error-not-found: No default printer.
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Returning IPP client-error-not-found for CUPS-Get-Default (no URI) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Content-Length: 113
+D [10/Dec/2019:17:10:47 +0530] [Client 7] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 8] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 8] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 8] 2.0 CUPS-Get-Default 1175
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default client-error-not-found: No default printer.
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Returning IPP client-error-not-found for CUPS-Get-Default (no URI) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Content-Length: 113
+D [10/Dec/2019:17:10:47 +0530] [Client 8] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 6] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 6] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 6] 2.0 CUPS-Get-Default 1176
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default client-error-not-found: No default printer.
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Returning IPP client-error-not-found for CUPS-Get-Default (no URI) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Content-Length: 113
+D [10/Dec/2019:17:10:47 +0530] [Client 6] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 7] con->http=0x5634becfb990
+D [10/Dec/2019:17:10:47 +0530] [Client 7] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=113, response=0x5634bed042f0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 7] bytes=0, http_state=0, data_remaining=113
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 7] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 8] con->http=0x5634bed001f0
+D [10/Dec/2019:17:10:47 +0530] [Client 8] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=113, response=0x5634bed09260(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 8] bytes=0, http_state=0, data_remaining=113
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 8] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 6] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:10:47 +0530] [Client 6] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=113, response=0x5634bed03a40(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 6] bytes=0, http_state=0, data_remaining=113
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 6] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 3] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 3] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 3] 2.0 CUPS-Get-Default 1177
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default client-error-not-found: No default printer.
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Returning IPP client-error-not-found for CUPS-Get-Default (no URI) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Content-Length: 113
+D [10/Dec/2019:17:10:47 +0530] [Client 3] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 4] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 4] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 4] 2.0 CUPS-Get-Default 1178
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default client-error-not-found: No default printer.
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Returning IPP client-error-not-found for CUPS-Get-Default (no URI) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Content-Length: 113
+D [10/Dec/2019:17:10:47 +0530] [Client 4] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 3] con->http=0x5634becd9ec0
+D [10/Dec/2019:17:10:47 +0530] [Client 3] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=113, response=0x5634bed039f0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 3] bytes=0, http_state=0, data_remaining=113
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 3] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 4] con->http=0x5634becf1150
+D [10/Dec/2019:17:10:47 +0530] [Client 4] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=113, response=0x5634bed042f0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 4] bytes=0, http_state=0, data_remaining=113
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 4] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 5] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 5] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 5] 2.0 Get-Printer-Attributes 1179
+D [10/Dec/2019:17:10:47 +0530] Get-Printer-Attributes ipp://localhost/printers/printer
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Returning IPP successful-ok for Get-Printer-Attributes (ipp://localhost/printers/printer) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Content-Length: 101
+D [10/Dec/2019:17:10:47 +0530] [Client 5] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 5] con->http=0x5634becf59b0
+D [10/Dec/2019:17:10:47 +0530] [Client 5] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=101, response=0x5634bed09210(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 5] bytes=0, http_state=0, data_remaining=101
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 5] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 8] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 8] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 8] 2.0 Get-Jobs 1180
+D [10/Dec/2019:17:10:47 +0530] Get-Jobs ipp://localhost/printers/printer
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Returning IPP successful-ok for Get-Jobs (ipp://localhost/printers/printer) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Content-Length: 75
+D [10/Dec/2019:17:10:47 +0530] [Client 8] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 8] con->http=0x5634bed001f0
+D [10/Dec/2019:17:10:47 +0530] [Client 8] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=75, response=0x5634bed042f0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 8] bytes=0, http_state=0, data_remaining=75
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 8] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 6] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 6] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 6] 2.0 Get-Printer-Attributes 1181
+D [10/Dec/2019:17:10:47 +0530] Get-Printer-Attributes ipp://localhost/printers/printer
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Returning IPP successful-ok for Get-Printer-Attributes (ipp://localhost/printers/printer) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Content-Length: 101
+D [10/Dec/2019:17:10:47 +0530] [Client 6] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 6] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:10:47 +0530] [Client 6] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=101, response=0x5634bed09210(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 6] bytes=0, http_state=0, data_remaining=101
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 6] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 7] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 7] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 7] 2.0 Get-Jobs 1182
+D [10/Dec/2019:17:10:47 +0530] Get-Jobs ipp://localhost/printers/printer
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Returning IPP successful-ok for Get-Jobs (ipp://localhost/printers/printer) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Content-Length: 75
+D [10/Dec/2019:17:10:47 +0530] [Client 7] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 7] con->http=0x5634becfb990
+D [10/Dec/2019:17:10:47 +0530] [Client 7] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=75, response=0x5634bed042f0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 7] bytes=0, http_state=0, data_remaining=75
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 7] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 3] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 3] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 3] 2.0 Get-Printer-Attributes 1183
+D [10/Dec/2019:17:10:47 +0530] Get-Printer-Attributes ipp://localhost/printers/printer
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Returning IPP successful-ok for Get-Printer-Attributes (ipp://localhost/printers/printer) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Content-Length: 101
+D [10/Dec/2019:17:10:47 +0530] [Client 3] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 3] con->http=0x5634becd9ec0
+D [10/Dec/2019:17:10:47 +0530] [Client 3] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=101, response=0x5634bed09210(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 3] bytes=0, http_state=0, data_remaining=101
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 3] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 4] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 4] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 4] 2.0 Get-Jobs 1184
+D [10/Dec/2019:17:10:47 +0530] Get-Jobs ipp://localhost/printers/printer
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Returning IPP successful-ok for Get-Jobs (ipp://localhost/printers/printer) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Content-Length: 75
+D [10/Dec/2019:17:10:47 +0530] [Client 4] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 4] con->http=0x5634becf1150
+D [10/Dec/2019:17:10:47 +0530] [Client 4] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=75, response=0x5634bed042f0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 4] bytes=0, http_state=0, data_remaining=75
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 4] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 8] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 8] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 8] 2.0 Get-Printer-Attributes 1185
+D [10/Dec/2019:17:10:47 +0530] Get-Printer-Attributes ipp://localhost/printers/printer
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Returning IPP successful-ok for Get-Printer-Attributes (ipp://localhost/printers/printer) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Content-Length: 101
+D [10/Dec/2019:17:10:47 +0530] [Client 8] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 5] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 5] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 5] 2.0 Get-Jobs 1186
+D [10/Dec/2019:17:10:47 +0530] Get-Jobs ipp://localhost/printers/printer
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Returning IPP successful-ok for Get-Jobs (ipp://localhost/printers/printer) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Content-Length: 75
+D [10/Dec/2019:17:10:47 +0530] [Client 5] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 8] con->http=0x5634bed001f0
+D [10/Dec/2019:17:10:47 +0530] [Client 8] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=101, response=0x5634bed09210(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 8] bytes=0, http_state=0, data_remaining=101
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 8] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 5] con->http=0x5634becf59b0
+D [10/Dec/2019:17:10:47 +0530] [Client 5] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=75, response=0x5634bed03a40(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 5] bytes=0, http_state=0, data_remaining=75
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 5] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 6] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 6] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 6] 2.0 Get-Printer-Attributes 1187
+D [10/Dec/2019:17:10:47 +0530] Get-Printer-Attributes ipp://localhost/printers/printer
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Returning IPP successful-ok for Get-Printer-Attributes (ipp://localhost/printers/printer) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Content-Length: 101
+D [10/Dec/2019:17:10:47 +0530] [Client 6] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 7] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 7] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 7] 2.0 Get-Jobs 1188
+D [10/Dec/2019:17:10:47 +0530] Get-Jobs ipp://localhost/printers/printer
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Returning IPP successful-ok for Get-Jobs (ipp://localhost/printers/printer) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Content-Length: 75
+D [10/Dec/2019:17:10:47 +0530] [Client 7] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 6] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:10:47 +0530] [Client 6] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=101, response=0x5634bed039f0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 6] bytes=0, http_state=0, data_remaining=101
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 6] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 6] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 7] con->http=0x5634becfb990
+D [10/Dec/2019:17:10:47 +0530] [Client 7] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=75, response=0x5634bed042f0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 7] bytes=0, http_state=0, data_remaining=75
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 7] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 7] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 3] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 3] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 3] 2.0 Get-Printer-Attributes 1189
+D [10/Dec/2019:17:10:47 +0530] Get-Printer-Attributes ipp://localhost/printers/printer
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Returning IPP successful-ok for Get-Printer-Attributes (ipp://localhost/printers/printer) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Content-Length: 101
+D [10/Dec/2019:17:10:47 +0530] [Client 3] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 4] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 4] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 4] 2.0 Get-Jobs 1190
+D [10/Dec/2019:17:10:47 +0530] Get-Jobs ipp://localhost/printers/printer
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Returning IPP successful-ok for Get-Jobs (ipp://localhost/printers/printer) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Content-Length: 75
+D [10/Dec/2019:17:10:47 +0530] [Client 4] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 3] con->http=0x5634becd9ec0
+D [10/Dec/2019:17:10:47 +0530] [Client 3] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=101, response=0x5634bed09210(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 3] bytes=0, http_state=0, data_remaining=101
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 3] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 3] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 4] con->http=0x5634becf1150
+D [10/Dec/2019:17:10:47 +0530] [Client 4] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=75, response=0x5634bed03a40(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 4] bytes=0, http_state=0, data_remaining=75
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 4] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 4] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 9] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 9] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 9] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 9] 2.0 CUPS-Get-Default 1191
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default
+D [10/Dec/2019:17:10:47 +0530] CUPS-Get-Default client-error-not-found: No default printer.
+D [10/Dec/2019:17:10:47 +0530] [Client 9] Returning IPP client-error-not-found for CUPS-Get-Default (no URI) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 9] Content-Length: 113
+D [10/Dec/2019:17:10:47 +0530] [Client 9] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 9] con->http=0x5634bed05870
+D [10/Dec/2019:17:10:47 +0530] [Client 9] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=113, response=0x5634bed039f0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 9] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 9] bytes=0, http_state=0, data_remaining=113
+D [10/Dec/2019:17:10:47 +0530] [Client 9] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 9] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 9] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 8] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 8] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 8] 2.0 Get-Printer-Attributes 1192
+D [10/Dec/2019:17:10:47 +0530] Get-Printer-Attributes ipp://localhost/printers/printer
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Returning IPP successful-ok for Get-Printer-Attributes (ipp://localhost/printers/printer) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Content-Length: 101
+D [10/Dec/2019:17:10:47 +0530] [Client 8] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 8] con->http=0x5634bed001f0
+D [10/Dec/2019:17:10:47 +0530] [Client 8] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=101, response=0x5634bed03a40(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 8] bytes=0, http_state=0, data_remaining=101
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 8] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 8] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 5] POST / HTTP/1.1
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Read: status=200, state=6
+D [10/Dec/2019:17:10:47 +0530] [Client 5] No authentication data provided.
+D [10/Dec/2019:17:10:47 +0530] [Client 5] 2.0 Get-Jobs 1193
+D [10/Dec/2019:17:10:47 +0530] Get-Jobs ipp://localhost/printers/printer
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Returning IPP successful-ok for Get-Jobs (ipp://localhost/printers/printer) from localhost.
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Content-Length: 75
+D [10/Dec/2019:17:10:47 +0530] [Client 5] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:10:47 +0530] [Client 5] con->http=0x5634becf59b0
+D [10/Dec/2019:17:10:47 +0530] [Client 5] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=75, response=0x5634bed039f0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:10:47 +0530] [Client 5] bytes=0, http_state=0, data_remaining=75
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Flushing write buffer.
+D [10/Dec/2019:17:10:47 +0530] [Client 5] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:10:47 +0530] [Client 5] Waiting for request.
+D [10/Dec/2019:17:10:47 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:10:48 +0530] [Client 7] HTTP_STATE_WAITING Closing for error 32 (Broken pipe)
+D [10/Dec/2019:17:10:48 +0530] [Client 7] Closing connection.
+D [10/Dec/2019:17:10:48 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+I [10/Dec/2019:17:10:48 +0530] Expiring subscriptions...
+D [10/Dec/2019:17:10:48 +0530] [Client 3] HTTP_STATE_WAITING Closing for error 32 (Broken pipe)
+D [10/Dec/2019:17:10:48 +0530] [Client 3] Closing connection.
+D [10/Dec/2019:17:10:48 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:48 +0530] [Client 4] HTTP_STATE_WAITING Closing for error 32 (Broken pipe)
+D [10/Dec/2019:17:10:48 +0530] [Client 4] Closing connection.
+D [10/Dec/2019:17:10:48 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:48 +0530] [Client 9] HTTP_STATE_WAITING Closing for error 32 (Broken pipe)
+D [10/Dec/2019:17:10:48 +0530] [Client 9] Closing connection.
+D [10/Dec/2019:17:10:48 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:48 +0530] [Client 8] HTTP_STATE_WAITING Closing for error 32 (Broken pipe)
+D [10/Dec/2019:17:10:48 +0530] [Client 8] Closing connection.
+D [10/Dec/2019:17:10:48 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:48 +0530] [Client 5] HTTP_STATE_WAITING Closing for error 32 (Broken pipe)
+D [10/Dec/2019:17:10:48 +0530] [Client 5] Closing connection.
+D [10/Dec/2019:17:10:48 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:10:48 +0530] [Job 50] IPP/2.0 Get-Printer-Attributes #7
+D [10/Dec/2019:17:10:48 +0530] [Job 50] ---- operation-attributes-tag ----
+D [10/Dec/2019:17:10:48 +0530] [Job 50] attributes-charset charset utf-8
+D [10/Dec/2019:17:10:48 +0530] [Job 50] attributes-natural-language naturalLanguage en-in
+D [10/Dec/2019:17:10:48 +0530] [Job 50] printer-uri uri ipps://jai-HP-Pavilion-Laptop-15-cc1xx.local:8880/ipp/print
+D [10/Dec/2019:17:10:48 +0530] [Job 50] requesting-user-name nameWithoutLanguage root
+D [10/Dec/2019:17:10:48 +0530] [Job 50] requested-attributes 1setOf keyword compression-supported,copies-supported,cups-version,document-format-supported,job-password-encryption-supported,marker-colors,marker-high-levels,marker-levels,marker-low-levels,marker-message,marker-names,marker-types,media-col-supported,multiple-document-handling-supported,operations-supported,print-color-mode-supported,printer-alert,printer-alert-description,printer-is-accepting-jobs,printer-mandatory-job-attributes,printer-state,printer-state-message,printer-state-reasons
+D [10/Dec/2019:17:10:48 +0530] [Job 50] ---- end-of-attributes-tag ----
+D [10/Dec/2019:17:10:48 +0530] [Job 50] Printing.
+D [10/Dec/2019:17:10:48 +0530] [Job 50] update_reasons(attr=1(none), s=\"(null)\")
+D [10/Dec/2019:17:10:48 +0530] [Job 50] Get-Printer-Attributes: successful-ok (successful-ok)
+D [10/Dec/2019:17:10:48 +0530] [Job 50] ---- operation-attributes-tag ----
+D [10/Dec/2019:17:10:48 +0530] [Job 50] attributes-charset charset utf-8
+D [10/Dec/2019:17:10:48 +0530] [Job 50] attributes-natural-language naturalLanguage en-in
+D [10/Dec/2019:17:10:48 +0530] [Job 50] ---- printer-attributes-tag ----
+D [10/Dec/2019:17:10:48 +0530] [Job 50] compression-supported 1setOf keyword deflate,gzip,none
+D [10/Dec/2019:17:10:48 +0530] [Job 50] copies-supported rangeOfInteger 1-999
+D [10/Dec/2019:17:10:48 +0530] [Job 50] document-format-supported 1setOf mimeMediaType application/pdf,image/jpeg,image/pwg-raster
+D [10/Dec/2019:17:10:48 +0530] [Job 50] media-col-supported 1setOf keyword media-bottom-margin,media-left-margin,media-right-margin,media-size,media-source,media-top-margin,media-type
+D [10/Dec/2019:17:10:48 +0530] [Job 50] multiple-document-handling-supported 1setOf keyword separate-documents-uncollated-copies,separate-documents-collated-copies
+D [10/Dec/2019:17:10:48 +0530] [Job 50] operations-supported 1setOf enum Print-Job,Print-URI,Validate-Job,Create-Job,Send-Document,Send-URI,Cancel-Job,Get-Job-Attributes,Get-Jobs,Get-Printer-Attributes,Cancel-My-Jobs,Close-Job,Identify-Printer
+D [10/Dec/2019:17:10:48 +0530] [Job 50] print-color-mode-supported 1setOf keyword auto,color,monochrome
+D [10/Dec/2019:17:10:48 +0530] [Job 50] printer-is-accepting-jobs boolean true
+D [10/Dec/2019:17:10:48 +0530] [Job 50] printer-state enum processing
+D [10/Dec/2019:17:10:48 +0530] [Job 50] printer-state-message textWithoutLanguage Printing.
+D [10/Dec/2019:17:10:48 +0530] [Job 50] printer-state-reasons keyword none
+D [10/Dec/2019:17:10:48 +0530] [Job 50] ---- end-of-attributes-tag ----
+D [10/Dec/2019:17:10:48 +0530] [Job 50] (monitor) Get-Job-Attributes: successful-ok (successful-ok)
+D [10/Dec/2019:17:10:48 +0530] [Job 50] (monitor) job-state = processing
+D [10/Dec/2019:17:10:48 +0530] [Job 50] (monitor) job-state = processing
+D [10/Dec/2019:17:10:49 +0530] [Job 50] IPP/2.0 Get-Printer-Attributes #9
+D [10/Dec/2019:17:10:49 +0530] [Job 50] ---- operation-attributes-tag ----
+D [10/Dec/2019:17:10:49 +0530] [Job 50] attributes-charset charset utf-8
+D [10/Dec/2019:17:10:49 +0530] [Job 50] attributes-natural-language naturalLanguage en-in
+D [10/Dec/2019:17:10:49 +0530] [Job 50] printer-uri uri ipps://jai-HP-Pavilion-Laptop-15-cc1xx.local:8880/ipp/print
+D [10/Dec/2019:17:10:49 +0530] [Job 50] requesting-user-name nameWithoutLanguage root
+D [10/Dec/2019:17:10:49 +0530] [Job 50] requested-attributes 1setOf keyword compression-supported,copies-supported,cups-version,document-format-supported,job-password-encryption-supported,marker-colors,marker-high-levels,marker-levels,marker-low-levels,marker-message,marker-names,marker-types,media-col-supported,multiple-document-handling-supported,operations-supported,print-color-mode-supported,printer-alert,printer-alert-description,printer-is-accepting-jobs,printer-mandatory-job-attributes,printer-state,printer-state-message,printer-state-reasons
+D [10/Dec/2019:17:10:49 +0530] [Job 50] ---- end-of-attributes-tag ----
+I [10/Dec/2019:17:10:49 +0530] Expiring subscriptions...
+D [10/Dec/2019:17:10:49 +0530] [Job 50] Printing.
+D [10/Dec/2019:17:10:49 +0530] [Job 50] update_reasons(attr=1(none), s=\"(null)\")
+D [10/Dec/2019:17:10:49 +0530] [Job 50] Get-Printer-Attributes: successful-ok (successful-ok)
+D [10/Dec/2019:17:10:49 +0530] [Job 50] ---- operation-attributes-tag ----
+D [10/Dec/2019:17:10:49 +0530] [Job 50] attributes-charset charset utf-8
+D [10/Dec/2019:17:10:49 +0530] [Job 50] attributes-natural-language naturalLanguage en-in
+D [10/Dec/2019:17:10:49 +0530] [Job 50] ---- printer-attributes-tag ----
+D [10/Dec/2019:17:10:49 +0530] [Job 50] compression-supported 1setOf keyword deflate,gzip,none
+D [10/Dec/2019:17:10:49 +0530] [Job 50] copies-supported rangeOfInteger 1-999
+D [10/Dec/2019:17:10:49 +0530] [Job 50] document-format-supported 1setOf mimeMediaType application/pdf,image/jpeg,image/pwg-raster
+D [10/Dec/2019:17:10:49 +0530] [Job 50] media-col-supported 1setOf keyword media-bottom-margin,media-left-margin,media-right-margin,media-size,media-source,media-top-margin,media-type
+D [10/Dec/2019:17:10:49 +0530] [Job 50] multiple-document-handling-supported 1setOf keyword separate-documents-uncollated-copies,separate-documents-collated-copies
+D [10/Dec/2019:17:10:49 +0530] [Job 50] operations-supported 1setOf enum Print-Job,Print-URI,Validate-Job,Create-Job,Send-Document,Send-URI,Cancel-Job,Get-Job-Attributes,Get-Jobs,Get-Printer-Attributes,Cancel-My-Jobs,Close-Job,Identify-Printer
+D [10/Dec/2019:17:10:49 +0530] [Job 50] print-color-mode-supported 1setOf keyword auto,color,monochrome
+D [10/Dec/2019:17:10:49 +0530] [Job 50] printer-is-accepting-jobs boolean true
+D [10/Dec/2019:17:10:49 +0530] [Job 50] printer-state enum processing
+D [10/Dec/2019:17:10:49 +0530] [Job 50] printer-state-message textWithoutLanguage Printing.
+D [10/Dec/2019:17:10:49 +0530] [Job 50] printer-state-reasons keyword none
+D [10/Dec/2019:17:10:49 +0530] [Job 50] ---- end-of-attributes-tag ----
+D [10/Dec/2019:17:10:49 +0530] [Job 50] (monitor) Get-Job-Attributes: successful-ok (successful-ok)
+D [10/Dec/2019:17:10:49 +0530] [Job 50] (monitor) job-state = processing
+D [10/Dec/2019:17:10:49 +0530] [Job 50] (monitor) job-state = processing
+I [10/Dec/2019:17:10:50 +0530] Expiring subscriptions...
+D [10/Dec/2019:17:10:51 +0530] [Job 50] IPP/2.0 Get-Printer-Attributes #11
+D [10/Dec/2019:17:10:51 +0530] [Job 50] ---- operation-attributes-tag ----
+D [10/Dec/2019:17:10:51 +0530] [Job 50] attributes-charset charset utf-8
+D [10/Dec/2019:17:10:51 +0530] [Job 50] attributes-natural-language naturalLanguage en-in
+D [10/Dec/2019:17:10:51 +0530] [Job 50] printer-uri uri ipps://jai-HP-Pavilion-Laptop-15-cc1xx.local:8880/ipp/print
+D [10/Dec/2019:17:10:51 +0530] [Job 50] requesting-user-name nameWithoutLanguage root
+D [10/Dec/2019:17:10:51 +0530] [Job 50] requested-attributes 1setOf keyword compression-supported,copies-supported,cups-version,document-format-supported,job-password-encryption-supported,marker-colors,marker-high-levels,marker-levels,marker-low-levels,marker-message,marker-names,marker-types,media-col-supported,multiple-document-handling-supported,operations-supported,print-color-mode-supported,printer-alert,printer-alert-description,printer-is-accepting-jobs,printer-mandatory-job-attributes,printer-state,printer-state-message,printer-state-reasons
+I [10/Dec/2019:17:10:51 +0530] Expiring subscriptions...
+D [10/Dec/2019:17:10:51 +0530] [Job 50] ---- end-of-attributes-tag ----
+D [10/Dec/2019:17:10:51 +0530] [Job 50] Printing.
+D [10/Dec/2019:17:10:51 +0530] [Job 50] update_reasons(attr=1(none), s=\"(null)\")
+D [10/Dec/2019:17:10:51 +0530] [Job 50] Get-Printer-Attributes: successful-ok (successful-ok)
+D [10/Dec/2019:17:10:51 +0530] [Job 50] ---- operation-attributes-tag ----
+D [10/Dec/2019:17:10:51 +0530] [Job 50] attributes-charset charset utf-8
+D [10/Dec/2019:17:10:51 +0530] [Job 50] attributes-natural-language naturalLanguage en-in
+D [10/Dec/2019:17:10:51 +0530] [Job 50] ---- printer-attributes-tag ----
+D [10/Dec/2019:17:10:51 +0530] [Job 50] compression-supported 1setOf keyword deflate,gzip,none
+D [10/Dec/2019:17:10:51 +0530] [Job 50] copies-supported rangeOfInteger 1-999
+D [10/Dec/2019:17:10:51 +0530] [Job 50] document-format-supported 1setOf mimeMediaType application/pdf,image/jpeg,image/pwg-raster
+D [10/Dec/2019:17:10:51 +0530] [Job 50] media-col-supported 1setOf keyword media-bottom-margin,media-left-margin,media-right-margin,media-size,media-source,media-top-margin,media-type
+D [10/Dec/2019:17:10:51 +0530] [Job 50] multiple-document-handling-supported 1setOf keyword separate-documents-uncollated-copies,separate-documents-collated-copies
+D [10/Dec/2019:17:10:51 +0530] [Job 50] operations-supported 1setOf enum Print-Job,Print-URI,Validate-Job,Create-Job,Send-Document,Send-URI,Cancel-Job,Get-Job-Attributes,Get-Jobs,Get-Printer-Attributes,Cancel-My-Jobs,Close-Job,Identify-Printer
+D [10/Dec/2019:17:10:51 +0530] [Job 50] print-color-mode-supported 1setOf keyword auto,color,monochrome
+D [10/Dec/2019:17:10:51 +0530] [Job 50] printer-is-accepting-jobs boolean true
+D [10/Dec/2019:17:10:51 +0530] [Job 50] printer-state enum processing
+D [10/Dec/2019:17:10:51 +0530] [Job 50] printer-state-message textWithoutLanguage Printing.
+D [10/Dec/2019:17:10:51 +0530] [Job 50] printer-state-reasons keyword none
+D [10/Dec/2019:17:10:51 +0530] [Job 50] ---- end-of-attributes-tag ----
+D [10/Dec/2019:17:10:51 +0530] [Job 50] (monitor) Get-Job-Attributes: successful-ok (successful-ok)
+D [10/Dec/2019:17:10:51 +0530] [Job 50] (monitor) job-state = processing
+D [10/Dec/2019:17:10:51 +0530] [Job 50] (monitor) job-state = processing
+I [10/Dec/2019:17:10:52 +0530] Expiring subscriptions...
+D [10/Dec/2019:17:10:54 +0530] [Job 50] IPP/2.0 Get-Printer-Attributes #13
+D [10/Dec/2019:17:10:54 +0530] [Job 50] ---- operation-attributes-tag ----
+D [10/Dec/2019:17:10:54 +0530] [Job 50] attributes-charset charset utf-8
+D [10/Dec/2019:17:10:54 +0530] [Job 50] attributes-natural-language naturalLanguage en-in
+D [10/Dec/2019:17:10:54 +0530] [Job 50] printer-uri uri ipps://jai-HP-Pavilion-Laptop-15-cc1xx.local:8880/ipp/print
+D [10/Dec/2019:17:10:54 +0530] [Job 50] requesting-user-name nameWithoutLanguage root
+D [10/Dec/2019:17:10:54 +0530] [Job 50] requested-attributes 1setOf keyword compression-supported,copies-supported,cups-version,document-format-supported,job-password-encryption-supported,marker-colors,marker-high-levels,marker-levels,marker-low-levels,marker-message,marker-names,marker-types,media-col-supported,multiple-document-handling-supported,operations-supported,print-color-mode-supported,printer-alert,printer-alert-description,printer-is-accepting-jobs,printer-mandatory-job-attributes,printer-state,printer-state-message,printer-state-reasons
+D [10/Dec/2019:17:10:54 +0530] [Job 50] ---- end-of-attributes-tag ----
+I [10/Dec/2019:17:10:54 +0530] Expiring subscriptions...
+D [10/Dec/2019:17:10:54 +0530] [Job 50] Printing.
+D [10/Dec/2019:17:10:54 +0530] [Job 50] update_reasons(attr=1(none), s=\"(null)\")
+D [10/Dec/2019:17:10:54 +0530] [Job 50] Get-Printer-Attributes: successful-ok (successful-ok)
+D [10/Dec/2019:17:10:54 +0530] [Job 50] ---- operation-attributes-tag ----
+D [10/Dec/2019:17:10:54 +0530] [Job 50] attributes-charset charset utf-8
+D [10/Dec/2019:17:10:54 +0530] [Job 50] attributes-natural-language naturalLanguage en-in
+D [10/Dec/2019:17:10:54 +0530] [Job 50] ---- printer-attributes-tag ----
+D [10/Dec/2019:17:10:54 +0530] [Job 50] compression-supported 1setOf keyword deflate,gzip,none
+D [10/Dec/2019:17:10:54 +0530] [Job 50] copies-supported rangeOfInteger 1-999
+D [10/Dec/2019:17:10:54 +0530] [Job 50] document-format-supported 1setOf mimeMediaType application/pdf,image/jpeg,image/pwg-raster
+D [10/Dec/2019:17:10:54 +0530] [Job 50] media-col-supported 1setOf keyword media-bottom-margin,media-left-margin,media-right-margin,media-size,media-source,media-top-margin,media-type
+D [10/Dec/2019:17:10:54 +0530] [Job 50] multiple-document-handling-supported 1setOf keyword separate-documents-uncollated-copies,separate-documents-collated-copies
+D [10/Dec/2019:17:10:54 +0530] [Job 50] operations-supported 1setOf enum Print-Job,Print-URI,Validate-Job,Create-Job,Send-Document,Send-URI,Cancel-Job,Get-Job-Attributes,Get-Jobs,Get-Printer-Attributes,Cancel-My-Jobs,Close-Job,Identify-Printer
+D [10/Dec/2019:17:10:54 +0530] [Job 50] print-color-mode-supported 1setOf keyword auto,color,monochrome
+D [10/Dec/2019:17:10:54 +0530] [Job 50] printer-is-accepting-jobs boolean true
+D [10/Dec/2019:17:10:54 +0530] [Job 50] printer-state enum processing
+D [10/Dec/2019:17:10:54 +0530] [Job 50] printer-state-message textWithoutLanguage Printing.
+D [10/Dec/2019:17:10:54 +0530] [Job 50] printer-state-reasons keyword none
+D [10/Dec/2019:17:10:54 +0530] [Job 50] ---- end-of-attributes-tag ----
+D [10/Dec/2019:17:10:54 +0530] [Job 50] (monitor) Get-Job-Attributes: successful-ok (successful-ok)
+D [10/Dec/2019:17:10:54 +0530] [Job 50] (monitor) job-state = processing
+D [10/Dec/2019:17:10:54 +0530] [Job 50] (monitor) job-state = processing
+I [10/Dec/2019:17:10:55 +0530] Expiring subscriptions...
+D [10/Dec/2019:17:10:59 +0530] [Job 50] IPP/2.0 Get-Printer-Attributes #15
+D [10/Dec/2019:17:10:59 +0530] [Job 50] ---- operation-attributes-tag ----
+D [10/Dec/2019:17:10:59 +0530] [Job 50] attributes-charset charset utf-8
+D [10/Dec/2019:17:10:59 +0530] [Job 50] attributes-natural-language naturalLanguage en-in
+D [10/Dec/2019:17:10:59 +0530] [Job 50] printer-uri uri ipps://jai-HP-Pavilion-Laptop-15-cc1xx.local:8880/ipp/print
+D [10/Dec/2019:17:10:59 +0530] [Job 50] requesting-user-name nameWithoutLanguage root
+D [10/Dec/2019:17:10:59 +0530] [Job 50] requested-attributes 1setOf keyword compression-supported,copies-supported,cups-version,document-format-supported,job-password-encryption-supported,marker-colors,marker-high-levels,marker-levels,marker-low-levels,marker-message,marker-names,marker-types,media-col-supported,multiple-document-handling-supported,operations-supported,print-color-mode-supported,printer-alert,printer-alert-description,printer-is-accepting-jobs,printer-mandatory-job-attributes,printer-state,printer-state-message,printer-state-reasons
+I [10/Dec/2019:17:10:59 +0530] Expiring subscriptions...
+D [10/Dec/2019:17:10:59 +0530] [Job 50] ---- end-of-attributes-tag ----
+D [10/Dec/2019:17:10:59 +0530] [Job 50] Printing.
+D [10/Dec/2019:17:10:59 +0530] [Job 50] update_reasons(attr=1(none), s=\"(null)\")
+D [10/Dec/2019:17:10:59 +0530] [Job 50] Get-Printer-Attributes: successful-ok (successful-ok)
+D [10/Dec/2019:17:10:59 +0530] [Job 50] ---- operation-attributes-tag ----
+D [10/Dec/2019:17:10:59 +0530] [Job 50] attributes-charset charset utf-8
+D [10/Dec/2019:17:10:59 +0530] [Job 50] attributes-natural-language naturalLanguage en-in
+D [10/Dec/2019:17:10:59 +0530] [Job 50] ---- printer-attributes-tag ----
+D [10/Dec/2019:17:10:59 +0530] [Job 50] compression-supported 1setOf keyword deflate,gzip,none
+D [10/Dec/2019:17:10:59 +0530] [Job 50] copies-supported rangeOfInteger 1-999
+D [10/Dec/2019:17:10:59 +0530] [Job 50] document-format-supported 1setOf mimeMediaType application/pdf,image/jpeg,image/pwg-raster
+D [10/Dec/2019:17:10:59 +0530] [Job 50] media-col-supported 1setOf keyword media-bottom-margin,media-left-margin,media-right-margin,media-size,media-source,media-top-margin,media-type
+D [10/Dec/2019:17:10:59 +0530] [Job 50] multiple-document-handling-supported 1setOf keyword separate-documents-uncollated-copies,separate-documents-collated-copies
+D [10/Dec/2019:17:10:59 +0530] [Job 50] operations-supported 1setOf enum Print-Job,Print-URI,Validate-Job,Create-Job,Send-Document,Send-URI,Cancel-Job,Get-Job-Attributes,Get-Jobs,Get-Printer-Attributes,Cancel-My-Jobs,Close-Job,Identify-Printer
+D [10/Dec/2019:17:10:59 +0530] [Job 50] print-color-mode-supported 1setOf keyword auto,color,monochrome
+D [10/Dec/2019:17:10:59 +0530] [Job 50] printer-is-accepting-jobs boolean true
+D [10/Dec/2019:17:10:59 +0530] [Job 50] printer-state enum processing
+D [10/Dec/2019:17:10:59 +0530] [Job 50] printer-state-message textWithoutLanguage Printing.
+D [10/Dec/2019:17:10:59 +0530] [Job 50] printer-state-reasons keyword none
+D [10/Dec/2019:17:10:59 +0530] [Job 50] ---- end-of-attributes-tag ----
+D [10/Dec/2019:17:10:59 +0530] [Job 50] (monitor) Get-Job-Attributes: successful-ok (successful-ok)
+D [10/Dec/2019:17:10:59 +0530] [Job 50] (monitor) job-state = processing
+D [10/Dec/2019:17:10:59 +0530] [Job 50] (monitor) job-state = processing
+I [10/Dec/2019:17:11:00 +0530] Expiring subscriptions...
+D [10/Dec/2019:17:11:01 +0530] [Job 50] Send-Document: successful-ok (successful-ok)
+D [10/Dec/2019:17:11:01 +0530] [Job 50] ---- operation-attributes-tag ----
+D [10/Dec/2019:17:11:01 +0530] [Job 50] attributes-charset charset utf-8
+D [10/Dec/2019:17:11:01 +0530] [Job 50] attributes-natural-language naturalLanguage en-in
+D [10/Dec/2019:17:11:01 +0530] [Job 50] ---- job-attributes-tag ----
+D [10/Dec/2019:17:11:01 +0530] [Job 50] job-id integer 5
+D [10/Dec/2019:17:11:01 +0530] [Job 50] job-uri uri ipp://jai-hp-pavilion-laptop-15-cc1xx:8880/ipp/print/5
+D [10/Dec/2019:17:11:01 +0530] [Job 50] job-state enum completed
+I [10/Dec/2019:17:11:01 +0530] Expiring subscriptions...
+D [10/Dec/2019:17:11:01 +0530] [Job 50] job-state-reasons keyword job-completed-successfully
+D [10/Dec/2019:17:11:01 +0530] [Job 50] ---- end-of-attributes-tag ----
+D [10/Dec/2019:17:11:01 +0530] [Job 50] STATE: +cups-waiting-for-job-completed
+D [10/Dec/2019:17:11:01 +0530] cupsdMarkDirty(P----)
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:11:01 +0530] cupsdMarkDirty(---J-)
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Job 50] Waiting for job to complete.
+D [10/Dec/2019:17:11:01 +0530] cupsdMarkDirty(---J-)
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Job 50] Set job-printer-state-message to "Waiting for job to complete.", current level=INFO
+D [10/Dec/2019:17:11:01 +0530] [Job 50] IPP/2.0 Get-Printer-Attributes #17
+D [10/Dec/2019:17:11:01 +0530] [Job 50] ---- operation-attributes-tag ----
+D [10/Dec/2019:17:11:01 +0530] [Job 50] attributes-charset charset utf-8
+D [10/Dec/2019:17:11:01 +0530] [Job 50] attributes-natural-language naturalLanguage en-in
+D [10/Dec/2019:17:11:01 +0530] [Job 50] printer-uri uri ipps://jai-HP-Pavilion-Laptop-15-cc1xx.local:8880/ipp/print
+D [10/Dec/2019:17:11:01 +0530] [Job 50] requesting-user-name nameWithoutLanguage root
+D [10/Dec/2019:17:11:01 +0530] [Job 50] requested-attributes 1setOf keyword compression-supported,copies-supported,cups-version,document-format-supported,job-password-encryption-supported,marker-colors,marker-high-levels,marker-levels,marker-low-levels,marker-message,marker-names,marker-types,media-col-supported,multiple-document-handling-supported,operations-supported,print-color-mode-supported,printer-alert,printer-alert-description,printer-is-accepting-jobs,printer-mandatory-job-attributes,printer-state,printer-state-message,printer-state-reasons
+D [10/Dec/2019:17:11:01 +0530] [Job 50] ---- end-of-attributes-tag ----
+D [10/Dec/2019:17:11:01 +0530] Discarding unused job-progress event...
+D [10/Dec/2019:17:11:01 +0530] cupsdMarkDirty(----S)
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Job 50] Idle.
+D [10/Dec/2019:17:11:01 +0530] cupsdMarkDirty(---J-)
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Job 50] Set job-printer-state-message to "Idle.", current level=INFO
+D [10/Dec/2019:17:11:01 +0530] [Job 50] update_reasons(attr=1(none), s=\"(null)\")
+D [10/Dec/2019:17:11:01 +0530] [Job 50] Get-Printer-Attributes: successful-ok (successful-ok)
+D [10/Dec/2019:17:11:01 +0530] Discarding unused job-progress event...
+D [10/Dec/2019:17:11:01 +0530] cupsdMarkDirty(----S)
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Job 50] ---- operation-attributes-tag ----
+D [10/Dec/2019:17:11:01 +0530] [Job 50] attributes-charset charset utf-8
+D [10/Dec/2019:17:11:01 +0530] [Job 50] attributes-natural-language naturalLanguage en-in
+D [10/Dec/2019:17:11:01 +0530] [Job 50] ---- printer-attributes-tag ----
+D [10/Dec/2019:17:11:01 +0530] [Job 50] compression-supported 1setOf keyword deflate,gzip,none
+D [10/Dec/2019:17:11:01 +0530] [Job 50] copies-supported rangeOfInteger 1-999
+D [10/Dec/2019:17:11:01 +0530] [Job 50] document-format-supported 1setOf mimeMediaType application/pdf,image/jpeg,image/pwg-raster
+D [10/Dec/2019:17:11:01 +0530] [Job 50] media-col-supported 1setOf keyword media-bottom-margin,media-left-margin,media-right-margin,media-size,media-source,media-top-margin,media-type
+D [10/Dec/2019:17:11:01 +0530] [Job 50] multiple-document-handling-supported 1setOf keyword separate-documents-uncollated-copies,separate-documents-collated-copies
+D [10/Dec/2019:17:11:01 +0530] [Job 50] operations-supported 1setOf enum Print-Job,Print-URI,Validate-Job,Create-Job,Send-Document,Send-URI,Cancel-Job,Get-Job-Attributes,Get-Jobs,Get-Printer-Attributes,Cancel-My-Jobs,Close-Job,Identify-Printer
+D [10/Dec/2019:17:11:01 +0530] [Job 50] print-color-mode-supported 1setOf keyword auto,color,monochrome
+D [10/Dec/2019:17:11:01 +0530] [Job 50] printer-is-accepting-jobs boolean true
+D [10/Dec/2019:17:11:01 +0530] [Job 50] printer-state enum idle
+D [10/Dec/2019:17:11:01 +0530] [Job 50] printer-state-message textWithoutLanguage Idle.
+D [10/Dec/2019:17:11:01 +0530] [Job 50] printer-state-reasons keyword none
+D [10/Dec/2019:17:11:01 +0530] [Job 50] ---- end-of-attributes-tag ----
+D [10/Dec/2019:17:11:01 +0530] [Job 50] IPP/2.0 Get-Job-Attributes #18
+D [10/Dec/2019:17:11:01 +0530] [Job 50] ---- operation-attributes-tag ----
+D [10/Dec/2019:17:11:01 +0530] [Job 50] attributes-charset charset utf-8
+D [10/Dec/2019:17:11:01 +0530] [Job 50] attributes-natural-language naturalLanguage en-in
+D [10/Dec/2019:17:11:01 +0530] [Job 50] printer-uri uri ipps://jai-HP-Pavilion-Laptop-15-cc1xx.local:8880/ipp/print
+D [10/Dec/2019:17:11:01 +0530] [Job 50] job-id integer 5
+D [10/Dec/2019:17:11:01 +0530] [Job 50] requesting-user-name nameWithoutLanguage root
+D [10/Dec/2019:17:11:01 +0530] [Job 50] requested-attributes 1setOf keyword job-id,job-impressions-completed,job-media-sheets-completed,job-name,job-originating-user-name,job-state,job-state-reasons
+D [10/Dec/2019:17:11:01 +0530] [Job 50] ---- end-of-attributes-tag ----
+D [10/Dec/2019:17:11:01 +0530] [Notifier] state=3
+D [10/Dec/2019:17:11:01 +0530] [Notifier] PrinterStateChanged
+D [10/Dec/2019:17:11:01 +0530] [Notifier] state=3
+D [10/Dec/2019:17:11:01 +0530] [Notifier] PrinterStateChanged
+D [10/Dec/2019:17:11:01 +0530] [Client 6] POST / HTTP/1.1
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Read: status=200, state=6
+D [10/Dec/2019:17:11:01 +0530] [Client 6] No authentication data provided.
+D [10/Dec/2019:17:11:01 +0530] [Client 6] 2.0 CUPS-Get-Printers 1194
+D [10/Dec/2019:17:11:01 +0530] CUPS-Get-Printers
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Returning IPP successful-ok for CUPS-Get-Printers (no URI) from localhost.
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Content-Length: 1222
+D [10/Dec/2019:17:11:01 +0530] [Client 6] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:01 +0530] [Client 6] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:11:01 +0530] [Client 6] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=1222, response=0x5634bed03b30(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:01 +0530] [Client 6] bytes=0, http_state=0, data_remaining=1222
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Flushing write buffer.
+D [10/Dec/2019:17:11:01 +0530] [Client 6] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Waiting for request.
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Server address is "/run/cups/cups.sock".
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Accepted from localhost (Domain)
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Waiting for request.
+D [10/Dec/2019:17:11:01 +0530] [Client 10] POST / HTTP/1.1
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Read: status=200, state=6
+D [10/Dec/2019:17:11:01 +0530] [Client 10] No authentication data provided.
+D [10/Dec/2019:17:11:01 +0530] [Client 10] 2.0 CUPS-Get-Printers 1195
+D [10/Dec/2019:17:11:01 +0530] CUPS-Get-Printers
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Returning IPP successful-ok for CUPS-Get-Printers (no URI) from localhost.
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Content-Length: 1222
+D [10/Dec/2019:17:11:01 +0530] [Client 10] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:01 +0530] [Client 10] con->http=0x5634becd9ec0
+D [10/Dec/2019:17:11:01 +0530] [Client 10] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=1222, response=0x5634bed03d30(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:01 +0530] [Client 10] bytes=0, http_state=0, data_remaining=1222
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Flushing write buffer.
+D [10/Dec/2019:17:11:01 +0530] [Client 10] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Waiting for request.
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 6] POST / HTTP/1.1
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Read: status=200, state=6
+D [10/Dec/2019:17:11:01 +0530] [Client 6] No authentication data provided.
+D [10/Dec/2019:17:11:01 +0530] [Client 6] 2.0 CUPS-Get-Default 1196
+D [10/Dec/2019:17:11:01 +0530] CUPS-Get-Default
+D [10/Dec/2019:17:11:01 +0530] CUPS-Get-Default client-error-not-found: No default printer.
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Returning IPP client-error-not-found for CUPS-Get-Default (no URI) from localhost.
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Content-Length: 113
+D [10/Dec/2019:17:11:01 +0530] [Client 6] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:01 +0530] [Client 6] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:11:01 +0530] [Client 6] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=113, response=0x5634bed03b70(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:01 +0530] [Client 6] bytes=0, http_state=0, data_remaining=113
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Flushing write buffer.
+D [10/Dec/2019:17:11:01 +0530] [Client 6] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Waiting for request.
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 10] POST / HTTP/1.1
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Read: status=200, state=6
+D [10/Dec/2019:17:11:01 +0530] [Client 10] No authentication data provided.
+D [10/Dec/2019:17:11:01 +0530] [Client 10] 2.0 CUPS-Get-Default 1197
+D [10/Dec/2019:17:11:01 +0530] CUPS-Get-Default
+D [10/Dec/2019:17:11:01 +0530] CUPS-Get-Default client-error-not-found: No default printer.
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Returning IPP client-error-not-found for CUPS-Get-Default (no URI) from localhost.
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Content-Length: 113
+D [10/Dec/2019:17:11:01 +0530] [Client 10] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:01 +0530] [Client 10] con->http=0x5634becd9ec0
+D [10/Dec/2019:17:11:01 +0530] [Client 10] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=113, response=0x5634bed03d30(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:01 +0530] [Client 10] bytes=0, http_state=0, data_remaining=113
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Flushing write buffer.
+D [10/Dec/2019:17:11:01 +0530] [Client 10] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Waiting for request.
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Job 50] Get-Job-Attributes: successful-ok (successful-ok)
+D [10/Dec/2019:17:11:01 +0530] [Job 50] ---- operation-attributes-tag ----
+D [10/Dec/2019:17:11:01 +0530] [Job 50] attributes-charset charset utf-8
+D [10/Dec/2019:17:11:01 +0530] [Job 50] attributes-natural-language naturalLanguage en-in
+D [10/Dec/2019:17:11:01 +0530] [Job 50] ---- job-attributes-tag ----
+D [10/Dec/2019:17:11:01 +0530] [Job 50] job-name nameWithoutLanguage a.txt
+D [10/Dec/2019:17:11:01 +0530] [Job 50] job-originating-user-name nameWithoutLanguage root
+D [10/Dec/2019:17:11:01 +0530] [Job 50] job-id integer 5
+D [10/Dec/2019:17:11:01 +0530] [Job 50] job-impressions-completed integer 0
+D [10/Dec/2019:17:11:01 +0530] [Job 50] job-state enum completed
+D [10/Dec/2019:17:11:01 +0530] [Job 50] job-state-reasons keyword job-completed-successfully
+D [10/Dec/2019:17:11:01 +0530] [Job 50] ---- end-of-attributes-tag ----
+D [10/Dec/2019:17:11:01 +0530] [Job 50] PAGE: total 0
+D [10/Dec/2019:17:11:01 +0530] Discarding unused job-progress event...
+D [10/Dec/2019:17:11:01 +0530] cupsdMarkDirty(---J-)
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Job 50] IPP/2.0 Get-Printer-Attributes #19
+D [10/Dec/2019:17:11:01 +0530] [Job 50] ---- operation-attributes-tag ----
+D [10/Dec/2019:17:11:01 +0530] [Job 50] attributes-charset charset utf-8
+D [10/Dec/2019:17:11:01 +0530] [Job 50] attributes-natural-language naturalLanguage en-in
+D [10/Dec/2019:17:11:01 +0530] [Job 50] printer-uri uri ipps://jai-HP-Pavilion-Laptop-15-cc1xx.local:8880/ipp/print
+D [10/Dec/2019:17:11:01 +0530] [Job 50] requesting-user-name nameWithoutLanguage root
+D [10/Dec/2019:17:11:01 +0530] [Job 50] requested-attributes 1setOf keyword compression-supported,copies-supported,cups-version,document-format-supported,job-password-encryption-supported,marker-colors,marker-high-levels,marker-levels,marker-low-levels,marker-message,marker-names,marker-types,media-col-supported,multiple-document-handling-supported,operations-supported,print-color-mode-supported,printer-alert,printer-alert-description,printer-is-accepting-jobs,printer-mandatory-job-attributes,printer-state,printer-state-message,printer-state-reasons
+D [10/Dec/2019:17:11:01 +0530] [Job 50] ---- end-of-attributes-tag ----
+D [10/Dec/2019:17:11:01 +0530] [Job 50] Idle.
+D [10/Dec/2019:17:11:01 +0530] [Job 50] update_reasons(attr=1(none), s=\"(null)\")
+D [10/Dec/2019:17:11:01 +0530] [Job 50] Get-Printer-Attributes: successful-ok (successful-ok)
+D [10/Dec/2019:17:11:01 +0530] [Job 50] ---- operation-attributes-tag ----
+D [10/Dec/2019:17:11:01 +0530] [Job 50] attributes-charset charset utf-8
+D [10/Dec/2019:17:11:01 +0530] [Job 50] attributes-natural-language naturalLanguage en-in
+D [10/Dec/2019:17:11:01 +0530] [Job 50] ---- printer-attributes-tag ----
+D [10/Dec/2019:17:11:01 +0530] [Job 50] compression-supported 1setOf keyword deflate,gzip,none
+D [10/Dec/2019:17:11:01 +0530] [Job 50] copies-supported rangeOfInteger 1-999
+D [10/Dec/2019:17:11:01 +0530] [Job 50] document-format-supported 1setOf mimeMediaType application/pdf,image/jpeg,image/pwg-raster
+D [10/Dec/2019:17:11:01 +0530] [Job 50] media-col-supported 1setOf keyword media-bottom-margin,media-left-margin,media-right-margin,media-size,media-source,media-top-margin,media-type
+D [10/Dec/2019:17:11:01 +0530] [Job 50] multiple-document-handling-supported 1setOf keyword separate-documents-uncollated-copies,separate-documents-collated-copies
+D [10/Dec/2019:17:11:01 +0530] [Job 50] operations-supported 1setOf enum Print-Job,Print-URI,Validate-Job,Create-Job,Send-Document,Send-URI,Cancel-Job,Get-Job-Attributes,Get-Jobs,Get-Printer-Attributes,Cancel-My-Jobs,Close-Job,Identify-Printer
+D [10/Dec/2019:17:11:01 +0530] [Job 50] print-color-mode-supported 1setOf keyword auto,color,monochrome
+D [10/Dec/2019:17:11:01 +0530] [Job 50] printer-is-accepting-jobs boolean true
+D [10/Dec/2019:17:11:01 +0530] [Job 50] printer-state enum idle
+D [10/Dec/2019:17:11:01 +0530] [Job 50] printer-state-message textWithoutLanguage Idle.
+D [10/Dec/2019:17:11:01 +0530] [Job 50] printer-state-reasons keyword none
+D [10/Dec/2019:17:11:01 +0530] [Job 50] ---- end-of-attributes-tag ----
+D [10/Dec/2019:17:11:01 +0530] [Job 50] ATTR: auth-info-required=none
+D [10/Dec/2019:17:11:01 +0530] load_ppd: Loading /var/cache/cups/printer.data...
+D [10/Dec/2019:17:11:01 +0530] cupsdRegisterPrinter(p=0x5634becd1880(printer))
+D [10/Dec/2019:17:11:01 +0530] cupsdMarkDirty(P----)
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Job 50] PID 8952 (/usr/lib/cups/backend/ipps) exited with no errors.
+D [10/Dec/2019:17:11:01 +0530] cupsdMarkDirty(P----)
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Job 50] time-at-completed=1575978061
+D [10/Dec/2019:17:11:01 +0530] cupsdMarkDirty(----S)
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+I [10/Dec/2019:17:11:01 +0530] [Job 50] Job completed.
+I [10/Dec/2019:17:11:01 +0530] Expiring subscriptions...
+D [10/Dec/2019:17:11:01 +0530] cupsdMarkDirty(---J-)
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:11:01 +0530] cupsdMarkDirty(----S)
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:11:01 +0530] cupsdMarkDirty(---J-)
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:11:01 +0530] cupsdMarkDirty(---J-)
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Notifier] state=3
+D [10/Dec/2019:17:11:01 +0530] [Notifier] JobCompleted
+D [10/Dec/2019:17:11:01 +0530] [Notifier] state=3
+D [10/Dec/2019:17:11:01 +0530] [Notifier] PrinterStateChanged
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Printing jobs and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 11] Server address is "/run/cups/cups.sock".
+D [10/Dec/2019:17:11:01 +0530] [Client 11] Accepted from localhost (Domain)
+D [10/Dec/2019:17:11:01 +0530] [Client 11] Waiting for request.
+D [10/Dec/2019:17:11:01 +0530] [Client 11] POST / HTTP/1.1
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 11] Read: status=200, state=6
+D [10/Dec/2019:17:11:01 +0530] [Client 11] No authentication data provided.
+D [10/Dec/2019:17:11:01 +0530] [Client 11] 2.0 Get-Job-Attributes 1198
+D [10/Dec/2019:17:11:01 +0530] Get-Job-Attributes ipp://localhost/jobs/50
+D [10/Dec/2019:17:11:01 +0530] [Client 11] Returning IPP successful-ok for Get-Job-Attributes (ipp://localhost/jobs/50) from localhost.
+D [10/Dec/2019:17:11:01 +0530] [Client 11] Content-Length: 162
+D [10/Dec/2019:17:11:01 +0530] [Client 11] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:01 +0530] [Client 11] con->http=0x5634becf25b0
+D [10/Dec/2019:17:11:01 +0530] [Client 11] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=162, response=0x5634bec45590(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:01 +0530] [Client 11] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:01 +0530] [Client 11] bytes=0, http_state=0, data_remaining=162
+D [10/Dec/2019:17:11:01 +0530] [Client 11] Flushing write buffer.
+D [10/Dec/2019:17:11:01 +0530] [Client 11] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:01 +0530] [Client 11] Waiting for request.
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 12] Server address is "/run/cups/cups.sock".
+D [10/Dec/2019:17:11:01 +0530] [Client 12] Accepted from localhost (Domain)
+D [10/Dec/2019:17:11:01 +0530] [Client 12] Waiting for request.
+D [10/Dec/2019:17:11:01 +0530] [Client 12] POST / HTTP/1.1
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 12] Read: status=200, state=6
+D [10/Dec/2019:17:11:01 +0530] [Client 12] No authentication data provided.
+D [10/Dec/2019:17:11:01 +0530] [Client 12] 2.0 CUPS-Get-Printers 1199
+D [10/Dec/2019:17:11:01 +0530] CUPS-Get-Printers
+D [10/Dec/2019:17:11:01 +0530] [Client 12] Returning IPP successful-ok for CUPS-Get-Printers (no URI) from localhost.
+D [10/Dec/2019:17:11:01 +0530] [Client 12] Content-Length: 1196
+D [10/Dec/2019:17:11:01 +0530] [Client 12] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:01 +0530] [Client 12] con->http=0x5634becfa7d0
+D [10/Dec/2019:17:11:01 +0530] [Client 12] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=1196, response=0x5634bec446d0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:01 +0530] [Client 12] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:01 +0530] [Client 12] bytes=0, http_state=0, data_remaining=1196
+D [10/Dec/2019:17:11:01 +0530] [Client 12] Flushing write buffer.
+D [10/Dec/2019:17:11:01 +0530] [Client 12] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:01 +0530] [Client 12] Waiting for request.
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 12] POST / HTTP/1.1
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 12] Read: status=200, state=6
+D [10/Dec/2019:17:11:01 +0530] [Client 12] No authentication data provided.
+D [10/Dec/2019:17:11:01 +0530] [Client 12] 2.0 CUPS-Get-Default 1200
+D [10/Dec/2019:17:11:01 +0530] CUPS-Get-Default
+D [10/Dec/2019:17:11:01 +0530] CUPS-Get-Default client-error-not-found: No default printer.
+D [10/Dec/2019:17:11:01 +0530] [Client 12] Returning IPP client-error-not-found for CUPS-Get-Default (no URI) from localhost.
+D [10/Dec/2019:17:11:01 +0530] [Client 12] Content-Length: 113
+D [10/Dec/2019:17:11:01 +0530] [Client 12] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:01 +0530] [Client 12] con->http=0x5634becfa7d0
+D [10/Dec/2019:17:11:01 +0530] [Client 12] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=113, response=0x5634becf6fa0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:01 +0530] [Client 12] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:01 +0530] [Client 12] bytes=0, http_state=0, data_remaining=113
+D [10/Dec/2019:17:11:01 +0530] [Client 12] Flushing write buffer.
+D [10/Dec/2019:17:11:01 +0530] [Client 12] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:01 +0530] [Client 12] Waiting for request.
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 6] POST / HTTP/1.1
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Read: status=200, state=6
+D [10/Dec/2019:17:11:01 +0530] [Client 6] No authentication data provided.
+D [10/Dec/2019:17:11:01 +0530] [Client 10] POST / HTTP/1.1
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Read: status=200, state=6
+D [10/Dec/2019:17:11:01 +0530] [Client 10] No authentication data provided.
+D [10/Dec/2019:17:11:01 +0530] [Client 10] 2.0 CUPS-Get-Default 1202
+D [10/Dec/2019:17:11:01 +0530] CUPS-Get-Default
+D [10/Dec/2019:17:11:01 +0530] CUPS-Get-Default client-error-not-found: No default printer.
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Returning IPP client-error-not-found for CUPS-Get-Default (no URI) from localhost.
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Content-Length: 113
+D [10/Dec/2019:17:11:01 +0530] [Client 10] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:01 +0530] [Client 10] con->http=0x5634becd9ec0
+D [10/Dec/2019:17:11:01 +0530] [Client 10] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=113, response=0x5634bec45590(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:01 +0530] [Client 10] bytes=0, http_state=0, data_remaining=113
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Flushing write buffer.
+D [10/Dec/2019:17:11:01 +0530] [Client 10] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Waiting for request.
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Read: status=100, state=6
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Read: status=100, state=6
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Read: status=100, state=6
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Read: status=100, state=6
+D [10/Dec/2019:17:11:01 +0530] [Client 6] 2.0 CUPS-Get-Default 1201
+D [10/Dec/2019:17:11:01 +0530] CUPS-Get-Default
+D [10/Dec/2019:17:11:01 +0530] CUPS-Get-Default client-error-not-found: No default printer.
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Returning IPP client-error-not-found for CUPS-Get-Default (no URI) from localhost.
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Content-Length: 113
+D [10/Dec/2019:17:11:01 +0530] [Client 6] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:01 +0530] [Client 6] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:11:01 +0530] [Client 6] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=113, response=0x5634bec45590(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:01 +0530] [Client 6] bytes=0, http_state=0, data_remaining=113
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Flushing write buffer.
+D [10/Dec/2019:17:11:01 +0530] [Client 6] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Waiting for request.
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 11] POST / HTTP/1.1
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 11] Read: status=200, state=6
+D [10/Dec/2019:17:11:01 +0530] [Client 11] No authentication data provided.
+D [10/Dec/2019:17:11:01 +0530] [Client 11] 2.0 Get-Printer-Attributes 1203
+D [10/Dec/2019:17:11:01 +0530] Get-Printer-Attributes ipp://localhost/printers/printer
+D [10/Dec/2019:17:11:01 +0530] [Client 11] Returning IPP successful-ok for Get-Printer-Attributes (ipp://localhost/printers/printer) from localhost.
+D [10/Dec/2019:17:11:01 +0530] [Client 11] Content-Length: 101
+D [10/Dec/2019:17:11:01 +0530] [Client 11] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:01 +0530] [Client 11] con->http=0x5634becf25b0
+D [10/Dec/2019:17:11:01 +0530] [Client 11] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=101, response=0x5634becf6fa0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:01 +0530] [Client 11] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:01 +0530] [Client 11] bytes=0, http_state=0, data_remaining=101
+D [10/Dec/2019:17:11:01 +0530] [Client 11] Flushing write buffer.
+D [10/Dec/2019:17:11:01 +0530] [Client 11] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:01 +0530] [Client 11] Waiting for request.
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 10] POST / HTTP/1.1
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Read: status=200, state=6
+D [10/Dec/2019:17:11:01 +0530] [Client 10] No authentication data provided.
+D [10/Dec/2019:17:11:01 +0530] [Client 10] 2.0 Get-Jobs 1204
+D [10/Dec/2019:17:11:01 +0530] Get-Jobs ipp://localhost/printers/printer
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Returning IPP successful-ok for Get-Jobs (ipp://localhost/printers/printer) from localhost.
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Content-Length: 75
+D [10/Dec/2019:17:11:01 +0530] [Client 10] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:01 +0530] [Client 10] con->http=0x5634becd9ec0
+D [10/Dec/2019:17:11:01 +0530] [Client 10] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=75, response=0x5634bec45590(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:01 +0530] [Client 10] bytes=0, http_state=0, data_remaining=75
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Flushing write buffer.
+D [10/Dec/2019:17:11:01 +0530] [Client 10] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Waiting for request.
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 6] POST / HTTP/1.1
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Read: status=200, state=6
+D [10/Dec/2019:17:11:01 +0530] [Client 6] No authentication data provided.
+D [10/Dec/2019:17:11:01 +0530] [Client 6] 2.0 Get-Printer-Attributes 1205
+D [10/Dec/2019:17:11:01 +0530] Get-Printer-Attributes ipp://localhost/printers/printer
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Returning IPP successful-ok for Get-Printer-Attributes (ipp://localhost/printers/printer) from localhost.
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Content-Length: 101
+D [10/Dec/2019:17:11:01 +0530] [Client 6] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:01 +0530] [Client 6] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:11:01 +0530] [Client 6] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=101, response=0x5634becf6fa0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:01 +0530] [Client 6] bytes=0, http_state=0, data_remaining=101
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Flushing write buffer.
+D [10/Dec/2019:17:11:01 +0530] [Client 6] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Waiting for request.
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 11] POST / HTTP/1.1
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 11] Read: status=200, state=6
+D [10/Dec/2019:17:11:01 +0530] [Client 11] No authentication data provided.
+D [10/Dec/2019:17:11:01 +0530] [Client 11] 2.0 Get-Jobs 1206
+D [10/Dec/2019:17:11:01 +0530] Get-Jobs ipp://localhost/printers/printer
+D [10/Dec/2019:17:11:01 +0530] [Client 11] Returning IPP successful-ok for Get-Jobs (ipp://localhost/printers/printer) from localhost.
+D [10/Dec/2019:17:11:01 +0530] [Client 11] Content-Length: 75
+D [10/Dec/2019:17:11:01 +0530] [Client 11] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:01 +0530] [Client 11] con->http=0x5634becf25b0
+D [10/Dec/2019:17:11:01 +0530] [Client 11] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=75, response=0x5634bec45590(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:01 +0530] [Client 11] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:01 +0530] [Client 11] bytes=0, http_state=0, data_remaining=75
+D [10/Dec/2019:17:11:01 +0530] [Client 11] Flushing write buffer.
+D [10/Dec/2019:17:11:01 +0530] [Client 11] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:01 +0530] [Client 11] Waiting for request.
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 12] POST / HTTP/1.1
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 12] Read: status=200, state=6
+D [10/Dec/2019:17:11:01 +0530] [Client 12] No authentication data provided.
+D [10/Dec/2019:17:11:01 +0530] [Client 12] 2.0 CUPS-Get-Default 1207
+D [10/Dec/2019:17:11:01 +0530] CUPS-Get-Default
+D [10/Dec/2019:17:11:01 +0530] CUPS-Get-Default client-error-not-found: No default printer.
+D [10/Dec/2019:17:11:01 +0530] [Client 12] Returning IPP client-error-not-found for CUPS-Get-Default (no URI) from localhost.
+D [10/Dec/2019:17:11:01 +0530] [Client 12] Content-Length: 113
+D [10/Dec/2019:17:11:01 +0530] [Client 12] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:01 +0530] [Client 12] con->http=0x5634becfa7d0
+D [10/Dec/2019:17:11:01 +0530] [Client 12] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=113, response=0x5634becf6fa0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:01 +0530] [Client 12] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:01 +0530] [Client 12] bytes=0, http_state=0, data_remaining=113
+D [10/Dec/2019:17:11:01 +0530] [Client 12] Flushing write buffer.
+D [10/Dec/2019:17:11:01 +0530] [Client 12] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:01 +0530] [Client 12] Waiting for request.
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 10] POST / HTTP/1.1
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Read: status=200, state=6
+D [10/Dec/2019:17:11:01 +0530] [Client 10] No authentication data provided.
+D [10/Dec/2019:17:11:01 +0530] [Client 10] 2.0 Get-Printer-Attributes 1208
+D [10/Dec/2019:17:11:01 +0530] Get-Printer-Attributes ipp://localhost/printers/printer
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Returning IPP successful-ok for Get-Printer-Attributes (ipp://localhost/printers/printer) from localhost.
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Content-Length: 101
+D [10/Dec/2019:17:11:01 +0530] [Client 10] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:01 +0530] [Client 10] con->http=0x5634becd9ec0
+D [10/Dec/2019:17:11:01 +0530] [Client 10] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=101, response=0x5634bec45590(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:01 +0530] [Client 10] bytes=0, http_state=0, data_remaining=101
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Flushing write buffer.
+D [10/Dec/2019:17:11:01 +0530] [Client 10] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:01 +0530] [Client 10] Waiting for request.
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 6] POST / HTTP/1.1
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Dirty files"
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Read: status=200, state=6
+D [10/Dec/2019:17:11:01 +0530] [Client 6] No authentication data provided.
+D [10/Dec/2019:17:11:01 +0530] [Client 6] 2.0 Get-Jobs 1209
+D [10/Dec/2019:17:11:01 +0530] Get-Jobs ipp://localhost/printers/printer
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Returning IPP successful-ok for Get-Jobs (ipp://localhost/printers/printer) from localhost.
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Content-Length: 75
+D [10/Dec/2019:17:11:01 +0530] [Client 6] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:01 +0530] [Client 6] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:11:01 +0530] [Client 6] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=75, response=0x5634becf6fa0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:01 +0530] [Client 6] bytes=0, http_state=0, data_remaining=75
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Flushing write buffer.
+D [10/Dec/2019:17:11:01 +0530] [Client 6] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:01 +0530] [Client 6] Waiting for request.
+D [10/Dec/2019:17:11:01 +0530] cupsdSetBusyState: newbusy="Dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:11:02 +0530] [Client 12] HTTP_STATE_WAITING Closing for error 32 (Broken pipe)
+D [10/Dec/2019:17:11:02 +0530] [Client 12] Closing connection.
+D [10/Dec/2019:17:11:02 +0530] cupsdSetBusyState: newbusy="Dirty files", busy="Dirty files"
+I [10/Dec/2019:17:11:02 +0530] Expiring subscriptions...
+D [10/Dec/2019:17:11:02 +0530] [Client 10] HTTP_STATE_WAITING Closing for error 32 (Broken pipe)
+D [10/Dec/2019:17:11:02 +0530] [Client 10] Closing connection.
+D [10/Dec/2019:17:11:02 +0530] cupsdSetBusyState: newbusy="Dirty files", busy="Dirty files"
+D [10/Dec/2019:17:11:02 +0530] [Client 6] HTTP_STATE_WAITING Closing for error 32 (Broken pipe)
+D [10/Dec/2019:17:11:02 +0530] [Client 6] Closing connection.
+D [10/Dec/2019:17:11:02 +0530] cupsdSetBusyState: newbusy="Dirty files", busy="Dirty files"
+I [10/Dec/2019:17:11:03 +0530] Expiring subscriptions...
+D [10/Dec/2019:17:11:06 +0530] [Client 11] POST / HTTP/1.1
+D [10/Dec/2019:17:11:06 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Dirty files"
+D [10/Dec/2019:17:11:06 +0530] [Client 11] Read: status=200, state=6
+D [10/Dec/2019:17:11:06 +0530] [Client 11] No authentication data provided.
+D [10/Dec/2019:17:11:06 +0530] [Client 11] 2.0 Renew-Subscription 1210
+D [10/Dec/2019:17:11:06 +0530] Renew-Subscription /
+D [10/Dec/2019:17:11:06 +0530] cupsdIsAuthorized: requesting-user-name="jai"
+D [10/Dec/2019:17:11:06 +0530] cupsdMarkDirty(----S)
+D [10/Dec/2019:17:11:06 +0530] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Active clients and dirty files"
+D [10/Dec/2019:17:11:06 +0530] [Client 11] Returning IPP successful-ok for Renew-Subscription (/) from localhost.
+D [10/Dec/2019:17:11:06 +0530] [Client 11] Content-Length: 106
+D [10/Dec/2019:17:11:06 +0530] [Client 11] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+I [10/Dec/2019:17:11:06 +0530] Expiring subscriptions...
+D [10/Dec/2019:17:11:06 +0530] [Client 11] con->http=0x5634becf25b0
+D [10/Dec/2019:17:11:06 +0530] [Client 11] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=106, response=0x5634bec45590(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:06 +0530] [Client 11] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:06 +0530] [Client 11] bytes=0, http_state=0, data_remaining=106
+D [10/Dec/2019:17:11:06 +0530] [Client 11] Flushing write buffer.
+D [10/Dec/2019:17:11:06 +0530] [Client 11] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:06 +0530] [Client 11] Waiting for request.
+D [10/Dec/2019:17:11:06 +0530] cupsdSetBusyState: newbusy="Dirty files", busy="Active clients and dirty files"
+I [10/Dec/2019:17:11:07 +0530] Expiring subscriptions...
+I [10/Dec/2019:17:11:17 +0530] Saving printers.conf...
+I [10/Dec/2019:17:11:17 +0530] Saving job.cache...
+I [10/Dec/2019:17:11:17 +0530] Saving subscriptions.conf...
+D [10/Dec/2019:17:11:17 +0530] cupsdSetBusyState: newbusy="Not busy", busy="Dirty files"
+I [10/Dec/2019:17:11:17 +0530] Expiring subscriptions...
+D [10/Dec/2019:17:11:22 +0530] [Client 11] HTTP_STATE_WAITING Closing for error 32 (Broken pipe)
+D [10/Dec/2019:17:11:22 +0530] [Client 11] Closing connection.
+D [10/Dec/2019:17:11:22 +0530] cupsdSetBusyState: newbusy="Not busy", busy="Not busy"
+I [10/Dec/2019:17:11:22 +0530] Expiring subscriptions...
+I [10/Dec/2019:17:11:23 +0530] Expiring subscriptions...
+D [10/Dec/2019:17:11:48 +0530] cupsdSetBusyState: newbusy="Active clients", busy="Not busy"
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Server address is "/run/cups/cups.sock".
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Accepted from localhost (Domain)
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Waiting for request.
+I [10/Dec/2019:17:11:48 +0530] Expiring subscriptions...
+D [10/Dec/2019:17:11:48 +0530] Report: clients=1
+D [10/Dec/2019:17:11:48 +0530] Report: jobs=1
+D [10/Dec/2019:17:11:48 +0530] Report: jobs-active=0
+D [10/Dec/2019:17:11:48 +0530] Report: printers=1
+D [10/Dec/2019:17:11:48 +0530] Report: stringpool-string-count=3001
+D [10/Dec/2019:17:11:48 +0530] Report: stringpool-alloc-bytes=20896
+D [10/Dec/2019:17:11:48 +0530] Report: stringpool-total-bytes=61776
+D [10/Dec/2019:17:11:48 +0530] [Client 13] POST / HTTP/1.1
+D [10/Dec/2019:17:11:48 +0530] cupsdSetBusyState: newbusy="Active clients", busy="Active clients"
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Read: status=200, state=6
+D [10/Dec/2019:17:11:48 +0530] [Client 13] No authentication data provided.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] 2.0 Get-Notifications 269
+D [10/Dec/2019:17:11:48 +0530] Get-Notifications /printers/
+D [10/Dec/2019:17:11:48 +0530] Get-Notifications client-error-not-found: Subscription #2085 does not exist.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Returning IPP client-error-not-found for Get-Notifications (/printers/) from localhost.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Content-Length: 128
+D [10/Dec/2019:17:11:48 +0530] [Client 13] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=128, response=0x5634bec45180(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] bytes=0, http_state=0, data_remaining=128
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Flushing write buffer.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Waiting for request.
+D [10/Dec/2019:17:11:48 +0530] cupsdSetBusyState: newbusy="Not busy", busy="Active clients"
+D [10/Dec/2019:17:11:48 +0530] [Client 13] POST / HTTP/1.1
+D [10/Dec/2019:17:11:48 +0530] cupsdSetBusyState: newbusy="Active clients", busy="Not busy"
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Read: status=200, state=6
+D [10/Dec/2019:17:11:48 +0530] [Client 13] No authentication data provided.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] 2.0 Get-Notifications 270
+D [10/Dec/2019:17:11:48 +0530] Get-Notifications /printers/
+D [10/Dec/2019:17:11:48 +0530] Get-Notifications client-error-not-found: Subscription #2085 does not exist.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Returning IPP client-error-not-found for Get-Notifications (/printers/) from localhost.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Content-Length: 128
+D [10/Dec/2019:17:11:48 +0530] [Client 13] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=128, response=0x5634becd32a0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] bytes=0, http_state=0, data_remaining=128
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Flushing write buffer.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Waiting for request.
+D [10/Dec/2019:17:11:48 +0530] cupsdSetBusyState: newbusy="Not busy", busy="Active clients"
+D [10/Dec/2019:17:11:48 +0530] [Client 13] POST / HTTP/1.1
+D [10/Dec/2019:17:11:48 +0530] cupsdSetBusyState: newbusy="Active clients", busy="Not busy"
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Read: status=200, state=6
+D [10/Dec/2019:17:11:48 +0530] [Client 13] No authentication data provided.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] 2.0 Get-Notifications 271
+D [10/Dec/2019:17:11:48 +0530] Get-Notifications /printers/
+D [10/Dec/2019:17:11:48 +0530] Get-Notifications client-error-not-found: Subscription #2085 does not exist.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Returning IPP client-error-not-found for Get-Notifications (/printers/) from localhost.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Content-Length: 128
+D [10/Dec/2019:17:11:48 +0530] [Client 13] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=128, response=0x5634bec45180(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] bytes=0, http_state=0, data_remaining=128
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Flushing write buffer.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Waiting for request.
+D [10/Dec/2019:17:11:48 +0530] cupsdSetBusyState: newbusy="Not busy", busy="Active clients"
+D [10/Dec/2019:17:11:48 +0530] [Client 13] POST / HTTP/1.1
+D [10/Dec/2019:17:11:48 +0530] cupsdSetBusyState: newbusy="Active clients", busy="Not busy"
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Read: status=200, state=6
+D [10/Dec/2019:17:11:48 +0530] [Client 13] No authentication data provided.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] 2.0 Get-Notifications 272
+D [10/Dec/2019:17:11:48 +0530] Get-Notifications /printers/
+D [10/Dec/2019:17:11:48 +0530] Get-Notifications client-error-not-found: Subscription #2085 does not exist.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Returning IPP client-error-not-found for Get-Notifications (/printers/) from localhost.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Content-Length: 128
+D [10/Dec/2019:17:11:48 +0530] [Client 13] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=128, response=0x5634becd32a0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] bytes=0, http_state=0, data_remaining=128
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Flushing write buffer.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Waiting for request.
+D [10/Dec/2019:17:11:48 +0530] cupsdSetBusyState: newbusy="Not busy", busy="Active clients"
+D [10/Dec/2019:17:11:48 +0530] [Client 13] POST / HTTP/1.1
+D [10/Dec/2019:17:11:48 +0530] cupsdSetBusyState: newbusy="Active clients", busy="Not busy"
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Read: status=200, state=6
+D [10/Dec/2019:17:11:48 +0530] [Client 13] No authentication data provided.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] 2.0 Get-Notifications 273
+D [10/Dec/2019:17:11:48 +0530] Get-Notifications /printers/
+D [10/Dec/2019:17:11:48 +0530] Get-Notifications client-error-not-found: Subscription #2085 does not exist.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Returning IPP client-error-not-found for Get-Notifications (/printers/) from localhost.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Content-Length: 128
+D [10/Dec/2019:17:11:48 +0530] [Client 13] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=128, response=0x5634bec45180(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] bytes=0, http_state=0, data_remaining=128
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Flushing write buffer.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Waiting for request.
+D [10/Dec/2019:17:11:48 +0530] cupsdSetBusyState: newbusy="Not busy", busy="Active clients"
+D [10/Dec/2019:17:11:48 +0530] [Client 13] POST / HTTP/1.1
+D [10/Dec/2019:17:11:48 +0530] cupsdSetBusyState: newbusy="Active clients", busy="Not busy"
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Read: status=200, state=6
+D [10/Dec/2019:17:11:48 +0530] [Client 13] No authentication data provided.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] 2.0 Get-Notifications 274
+D [10/Dec/2019:17:11:48 +0530] Get-Notifications /printers/
+D [10/Dec/2019:17:11:48 +0530] Get-Notifications client-error-not-found: Subscription #2085 does not exist.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Returning IPP client-error-not-found for Get-Notifications (/printers/) from localhost.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Content-Length: 128
+D [10/Dec/2019:17:11:48 +0530] [Client 13] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=128, response=0x5634becd32a0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] bytes=0, http_state=0, data_remaining=128
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Flushing write buffer.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Waiting for request.
+D [10/Dec/2019:17:11:48 +0530] cupsdSetBusyState: newbusy="Not busy", busy="Active clients"
+D [10/Dec/2019:17:11:48 +0530] [Client 13] POST / HTTP/1.1
+D [10/Dec/2019:17:11:48 +0530] cupsdSetBusyState: newbusy="Active clients", busy="Not busy"
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Read: status=200, state=6
+D [10/Dec/2019:17:11:48 +0530] [Client 13] No authentication data provided.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] 2.0 Get-Notifications 275
+D [10/Dec/2019:17:11:48 +0530] Get-Notifications /printers/
+D [10/Dec/2019:17:11:48 +0530] Get-Notifications client-error-not-found: Subscription #2085 does not exist.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Returning IPP client-error-not-found for Get-Notifications (/printers/) from localhost.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Content-Length: 128
+D [10/Dec/2019:17:11:48 +0530] [Client 13] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=128, response=0x5634bec45180(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] bytes=0, http_state=0, data_remaining=128
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Flushing write buffer.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Waiting for request.
+D [10/Dec/2019:17:11:48 +0530] cupsdSetBusyState: newbusy="Not busy", busy="Active clients"
+D [10/Dec/2019:17:11:48 +0530] [Client 13] POST / HTTP/1.1
+D [10/Dec/2019:17:11:48 +0530] cupsdSetBusyState: newbusy="Active clients", busy="Not busy"
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Read: status=200, state=6
+D [10/Dec/2019:17:11:48 +0530] [Client 13] No authentication data provided.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] 2.0 Get-Notifications 276
+D [10/Dec/2019:17:11:48 +0530] Get-Notifications /printers/
+D [10/Dec/2019:17:11:48 +0530] Get-Notifications client-error-not-found: Subscription #2085 does not exist.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Returning IPP client-error-not-found for Get-Notifications (/printers/) from localhost.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Content-Length: 128
+D [10/Dec/2019:17:11:48 +0530] [Client 13] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=128, response=0x5634becd32a0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] bytes=0, http_state=0, data_remaining=128
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Flushing write buffer.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Waiting for request.
+D [10/Dec/2019:17:11:48 +0530] cupsdSetBusyState: newbusy="Not busy", busy="Active clients"
+D [10/Dec/2019:17:11:48 +0530] [Client 13] POST / HTTP/1.1
+D [10/Dec/2019:17:11:48 +0530] cupsdSetBusyState: newbusy="Active clients", busy="Not busy"
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Read: status=200, state=6
+D [10/Dec/2019:17:11:48 +0530] [Client 13] No authentication data provided.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] 2.0 Get-Notifications 277
+D [10/Dec/2019:17:11:48 +0530] Get-Notifications /printers/
+D [10/Dec/2019:17:11:48 +0530] Get-Notifications client-error-not-found: Subscription #2085 does not exist.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Returning IPP client-error-not-found for Get-Notifications (/printers/) from localhost.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Content-Length: 128
+D [10/Dec/2019:17:11:48 +0530] [Client 13] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=128, response=0x5634bec45180(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] bytes=0, http_state=0, data_remaining=128
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Flushing write buffer.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Waiting for request.
+D [10/Dec/2019:17:11:48 +0530] cupsdSetBusyState: newbusy="Not busy", busy="Active clients"
+D [10/Dec/2019:17:11:48 +0530] [Client 13] POST / HTTP/1.1
+D [10/Dec/2019:17:11:48 +0530] cupsdSetBusyState: newbusy="Active clients", busy="Not busy"
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Read: status=200, state=6
+D [10/Dec/2019:17:11:48 +0530] [Client 13] No authentication data provided.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] 2.0 Get-Notifications 278
+D [10/Dec/2019:17:11:48 +0530] Get-Notifications /printers/
+D [10/Dec/2019:17:11:48 +0530] Get-Notifications client-error-not-found: Subscription #2085 does not exist.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Returning IPP client-error-not-found for Get-Notifications (/printers/) from localhost.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Content-Length: 128
+D [10/Dec/2019:17:11:48 +0530] [Client 13] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=128, response=0x5634becd32a0(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] bytes=0, http_state=0, data_remaining=128
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Flushing write buffer.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Waiting for request.
+D [10/Dec/2019:17:11:48 +0530] cupsdSetBusyState: newbusy="Not busy", busy="Active clients"
+D [10/Dec/2019:17:11:48 +0530] [Client 13] POST / HTTP/1.1
+D [10/Dec/2019:17:11:48 +0530] cupsdSetBusyState: newbusy="Active clients", busy="Not busy"
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Read: status=200, state=6
+D [10/Dec/2019:17:11:48 +0530] [Client 13] No authentication data provided.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] 2.0 Get-Notifications 279
+D [10/Dec/2019:17:11:48 +0530] Get-Notifications /printers/
+D [10/Dec/2019:17:11:48 +0530] Get-Notifications client-error-not-found: Subscription #2085 does not exist.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Returning IPP client-error-not-found for Get-Notifications (/printers/) from localhost.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Content-Length: 128
+D [10/Dec/2019:17:11:48 +0530] [Client 13] cupsdSendHeader: code=200, type="application/ipp", auth_type=0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] con->http=0x5634bec40fa0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] cupsdWriteClient error=0, used=0, state=HTTP_STATE_POST_SEND, data_encoding=HTTP_ENCODING_LENGTH, data_remaining=128, response=0x5634bec45180(IPP_STATE_DATA), pipe_pid=0, file=-1
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Writing IPP response, ipp_state=IPP_STATE_DATA, old wused=0, new wused=0
+D [10/Dec/2019:17:11:48 +0530] [Client 13] bytes=0, http_state=0, data_remaining=128
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Flushing write buffer.
+D [10/Dec/2019:17:11:48 +0530] [Client 13] New state is HTTP_STATE_WAITING
+D [10/Dec/2019:17:11:48 +0530] [Client 13] Waiting for request.
+D [10/Dec/2019:17:11:48 +0530] cupsdSetBusyState: newbusy="Not busy", busy="Active clients"
+I [10/Dec/2019:17:11:49 +0530] Expiring subscriptions...
