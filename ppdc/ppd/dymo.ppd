@@ -1,0 +1,140 @@
+*PPD-Adobe: "4.3"
+*%%%% PPD file for Label Printer with CUPS.
+*%%%% Created by the CUPS PPD Compiler CUPS v2.3.1.
+*% Copyright (c) 2007-2019 by Apple Inc.
+*% Copyright (c) 1997-2007 by Easy Software Products.
+*% 
+*% Licensed under Apache License v2.0.  See the file "LICENSE" for more
+*% information.
+*FormatVersion: "4.3"
+*FileVersion: "2.3"
+*LanguageVersion: English
+*LanguageEncoding: ISOLatin1
+*PCFileName: "dymo.ppd"
+*Product: "(Label Printer)"
+*Manufacturer: "DYMO"
+*ModelName: "DYMO Label Printer"
+*ShortNickName: "DYMO Label Printer"
+*NickName: "DYMO Label Printer"
+*PSVersion: "(3010.000) 0"
+*LanguageLevel: "3"
+*ColorDevice: False
+*DefaultColorSpace: Gray
+*FileSystem: False
+*Throughput: "8"
+*LandscapeOrientation: Plus90
+*TTRasterizer: Type42
+*% Driver-defined attributes...
+*cupsSNMPSupplies: "false"
+*cupsVersion: 2.3
+*cupsModelNumber: 0
+*cupsManualCopies: True
+*cupsFilter: "application/vnd.cups-raster 50 rastertolabel"
+*OpenUI *PageSize/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: w81h252
+*PageSize w81h252/Address: "<</PageSize[81 252]/ImagingBBox null>>setpagedevice"
+*PageSize w101h252/Large Address: "<</PageSize[101 252]/ImagingBBox null>>setpagedevice"
+*PageSize w54h144/Return Address: "<</PageSize[54 144]/ImagingBBox null>>setpagedevice"
+*PageSize w162h225/30859 Paint Can Label: "<</PageSize[162 225]/ImagingBBox null>>setpagedevice"
+*PageSize w162h288/2.25x4.00": "<</PageSize[162 288]/ImagingBBox null>>setpagedevice"
+*PageSize w162h540/Internet Postage 2-Part: "<</PageSize[162 540]/ImagingBBox null>>setpagedevice"
+*PageSize w162h504/Internet Postage 3-Part: "<</PageSize[162 504]/ImagingBBox null>>setpagedevice"
+*PageSize w41h248/File Folder: "<</PageSize[41 248]/ImagingBBox null>>setpagedevice"
+*PageSize w41h144/Hanging Folder: "<</PageSize[41 144]/ImagingBBox null>>setpagedevice"
+*PageSize w153h198/3.5" Disk: "<</PageSize[153 198]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageSize
+*OpenUI *PageRegion/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: w81h252
+*PageRegion w81h252/Address: "<</PageSize[81 252]/ImagingBBox null>>setpagedevice"
+*PageRegion w101h252/Large Address: "<</PageSize[101 252]/ImagingBBox null>>setpagedevice"
+*PageRegion w54h144/Return Address: "<</PageSize[54 144]/ImagingBBox null>>setpagedevice"
+*PageRegion w162h225/30859 Paint Can Label: "<</PageSize[162 225]/ImagingBBox null>>setpagedevice"
+*PageRegion w162h288/2.25x4.00": "<</PageSize[162 288]/ImagingBBox null>>setpagedevice"
+*PageRegion w162h540/Internet Postage 2-Part: "<</PageSize[162 540]/ImagingBBox null>>setpagedevice"
+*PageRegion w162h504/Internet Postage 3-Part: "<</PageSize[162 504]/ImagingBBox null>>setpagedevice"
+*PageRegion w41h248/File Folder: "<</PageSize[41 248]/ImagingBBox null>>setpagedevice"
+*PageRegion w41h144/Hanging Folder: "<</PageSize[41 144]/ImagingBBox null>>setpagedevice"
+*PageRegion w153h198/3.5" Disk: "<</PageSize[153 198]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+*DefaultImageableArea: w81h252
+*ImageableArea w81h252/Address: "2 14.89999961853 79 237.100006103516"
+*ImageableArea w101h252/Large Address: "2 14.89999961853 99 237.100006103516"
+*ImageableArea w54h144/Return Address: "2 14.89999961853 52 129.100006103516"
+*ImageableArea w162h225/30859 Paint Can Label: "2 14.89999961853 160 210.100006103516"
+*ImageableArea w162h288/2.25x4.00": "2 14.89999961853 160 273.100006103516"
+*ImageableArea w162h540/Internet Postage 2-Part: "2 14.89999961853 160 525.099975585938"
+*ImageableArea w162h504/Internet Postage 3-Part: "2 14.89999961853 160 489.100006103516"
+*ImageableArea w41h248/File Folder: "2 14.89999961853 39 233.100006103516"
+*ImageableArea w41h144/Hanging Folder: "2 14.89999961853 39 129.100006103516"
+*ImageableArea w153h198/3.5" Disk: "2 14.89999961853 151 183.100006103516"
+*DefaultPaperDimension: w81h252
+*PaperDimension w81h252/Address: "81 252"
+*PaperDimension w101h252/Large Address: "101 252"
+*PaperDimension w54h144/Return Address: "54 144"
+*PaperDimension w162h225/30859 Paint Can Label: "162 225"
+*PaperDimension w162h288/2.25x4.00": "162 288"
+*PaperDimension w162h540/Internet Postage 2-Part: "162 540"
+*PaperDimension w162h504/Internet Postage 3-Part: "162 504"
+*PaperDimension w41h248/File Folder: "41 248"
+*PaperDimension w41h144/Hanging Folder: "41 144"
+*PaperDimension w153h198/3.5" Disk: "153 198"
+*OpenUI *Resolution/Resolution: PickOne
+*OrderDependency: 10 AnySetup *Resolution
+*DefaultResolution: 300dpi
+*Resolution 136dpi/136dpi: "<</HWResolution[136 136]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+*Resolution 203dpi/203dpi: "<</HWResolution[203 203]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+*Resolution 300dpi/300dpi: "<</HWResolution[300 300]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+*CloseUI: *Resolution
+*OpenUI *InputSlot/Media Source: PickOne
+*OrderDependency: 10 AnySetup *InputSlot
+*DefaultInputSlot: Roll
+*InputSlot Roll/Main Roll: "<</MediaPosition 0>>setpagedevice"
+*InputSlot Roll2/Second Roll (DUO/Twin Only): "<</MediaPosition 1>>setpagedevice"
+*CloseUI: *InputSlot
+*OpenUI *cupsDarkness/Darkness: PickOne
+*OrderDependency: 10 AnySetup *cupsDarkness
+*DefaultcupsDarkness: Normal
+*cupsDarkness Light/Light: "<</cupsCompression 0>>setpagedevice"
+*cupsDarkness Medium/Medium: "<</cupsCompression 1>>setpagedevice"
+*cupsDarkness Normal/Normal: "<</cupsCompression 2>>setpagedevice"
+*cupsDarkness Dark/Dark: "<</cupsCompression 3>>setpagedevice"
+*CloseUI: *cupsDarkness
+*DefaultFont: Courier
+*Font AvantGarde-Book: Standard "(1.05)" Standard ROM
+*Font AvantGarde-BookOblique: Standard "(1.05)" Standard ROM
+*Font AvantGarde-Demi: Standard "(1.05)" Standard ROM
+*Font AvantGarde-DemiOblique: Standard "(1.05)" Standard ROM
+*Font Bookman-Demi: Standard "(1.05)" Standard ROM
+*Font Bookman-DemiItalic: Standard "(1.05)" Standard ROM
+*Font Bookman-Light: Standard "(1.05)" Standard ROM
+*Font Bookman-LightItalic: Standard "(1.05)" Standard ROM
+*Font Courier: Standard "(1.05)" Standard ROM
+*Font Courier-Bold: Standard "(1.05)" Standard ROM
+*Font Courier-BoldOblique: Standard "(1.05)" Standard ROM
+*Font Courier-Oblique: Standard "(1.05)" Standard ROM
+*Font Helvetica: Standard "(1.05)" Standard ROM
+*Font Helvetica-Bold: Standard "(1.05)" Standard ROM
+*Font Helvetica-BoldOblique: Standard "(1.05)" Standard ROM
+*Font Helvetica-Narrow: Standard "(1.05)" Standard ROM
+*Font Helvetica-Narrow-Bold: Standard "(1.05)" Standard ROM
+*Font Helvetica-Narrow-BoldOblique: Standard "(1.05)" Standard ROM
+*Font Helvetica-Narrow-Oblique: Standard "(1.05)" Standard ROM
+*Font Helvetica-Oblique: Standard "(1.05)" Standard ROM
+*Font NewCenturySchlbk-Bold: Standard "(1.05)" Standard ROM
+*Font NewCenturySchlbk-BoldItalic: Standard "(1.05)" Standard ROM
+*Font NewCenturySchlbk-Italic: Standard "(1.05)" Standard ROM
+*Font NewCenturySchlbk-Roman: Standard "(1.05)" Standard ROM
+*Font Palatino-Bold: Standard "(1.05)" Standard ROM
+*Font Palatino-BoldItalic: Standard "(1.05)" Standard ROM
+*Font Palatino-Italic: Standard "(1.05)" Standard ROM
+*Font Palatino-Roman: Standard "(1.05)" Standard ROM
+*Font Symbol: Special "(001.005)" Special ROM
+*Font Times-Bold: Standard "(1.05)" Standard ROM
+*Font Times-BoldItalic: Standard "(1.05)" Standard ROM
+*Font Times-Italic: Standard "(1.05)" Standard ROM
+*Font Times-Roman: Standard "(1.05)" Standard ROM
+*Font ZapfChancery-MediumItalic: Standard "(1.05)" Standard ROM
+*Font ZapfDingbats: Special "(001.005)" Special ROM
+*% End of dymo.ppd, 07624 bytes.

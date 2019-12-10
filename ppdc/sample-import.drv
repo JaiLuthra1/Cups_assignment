@@ -1,0 +1,1722 @@
+// CUPS PPD Compiler CUPS v2.3.1
+
+// Include necessary files...
+#include <font.defs>
+#include <media.defs>
+
+// HP DeskJet Series
+{
+  Copyright "Copyright (c) 2007-2019 by Apple Inc."
+  Copyright "Copyright (c) 1997-2007 by Easy Software Products."
+  Copyright ""
+  Copyright "Licensed under Apache License v2.0.  See the file \"LICENSE\" for more"
+  Copyright "information."
+  Manufacturer "HP"
+  ModelName "DeskJet Series"
+  PCFileName "deskjet.ppd"
+  Version "2.3"
+  DriverType ps
+  ModelNumber 1
+  ManualCopies Yes
+  ColorDevice Yes
+  Throughput 1
+  Attribute "NickName" "" "HP DeskJet Series"
+  Attribute "ShortNickName" "" "HP DeskJet Series"
+  Attribute "Product" "" "(DeskJet Series)"
+  Attribute "PSVersion" "" "(3010.000) 0"
+  Attribute "LanguageLevel" "" "3"
+  Attribute "DefaultColorSpace" "" "RGB"
+  Attribute "FileSystem" "" "False"
+  Attribute "LandscapeOrientation" "" "Plus90"
+  Attribute "TTRasterizer" "" "Type42"
+  Attribute "1284DeviceID" "" "MFG:HP;MDL:HP DeskJet;CMD:PCL;"
+  UIConstraints "*PageSize A3 *InputSlot Envelope"
+  UIConstraints "*PageSize A4 *InputSlot Envelope"
+  UIConstraints "*PageSize A5 *InputSlot Envelope"
+  UIConstraints "*PageSize B5 *InputSlot Envelope"
+  UIConstraints "*PageSize Executive *InputSlot Envelope"
+  UIConstraints "*PageSize Legal *InputSlot Envelope"
+  UIConstraints "*PageSize Letter *InputSlot Envelope"
+  UIConstraints "*PageSize Tabloid *InputSlot Envelope"
+  Filter "application/vnd.cups-raster 50 rastertohp"
+  Font "AvantGarde-Book" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-BookOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-DemiOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-DemiItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Light" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-LightItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Symbol" "Special" "(001.005)" "Special" ROM
+  Font "Times-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfChancery-MediumItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfDingbats" "Special" "(001.005)" "Special" ROM
+  Group "General/General"
+    Option "ColorModel/Color Mode" PickOne AnySetup 10.0
+      Choice "Gray/Grayscale" "<</cupsColorSpace 3/cupsColorOrder 0/cupsCompression 2>>setpagedevice"
+      Choice "RGB/Color" "<</cupsColorSpace 4/cupsColorOrder 1/cupsCompression 2>>setpagedevice"
+      *Choice "CMYK/CMYK" "<</cupsColorSpace 8/cupsColorOrder 1/cupsCompression 2>>setpagedevice"
+    Option "Resolution/Resolution" PickOne AnySetup 10.0
+      Choice "150dpi/150dpi" "<</HWResolution[150 150]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0>>setpagedevice"
+      *Choice "300dpi/300dpi" "<</HWResolution[300 300]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0>>setpagedevice"
+      Choice "600dpi/600dpi" "<</HWResolution[600 600]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0>>setpagedevice"
+    Option "InputSlot/Media Source" PickOne AnySetup 10.0
+      *Choice "Tray/Tray" "<</MediaPosition 1>>setpagedevice"
+      Choice "Manual/Manual Feed" "<</MediaPosition 2>>setpagedevice"
+      Choice "Envelope/Envelope Feed" "<</MediaPosition 3>>setpagedevice"
+    Option "MediaType/Media Type" PickOne AnySetup 10.0
+      *Choice "Plain/Plain Paper" "<</MediaType(Plain)/cupsMediaType 0>>setpagedevice"
+      Choice "Bond/Bond Paper" "<</MediaType(Bond)/cupsMediaType 1>>setpagedevice"
+      Choice "Special/Special Paper" "<</MediaType(Special)/cupsMediaType 2>>setpagedevice"
+      Choice "Transparency/Transparency" "<</MediaType(Transparency)/cupsMediaType 3>>setpagedevice"
+      Choice "Glossy/Glossy Paper" "<</MediaType(Glossy)/cupsMediaType 4>>setpagedevice"
+  *CustomMedia "Letter/US Letter" 612.00 792.00 18.00 36.00 18.00 36.00 "<</PageSize[612 792]/ImagingBBox null>>setpagedevice" "<</PageSize[612 792]/ImagingBBox null>>setpagedevice"
+  CustomMedia "Legal/US Legal" 612.00 1008.00 18.00 36.00 18.00 36.00 "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice" "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice"
+  CustomMedia "Executive/Executive" 522.00 756.00 18.00 36.00 18.00 36.00 "<</PageSize[522 756]/ImagingBBox null>>setpagedevice" "<</PageSize[522 756]/ImagingBBox null>>setpagedevice"
+  CustomMedia "Tabloid/Tabloid" 792.00 1224.00 18.00 36.00 18.00 36.00 "<</PageSize[792 1224]/ImagingBBox null>>setpagedevice" "<</PageSize[792 1224]/ImagingBBox null>>setpagedevice"
+  CustomMedia "A3/A3" 842.00 1191.00 18.00 36.00 18.00 36.00 "<</PageSize[842 1191]/ImagingBBox null>>setpagedevice" "<</PageSize[842 1191]/ImagingBBox null>>setpagedevice"
+  CustomMedia "A4/A4" 595.00 842.00 18.00 36.00 18.00 36.00 "<</PageSize[595 842]/ImagingBBox null>>setpagedevice" "<</PageSize[595 842]/ImagingBBox null>>setpagedevice"
+  CustomMedia "A5/A5" 420.00 595.00 18.00 36.00 18.00 36.00 "<</PageSize[420 595]/ImagingBBox null>>setpagedevice" "<</PageSize[420 595]/ImagingBBox null>>setpagedevice"
+  CustomMedia "B5/JIS B5" 516.00 729.00 18.00 36.00 18.00 36.00 "<</PageSize[516 729]/ImagingBBox null>>setpagedevice" "<</PageSize[516 729]/ImagingBBox null>>setpagedevice"
+  CustomMedia "EnvISOB5/Envelope B5" 499.00 709.00 18.00 36.00 18.00 36.00 "<</PageSize[499 709]/ImagingBBox null>>setpagedevice" "<</PageSize[499 709]/ImagingBBox null>>setpagedevice"
+  CustomMedia "Env10/Envelope #10" 297.00 684.00 18.00 36.00 18.00 36.00 "<</PageSize[297 684]/ImagingBBox null>>setpagedevice" "<</PageSize[297 684]/ImagingBBox null>>setpagedevice"
+  CustomMedia "EnvC5/Envelope C5" 459.00 649.00 18.00 36.00 18.00 36.00 "<</PageSize[459 649]/ImagingBBox null>>setpagedevice" "<</PageSize[459 649]/ImagingBBox null>>setpagedevice"
+  CustomMedia "EnvDL/Envelope DL" 312.00 624.00 18.00 36.00 18.00 36.00 "<</PageSize[312 624]/ImagingBBox null>>setpagedevice" "<</PageSize[312 624]/ImagingBBox null>>setpagedevice"
+  CustomMedia "EnvMonarch/Envelope Monarch" 279.00 540.00 18.00 36.00 18.00 36.00 "<</PageSize[279 540]/ImagingBBox null>>setpagedevice" "<</PageSize[279 540]/ImagingBBox null>>setpagedevice"
+}
+
+// DYMO Label Printer
+{
+  Copyright "Copyright (c) 2007-2019 by Apple Inc."
+  Copyright "Copyright (c) 1997-2007 by Easy Software Products."
+  Copyright ""
+  Copyright "Licensed under Apache License v2.0.  See the file \"LICENSE\" for more"
+  Copyright "information."
+  Manufacturer "DYMO"
+  ModelName "Label Printer"
+  PCFileName "dymo.ppd"
+  Version "2.3"
+  DriverType ps
+  ManualCopies Yes
+  Throughput 8
+  Attribute "NickName" "" "DYMO Label Printer"
+  Attribute "ShortNickName" "" "DYMO Label Printer"
+  Attribute "Product" "" "(Label Printer)"
+  Attribute "PSVersion" "" "(3010.000) 0"
+  Attribute "LanguageLevel" "" "3"
+  Attribute "DefaultColorSpace" "" "Gray"
+  Attribute "FileSystem" "" "False"
+  Attribute "LandscapeOrientation" "" "Plus90"
+  Attribute "TTRasterizer" "" "Type42"
+  Attribute "cupsSNMPSupplies" "" "false"
+  Filter "application/vnd.cups-raster 50 rastertolabel"
+  Font "AvantGarde-Book" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-BookOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-DemiOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-DemiItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Light" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-LightItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Symbol" "Special" "(001.005)" "Special" ROM
+  Font "Times-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfChancery-MediumItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfDingbats" "Special" "(001.005)" "Special" ROM
+  Group "General/General"
+    Option "Resolution/Resolution" PickOne AnySetup 10.0
+      Choice "136dpi/136dpi" "<</HWResolution[136 136]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+      Choice "203dpi/203dpi" "<</HWResolution[203 203]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+      *Choice "300dpi/300dpi" "<</HWResolution[300 300]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+    Option "InputSlot/Media Source" PickOne AnySetup 10.0
+      *Choice "Roll/Main Roll" "<</MediaPosition 0>>setpagedevice"
+      Choice "Roll2/Second Roll (DUO/Twin Only)" "<</MediaPosition 1>>setpagedevice"
+    Option "cupsDarkness/Darkness" PickOne AnySetup 10.0
+      Choice "Light/Light" "<</cupsCompression 0>>setpagedevice"
+      Choice "Medium/Medium" "<</cupsCompression 1>>setpagedevice"
+      *Choice "Normal/Normal" "<</cupsCompression 2>>setpagedevice"
+      Choice "Dark/Dark" "<</cupsCompression 3>>setpagedevice"
+  *CustomMedia "w81h252/Address" 81.00 252.00 2.00 14.90 2.00 14.90 "<</PageSize[81 252]/ImagingBBox null>>setpagedevice" "<</PageSize[81 252]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w101h252/Large Address" 101.00 252.00 2.00 14.90 2.00 14.90 "<</PageSize[101 252]/ImagingBBox null>>setpagedevice" "<</PageSize[101 252]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w54h144/Return Address" 54.00 144.00 2.00 14.90 2.00 14.90 "<</PageSize[54 144]/ImagingBBox null>>setpagedevice" "<</PageSize[54 144]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w162h225/30859 Paint Can Label" 162.00 225.00 2.00 14.90 2.00 14.90 "<</PageSize[162 225]/ImagingBBox null>>setpagedevice" "<</PageSize[162 225]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w162h288/2.25x4.00\"" 162.00 288.00 2.00 14.90 2.00 14.90 "<</PageSize[162 288]/ImagingBBox null>>setpagedevice" "<</PageSize[162 288]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w162h540/Internet Postage 2-Part" 162.00 540.00 2.00 14.90 2.00 14.90 "<</PageSize[162 540]/ImagingBBox null>>setpagedevice" "<</PageSize[162 540]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w162h504/Internet Postage 3-Part" 162.00 504.00 2.00 14.90 2.00 14.90 "<</PageSize[162 504]/ImagingBBox null>>setpagedevice" "<</PageSize[162 504]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w41h248/File Folder" 41.00 248.00 2.00 14.90 2.00 14.90 "<</PageSize[41 248]/ImagingBBox null>>setpagedevice" "<</PageSize[41 248]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w41h144/Hanging Folder" 41.00 144.00 2.00 14.90 2.00 14.90 "<</PageSize[41 144]/ImagingBBox null>>setpagedevice" "<</PageSize[41 144]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w153h198/3.5\" Disk" 153.00 198.00 2.00 14.90 2.00 14.90 "<</PageSize[153 198]/ImagingBBox null>>setpagedevice" "<</PageSize[153 198]/ImagingBBox null>>setpagedevice"
+}
+
+// Epson 24-Pin Series
+{
+  Copyright "Copyright (c) 2007-2019 by Apple Inc."
+  Copyright "Copyright (c) 1997-2007 by Easy Software Products."
+  Copyright ""
+  Copyright "Licensed under Apache License v2.0.  See the file \"LICENSE\" for more"
+  Copyright "information."
+  Manufacturer "Epson"
+  ModelName "24-Pin Series"
+  PCFileName "epson24.ppd"
+  Version "2.3"
+  DriverType ps
+  ModelNumber 1
+  ManualCopies Yes
+  Throughput 1
+  Attribute "NickName" "" "Epson 24-Pin Series"
+  Attribute "ShortNickName" "" "Epson 24-Pin Series"
+  Attribute "Product" "" "(24-Pin Series)"
+  Attribute "PSVersion" "" "(3010.000) 0"
+  Attribute "LanguageLevel" "" "3"
+  Attribute "DefaultColorSpace" "" "Gray"
+  Attribute "FileSystem" "" "False"
+  Attribute "LandscapeOrientation" "" "Plus90"
+  Attribute "TTRasterizer" "" "Type42"
+  Filter "application/vnd.cups-raster 50 rastertoepson"
+  Font "AvantGarde-Book" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-BookOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-DemiOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-DemiItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Light" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-LightItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Symbol" "Special" "(001.005)" "Special" ROM
+  Font "Times-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfChancery-MediumItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfDingbats" "Special" "(001.005)" "Special" ROM
+  Group "General/General"
+    Option "Resolution/Resolution" PickOne AnySetup 10.0
+      Choice "60dpi/60dpi" "<</HWResolution[60 60]/cupsBitsPerColor 1/cupsRowCount 8/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+      *Choice "120x60dpi/120x60dpi" "<</HWResolution[120 60]/cupsBitsPerColor 1/cupsRowCount 8/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+      Choice "180dpi/180dpi" "<</HWResolution[180 180]/cupsBitsPerColor 1/cupsRowCount 24/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+      Choice "360x180dpi/360x180dpi" "<</HWResolution[360 180]/cupsBitsPerColor 1/cupsRowCount 24/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+      Choice "360dpi/360dpi" "<</HWResolution[360 360]/cupsBitsPerColor 1/cupsRowCount 48/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+  *CustomMedia "Letter/US Letter" 612.00 792.00 18.00 18.00 18.00 18.00 "<</PageSize[612 792]/ImagingBBox null>>setpagedevice" "<</PageSize[612 792]/ImagingBBox null>>setpagedevice"
+  CustomMedia "Legal/US Legal" 612.00 1008.00 18.00 18.00 18.00 18.00 "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice" "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice"
+  CustomMedia "A4/A4" 595.00 842.00 18.00 18.00 18.00 18.00 "<</PageSize[595 842]/ImagingBBox null>>setpagedevice" "<</PageSize[595 842]/ImagingBBox null>>setpagedevice"
+  CustomMedia "FanFoldUS/US Fanfold" 1071.00 792.00 18.00 18.00 18.00 18.00 "<</PageSize[1071 792]/ImagingBBox null>>setpagedevice" "<</PageSize[1071 792]/ImagingBBox null>>setpagedevice"
+  VariablePaperSize Yes
+  HWMargins 18.00 18.00 18.00 18.00
+  MinSize 36.00 36.00
+  MaxSize 1080.00 86400.00
+}
+
+// Epson 9-Pin Series
+{
+  Copyright "Copyright (c) 2007-2019 by Apple Inc."
+  Copyright "Copyright (c) 1997-2007 by Easy Software Products."
+  Copyright ""
+  Copyright "Licensed under Apache License v2.0.  See the file \"LICENSE\" for more"
+  Copyright "information."
+  Manufacturer "Epson"
+  ModelName "9-Pin Series"
+  PCFileName "epson9.ppd"
+  Version "2.3"
+  DriverType ps
+  ManualCopies Yes
+  Throughput 1
+  Attribute "NickName" "" "Epson 9-Pin Series"
+  Attribute "ShortNickName" "" "Epson 9-Pin Series"
+  Attribute "Product" "" "(9-Pin Series)"
+  Attribute "PSVersion" "" "(3010.000) 0"
+  Attribute "LanguageLevel" "" "3"
+  Attribute "DefaultColorSpace" "" "Gray"
+  Attribute "FileSystem" "" "False"
+  Attribute "LandscapeOrientation" "" "Plus90"
+  Attribute "TTRasterizer" "" "Type42"
+  Filter "application/vnd.cups-raster 50 rastertoepson"
+  Font "AvantGarde-Book" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-BookOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-DemiOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-DemiItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Light" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-LightItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Symbol" "Special" "(001.005)" "Special" ROM
+  Font "Times-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfChancery-MediumItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfDingbats" "Special" "(001.005)" "Special" ROM
+  Group "General/General"
+    Option "Resolution/Resolution" PickOne AnySetup 10.0
+      Choice "60x72dpi/60x72dpi" "<</HWResolution[60 72]/cupsBitsPerColor 1/cupsRowCount 8/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+      *Choice "120x72dpi/120x72dpi" "<</HWResolution[120 72]/cupsBitsPerColor 1/cupsRowCount 8/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+      Choice "240x72dpi/240x72dpi" "<</HWResolution[240 72]/cupsBitsPerColor 1/cupsRowCount 8/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+  *CustomMedia "Letter/US Letter" 612.00 792.00 18.00 18.00 18.00 18.00 "<</PageSize[612 792]/ImagingBBox null>>setpagedevice" "<</PageSize[612 792]/ImagingBBox null>>setpagedevice"
+  CustomMedia "Legal/US Legal" 612.00 1008.00 18.00 18.00 18.00 18.00 "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice" "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice"
+  CustomMedia "A4/A4" 595.00 842.00 18.00 18.00 18.00 18.00 "<</PageSize[595 842]/ImagingBBox null>>setpagedevice" "<</PageSize[595 842]/ImagingBBox null>>setpagedevice"
+  CustomMedia "FanFoldUS/US Fanfold" 1071.00 792.00 18.00 18.00 18.00 18.00 "<</PageSize[1071 792]/ImagingBBox null>>setpagedevice" "<</PageSize[1071 792]/ImagingBBox null>>setpagedevice"
+  VariablePaperSize Yes
+  HWMargins 18.00 18.00 18.00 18.00
+  MinSize 36.00 36.00
+  MaxSize 1080.00 86400.00
+}
+
+// Generic PostScript Printer
+{
+  Copyright "Copyright (c) 2007-2019 by Apple Inc."
+  Copyright "Copyright (c) 1997-2007 by Easy Software Products."
+  Copyright ""
+  Copyright "Licensed under Apache License v2.0.  See the file \"LICENSE\" for more"
+  Copyright "information."
+  Manufacturer "Generic"
+  ModelName "PostScript Printer"
+  PCFileName "generic.ppd"
+  Version "2.3"
+  DriverType ps
+  ColorDevice Yes
+  Throughput 8
+  Attribute "NickName" "" "Generic PostScript Printer"
+  Attribute "ShortNickName" "" "Generic PostScript Printer"
+  Attribute "Product" "" "(PostScript Printer)"
+  Attribute "PSVersion" "" "(2016.0) 0"
+  Attribute "LanguageLevel" "" "2"
+  Attribute "DefaultColorSpace" "" "RGB"
+  Attribute "FileSystem" "" "False"
+  Attribute "LandscapeOrientation" "" "Plus90"
+  Attribute "TTRasterizer" "" "Type42"
+  Attribute "1284DeviceID" "" "CMD:PS;"
+  Attribute "cupsBackSide" "" "Normal"
+  Attribute "?Option1" "" "save currentpagedevice/Duplex known{(True)}{(False)}ifelse = flush restore"
+  UIConstraints "*Duplex  *Option1 False"
+  Font "AvantGarde-Book" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-BookOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-DemiOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-DemiItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Light" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-LightItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Symbol" "Special" "(001.005)" "Special" ROM
+  Font "Times-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfChancery-MediumItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfDingbats" "Special" "(001.005)" "Special" ROM
+  Group "General/General"
+    Option "InputSlot/Media Source" PickOne AnySetup 10.0
+      *Choice "Default/Printer Default" ""
+      Choice "Upper/Cassette" "<</ManualFeed false>>setpagedevice"
+      Choice "Manual/Manual Feed" "<</ManualFeed true>>setpagedevice"
+    Option "Duplex/2-Sided Printing" PickOne AnySetup 10.0
+      *Choice "None/Off (1-Sided)" "<</Duplex false>>setpagedevice"
+      Choice "DuplexNoTumble/Long-Edge (Portrait)" "<</Duplex true/Tumble false>>setpagedevice"
+      Choice "DuplexTumble/Short-Edge (Landscape)" "<</Duplex true/Tumble true>>setpagedevice"
+  Group "InstallableOptions/Installable Options"
+    Option "Option1/Duplexer" Boolean AnySetup 10.0
+      *Choice "False/Not Installed" ""
+      Choice "True/Installed" ""
+  *CustomMedia "Letter/US Letter" 612.00 792.00 12.00 12.00 12.00 12.00 "<</PageSize[612 792]/ImagingBBox null>>setpagedevice" "<</PageSize[612 792]/ImagingBBox null>>setpagedevice"
+  CustomMedia "Legal/US Legal" 612.00 1008.00 12.00 12.00 12.00 12.00 "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice" "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice"
+  CustomMedia "Executive/Executive" 522.00 756.00 12.00 12.00 12.00 12.00 "<</PageSize[522 756]/ImagingBBox null>>setpagedevice" "<</PageSize[522 756]/ImagingBBox null>>setpagedevice"
+  CustomMedia "Tabloid/Tabloid" 792.00 1224.00 12.00 12.00 12.00 12.00 "<</PageSize[792 1224]/ImagingBBox null>>setpagedevice" "<</PageSize[792 1224]/ImagingBBox null>>setpagedevice"
+  CustomMedia "A3/A3" 842.00 1191.00 12.00 12.00 12.00 12.00 "<</PageSize[842 1191]/ImagingBBox null>>setpagedevice" "<</PageSize[842 1191]/ImagingBBox null>>setpagedevice"
+  CustomMedia "A4/A4" 595.00 842.00 12.00 12.00 12.00 12.00 "<</PageSize[595 842]/ImagingBBox null>>setpagedevice" "<</PageSize[595 842]/ImagingBBox null>>setpagedevice"
+  CustomMedia "A5/A5" 420.00 595.00 12.00 12.00 12.00 12.00 "<</PageSize[420 595]/ImagingBBox null>>setpagedevice" "<</PageSize[420 595]/ImagingBBox null>>setpagedevice"
+  CustomMedia "B5/JIS B5" 516.00 729.00 12.00 12.00 12.00 12.00 "<</PageSize[516 729]/ImagingBBox null>>setpagedevice" "<</PageSize[516 729]/ImagingBBox null>>setpagedevice"
+  CustomMedia "EnvISOB5/Envelope B5" 499.00 709.00 12.00 12.00 12.00 12.00 "<</PageSize[499 709]/ImagingBBox null>>setpagedevice" "<</PageSize[499 709]/ImagingBBox null>>setpagedevice"
+  CustomMedia "Env10/Envelope #10" 297.00 684.00 12.00 12.00 12.00 12.00 "<</PageSize[297 684]/ImagingBBox null>>setpagedevice" "<</PageSize[297 684]/ImagingBBox null>>setpagedevice"
+  CustomMedia "EnvC5/Envelope C5" 459.00 649.00 12.00 12.00 12.00 12.00 "<</PageSize[459 649]/ImagingBBox null>>setpagedevice" "<</PageSize[459 649]/ImagingBBox null>>setpagedevice"
+  CustomMedia "EnvDL/Envelope DL" 312.00 624.00 12.00 12.00 12.00 12.00 "<</PageSize[312 624]/ImagingBBox null>>setpagedevice" "<</PageSize[312 624]/ImagingBBox null>>setpagedevice"
+  CustomMedia "EnvMonarch/Envelope Monarch" 279.00 540.00 12.00 12.00 12.00 12.00 "<</PageSize[279 540]/ImagingBBox null>>setpagedevice" "<</PageSize[279 540]/ImagingBBox null>>setpagedevice"
+}
+
+// Generic PCL Laser Printer
+{
+  Copyright "Copyright (c) 2007-2019 by Apple Inc."
+  Copyright "Copyright (c) 1997-2007 by Easy Software Products."
+  Copyright ""
+  Copyright "Licensed under Apache License v2.0.  See the file \"LICENSE\" for more"
+  Copyright "information."
+  Manufacturer "Generic"
+  ModelName "PCL Laser Printer"
+  PCFileName "generpcl.ppd"
+  Version "2.3"
+  DriverType ps
+  Throughput 8
+  Attribute "NickName" "" "Generic PCL Laser Printer"
+  Attribute "ShortNickName" "" "Generic PCL Laser Printer"
+  Attribute "Product" "" "(PCL Laser Printer)"
+  Attribute "PSVersion" "" "(3010.000) 0"
+  Attribute "LanguageLevel" "" "3"
+  Attribute "DefaultColorSpace" "" "Gray"
+  Attribute "FileSystem" "" "False"
+  Attribute "LandscapeOrientation" "" "Plus90"
+  Attribute "TTRasterizer" "" "Type42"
+  Attribute "1284DeviceID" "" "CMD:PCL;"
+  Attribute "cupsBackSide" "" "Normal"
+  UIConstraints "*Duplex  *Option1 False"
+  UIConstraints "*PageSize A3 *InputSlot Envelope"
+  UIConstraints "*PageSize A4 *InputSlot Envelope"
+  UIConstraints "*PageSize A5 *InputSlot Envelope"
+  UIConstraints "*PageSize B5 *InputSlot Envelope"
+  UIConstraints "*PageSize Executive *InputSlot Envelope"
+  UIConstraints "*PageSize Legal *InputSlot Envelope"
+  UIConstraints "*PageSize Letter *InputSlot Envelope"
+  UIConstraints "*PageSize Tabloid *InputSlot Envelope"
+  Filter "application/vnd.cups-raster 50 rastertohp"
+  Font "AvantGarde-Book" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-BookOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-DemiOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-DemiItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Light" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-LightItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Symbol" "Special" "(001.005)" "Special" ROM
+  Font "Times-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfChancery-MediumItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfDingbats" "Special" "(001.005)" "Special" ROM
+  Group "General/General"
+    Option "Resolution/Resolution" PickOne AnySetup 10.0
+      *Choice "300dpi/300dpi" "<</HWResolution[300 300]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+      Choice "600dpi/600dpi" "<</HWResolution[600 600]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+    Option "InputSlot/Media Source" PickOne AnySetup 10.0
+      *Choice "Default/Printer Default" "<</MediaPosition 0>>setpagedevice"
+      Choice "Tray1/Tray 1" "<</MediaPosition 8>>setpagedevice"
+      Choice "Tray2/Tray 2" "<</MediaPosition 1>>setpagedevice"
+      Choice "Tray3/Tray 3" "<</MediaPosition 4>>setpagedevice"
+      Choice "Tray4/Tray 4" "<</MediaPosition 5>>setpagedevice"
+      Choice "Manual/Manual Feed" "<</MediaPosition 2>>setpagedevice"
+      Choice "Envelope/Envelope Feed" "<</MediaPosition 3>>setpagedevice"
+    Option "Duplex/2-Sided Printing" PickOne AnySetup 10.0
+      *Choice "None/Off (1-Sided)" "<</Duplex false>>setpagedevice"
+      Choice "DuplexNoTumble/Long-Edge (Portrait)" "<</Duplex true/Tumble false>>setpagedevice"
+      Choice "DuplexTumble/Short-Edge (Landscape)" "<</Duplex true/Tumble true>>setpagedevice"
+  Group "InstallableOptions/Installable Options"
+    Option "Option1/Duplexer" Boolean AnySetup 10.0
+      *Choice "False/Not Installed" ""
+      Choice "True/Installed" ""
+  *CustomMedia "Letter/US Letter" 612.00 792.00 18.00 12.00 18.00 12.00 "<</PageSize[612 792]/ImagingBBox null>>setpagedevice" "<</PageSize[612 792]/ImagingBBox null>>setpagedevice"
+  CustomMedia "Legal/US Legal" 612.00 1008.00 18.00 12.00 18.00 12.00 "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice" "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice"
+  CustomMedia "Executive/Executive" 522.00 756.00 18.00 12.00 18.00 12.00 "<</PageSize[522 756]/ImagingBBox null>>setpagedevice" "<</PageSize[522 756]/ImagingBBox null>>setpagedevice"
+  CustomMedia "Tabloid/Tabloid" 792.00 1224.00 18.00 12.00 18.00 12.00 "<</PageSize[792 1224]/ImagingBBox null>>setpagedevice" "<</PageSize[792 1224]/ImagingBBox null>>setpagedevice"
+  CustomMedia "A3/A3" 842.00 1191.00 18.00 12.00 18.00 12.00 "<</PageSize[842 1191]/ImagingBBox null>>setpagedevice" "<</PageSize[842 1191]/ImagingBBox null>>setpagedevice"
+  CustomMedia "A4/A4" 595.00 842.00 18.00 12.00 18.00 12.00 "<</PageSize[595 842]/ImagingBBox null>>setpagedevice" "<</PageSize[595 842]/ImagingBBox null>>setpagedevice"
+  CustomMedia "A5/A5" 420.00 595.00 18.00 12.00 18.00 12.00 "<</PageSize[420 595]/ImagingBBox null>>setpagedevice" "<</PageSize[420 595]/ImagingBBox null>>setpagedevice"
+  CustomMedia "B5/JIS B5" 516.00 729.00 18.00 12.00 18.00 12.00 "<</PageSize[516 729]/ImagingBBox null>>setpagedevice" "<</PageSize[516 729]/ImagingBBox null>>setpagedevice"
+  CustomMedia "EnvISOB5/Envelope B5" 499.00 709.00 18.00 12.00 18.00 12.00 "<</PageSize[499 709]/ImagingBBox null>>setpagedevice" "<</PageSize[499 709]/ImagingBBox null>>setpagedevice"
+  CustomMedia "Env10/Envelope #10" 297.00 684.00 18.00 12.00 18.00 12.00 "<</PageSize[297 684]/ImagingBBox null>>setpagedevice" "<</PageSize[297 684]/ImagingBBox null>>setpagedevice"
+  CustomMedia "EnvC5/Envelope C5" 459.00 649.00 18.00 12.00 18.00 12.00 "<</PageSize[459 649]/ImagingBBox null>>setpagedevice" "<</PageSize[459 649]/ImagingBBox null>>setpagedevice"
+  CustomMedia "EnvDL/Envelope DL" 312.00 624.00 18.00 12.00 18.00 12.00 "<</PageSize[312 624]/ImagingBBox null>>setpagedevice" "<</PageSize[312 624]/ImagingBBox null>>setpagedevice"
+  CustomMedia "EnvMonarch/Envelope Monarch" 279.00 540.00 18.00 12.00 18.00 12.00 "<</PageSize[279 540]/ImagingBBox null>>setpagedevice" "<</PageSize[279 540]/ImagingBBox null>>setpagedevice"
+}
+
+// Intellitech IntelliBar Label Printer
+{
+  Copyright "Copyright (c) 2007-2019 by Apple Inc."
+  Copyright "Copyright (c) 1997-2007 by Easy Software Products."
+  Copyright ""
+  Copyright "Licensed under Apache License v2.0.  See the file \"LICENSE\" for more"
+  Copyright "information."
+  Manufacturer "Intellitech"
+  ModelName "IntelliBar Label Printer"
+  PCFileName "intelbar.ppd"
+  Version "2.3"
+  DriverType ps
+  ModelNumber 32
+  Throughput 8
+  Attribute "NickName" "" "Intellitech IntelliBar Label Printer, 2.3"
+  Attribute "ShortNickName" "" "IntelliBar Label Printer"
+  Attribute "Product" "" "(IntelliBar Label Printer)"
+  Attribute "PSVersion" "" "(3010.000) 0"
+  Attribute "LanguageLevel" "" "3"
+  Attribute "DefaultColorSpace" "" "Gray"
+  Attribute "FileSystem" "" "False"
+  Attribute "LandscapeOrientation" "" "Plus90"
+  Attribute "TTRasterizer" "" "Type42"
+  Attribute "cupsSNMPSupplies" "" "false"
+  Attribute "CustominTearInterval" "True" "<</cupsRowCount 2 1 roll>>setpagedevice"
+  Attribute "ParamCustominTearInterval" "Interval/Interval" "1 int 1 99"
+  Attribute "CustominCutInterval" "True" "<</cupsRowStep 2 1 roll>>setpagedevice"
+  Attribute "ParamCustominCutInterval" "Interval/Interval" "1 int 1 99"
+  UIConstraints "*inPrintMode Standard *inCutInterval "
+  UIConstraints "*inPrintMode Tear *inCutInterval "
+  UIConstraints "*inPrintMode Standard *inTearInterval "
+  UIConstraints "*inPrintMode Cut *inTearInterval "
+  Filter "application/vnd.cups-raster 50 rastertolabel"
+  Font "AvantGarde-Book" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-BookOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-DemiOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-DemiItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Light" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-LightItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Symbol" "Special" "(001.005)" "Special" ROM
+  Font "Times-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfChancery-MediumItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfDingbats" "Special" "(001.005)" "Special" ROM
+  Group "General/General"
+    Option "Resolution/Resolution" PickOne AnySetup 10.0
+      *Choice "300dpi/300dpi" "<</HWResolution[300 300]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+  Group "PrinterSettings/Printer Settings"
+    Option "inPrintDensity/Print Density" PickOne DocumentSetup 20.0
+      *Choice "Default/Printer Default" "<</cupsCompression -1>>setpagedevice"
+      Choice "-15/-15" "<</cupsCompression 0>>setpagedevice"
+      Choice "-14/-14" "<</cupsCompression 4>>setpagedevice"
+      Choice "-13/-13" "<</cupsCompression 7>>setpagedevice"
+      Choice "-12/-12" "<</cupsCompression 10>>setpagedevice"
+      Choice "-11/-11" "<</cupsCompression 14>>setpagedevice"
+      Choice "-10/-10" "<</cupsCompression 17>>setpagedevice"
+      Choice "-9/-9" "<</cupsCompression 20>>setpagedevice"
+      Choice "-8/-8" "<</cupsCompression 24>>setpagedevice"
+      Choice "-7/-7" "<</cupsCompression 27>>setpagedevice"
+      Choice "-6/-6" "<</cupsCompression 30>>setpagedevice"
+      Choice "-5/-5" "<</cupsCompression 34>>setpagedevice"
+      Choice "-4/-4" "<</cupsCompression 37>>setpagedevice"
+      Choice "-3/-3" "<</cupsCompression 40>>setpagedevice"
+      Choice "-2/-2" "<</cupsCompression 44>>setpagedevice"
+      Choice "-1/-1" "<</cupsCompression 47>>setpagedevice"
+      Choice "0/0" "<</cupsCompression 50>>setpagedevice"
+      Choice "1/1" "<</cupsCompression 54>>setpagedevice"
+      Choice "2/2" "<</cupsCompression 57>>setpagedevice"
+      Choice "3/3" "<</cupsCompression 60>>setpagedevice"
+      Choice "4/4" "<</cupsCompression 64>>setpagedevice"
+      Choice "5/5" "<</cupsCompression 67>>setpagedevice"
+      Choice "6/6" "<</cupsCompression 70>>setpagedevice"
+      Choice "7/7" "<</cupsCompression 74>>setpagedevice"
+      Choice "8/8" "<</cupsCompression 77>>setpagedevice"
+      Choice "9/9" "<</cupsCompression 80>>setpagedevice"
+      Choice "10/10" "<</cupsCompression 84>>setpagedevice"
+      Choice "11/11" "<</cupsCompression 87>>setpagedevice"
+      Choice "12/12" "<</cupsCompression 90>>setpagedevice"
+      Choice "13/13" "<</cupsCompression 94>>setpagedevice"
+      Choice "14/14" "<</cupsCompression 97>>setpagedevice"
+      Choice "15/15" "<</cupsCompression 100>>setpagedevice"
+    Option "inPrintRate/Print Speed" PickOne DocumentSetup 20.0
+      *Choice "Default/Printer Default" "<</cupsRowFeed 0>>setpagedevice"
+      Choice "15/15 mm/sec." "<</cupsRowFeed 15>>setpagedevice"
+      Choice "20/20 mm/sec." "<</cupsRowFeed 20>>setpagedevice"
+      Choice "30/30 mm/sec." "<</cupsRowFeed 30>>setpagedevice"
+      Choice "40/40 mm/sec." "<</cupsRowFeed 40>>setpagedevice"
+      Choice "60/60 mm/sec." "<</cupsRowFeed 60>>setpagedevice"
+      Choice "80/80 mm/sec." "<</cupsRowFeed 80>>setpagedevice"
+      Choice "100/100 mm/sec." "<</cupsRowFeed 100>>setpagedevice"
+      Choice "120/120 mm/sec." "<</cupsRowFeed 120>>setpagedevice"
+      Choice "150/150 mm/sec." "<</cupsRowFeed 150>>setpagedevice"
+      Choice "200/200 mm/sec." "<</cupsRowFeed 200>>setpagedevice"
+      Choice "250/250 mm/sec." "<</cupsRowFeed 250>>setpagedevice"
+      Choice "300/300 mm/sec." "<</cupsRowFeed 300>>setpagedevice"
+    Option "inPrintMode/Print Mode" PickOne DocumentSetup 20.0
+      *Choice "Standard/Standard" ""
+      Choice "Tear/Tear" ""
+      Choice "Cut/Cut" ""
+    Option "inTearInterval/Print and Tear" PickOne DocumentSetup 20.0
+      *Choice "None/Disabled" "<</cupsRowCount 0>>setpagedevice"
+      Choice "1/Every Label" "<</cupsRowCount 1>>setpagedevice"
+      Choice "2/Every 2 Labels" "<</cupsRowCount 2>>setpagedevice"
+      Choice "3/Every 3 Labels" "<</cupsRowCount 3>>setpagedevice"
+      Choice "4/Every 4 Labels" "<</cupsRowCount 4>>setpagedevice"
+      Choice "5/Every 5 Labels" "<</cupsRowCount 5>>setpagedevice"
+      Choice "6/Every 6 Labels" "<</cupsRowCount 6>>setpagedevice"
+      Choice "7/Every 7 Labels" "<</cupsRowCount 7>>setpagedevice"
+      Choice "8/Every 8 Labels" "<</cupsRowCount 8>>setpagedevice"
+      Choice "9/Every 9 Labels" "<</cupsRowCount 9>>setpagedevice"
+      Choice "10/Every 10 Labels" "<</cupsRowCount 10>>setpagedevice"
+    Option "inCutInterval/Print and Cut" PickOne DocumentSetup 20.0
+      *Choice "None/Disabled" "<</cupsRowStep 0>>setpagedevice"
+      Choice "1/Every Label" "<</cupsRowStep 1>>setpagedevice"
+      Choice "2/Every 2 Labels" "<</cupsRowStep 2>>setpagedevice"
+      Choice "3/Every 3 Labels" "<</cupsRowStep 3>>setpagedevice"
+      Choice "4/Every 4 Labels" "<</cupsRowStep 4>>setpagedevice"
+      Choice "5/Every 5 Labels" "<</cupsRowStep 5>>setpagedevice"
+      Choice "6/Every 6 Labels" "<</cupsRowStep 6>>setpagedevice"
+      Choice "7/Every 7 Labels" "<</cupsRowStep 7>>setpagedevice"
+      Choice "8/Every 8 Labels" "<</cupsRowStep 8>>setpagedevice"
+      Choice "9/Every 9 Labels" "<</cupsRowStep 9>>setpagedevice"
+      Choice "10/Every 10 Labels" "<</cupsRowStep 10>>setpagedevice"
+  *CustomMedia "w288h432/4.00x6.00\"" 288.00 432.00 0.00 5.76 0.00 5.76 "<</PageSize[288 432]/ImagingBBox null>>setpagedevice" "<</PageSize[288 432]/ImagingBBox null>>setpagedevice"
+  VariablePaperSize Yes
+  HWMargins 0.00 5.76 0.00 5.76
+  MinSize 36.00 36.00
+  MaxSize 630.00 7128.00
+}
+
+// HP LaserJet Series PCL 4/5
+{
+  Copyright "Copyright (c) 2007-2019 by Apple Inc."
+  Copyright "Copyright (c) 1997-2007 by Easy Software Products."
+  Copyright ""
+  Copyright "Licensed under Apache License v2.0.  See the file \"LICENSE\" for more"
+  Copyright "information."
+  Manufacturer "HP"
+  ModelName "LaserJet Series PCL 4/5"
+  PCFileName "laserjet.ppd"
+  Version "2.3"
+  DriverType ps
+  Throughput 8
+  Attribute "NickName" "" "HP LaserJet Series PCL 4/5"
+  Attribute "ShortNickName" "" "HP LaserJet Series PCL 4/5"
+  Attribute "Product" "" "(LaserJet Series PCL 4/5)"
+  Attribute "PSVersion" "" "(3010.000) 0"
+  Attribute "LanguageLevel" "" "3"
+  Attribute "DefaultColorSpace" "" "Gray"
+  Attribute "FileSystem" "" "False"
+  Attribute "LandscapeOrientation" "" "Plus90"
+  Attribute "TTRasterizer" "" "Type42"
+  Attribute "1284DeviceID" "" "MFG:HP;MDL:HP LaserJet;CMD:PCL;"
+  Attribute "cupsBackSide" "" "Normal"
+  UIConstraints "*Duplex  *Option1 False"
+  UIConstraints "*PageSize A3 *InputSlot Envelope"
+  UIConstraints "*PageSize A4 *InputSlot Envelope"
+  UIConstraints "*PageSize A5 *InputSlot Envelope"
+  UIConstraints "*PageSize B5 *InputSlot Envelope"
+  UIConstraints "*PageSize Executive *InputSlot Envelope"
+  UIConstraints "*PageSize Legal *InputSlot Envelope"
+  UIConstraints "*PageSize Letter *InputSlot Envelope"
+  UIConstraints "*PageSize Tabloid *InputSlot Envelope"
+  Filter "application/vnd.cups-raster 50 rastertohp"
+  Font "AvantGarde-Book" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-BookOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-DemiOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-DemiItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Light" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-LightItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Symbol" "Special" "(001.005)" "Special" ROM
+  Font "Times-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfChancery-MediumItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfDingbats" "Special" "(001.005)" "Special" ROM
+  Group "General/General"
+    Option "Resolution/Resolution" PickOne AnySetup 10.0
+      Choice "150dpi/150dpi" "<</HWResolution[150 150]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+      *Choice "300dpi/300dpi" "<</HWResolution[300 300]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+      Choice "600dpi/600dpi" "<</HWResolution[600 600]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+    Option "InputSlot/Media Source" PickOne AnySetup 10.0
+      *Choice "Default/Printer Default" "<</MediaPosition 0>>setpagedevice"
+      Choice "Tray1/Tray 1" "<</MediaPosition 8>>setpagedevice"
+      Choice "Tray2/Tray 2" "<</MediaPosition 1>>setpagedevice"
+      Choice "Tray3/Tray 3" "<</MediaPosition 4>>setpagedevice"
+      Choice "Tray4/Tray 4" "<</MediaPosition 5>>setpagedevice"
+      Choice "Manual/Manual Feed" "<</MediaPosition 2>>setpagedevice"
+      Choice "Envelope/Envelope Feed" "<</MediaPosition 3>>setpagedevice"
+    Option "Duplex/2-Sided Printing" PickOne AnySetup 10.0
+      *Choice "None/Off (1-Sided)" "<</Duplex false>>setpagedevice"
+      Choice "DuplexNoTumble/Long-Edge (Portrait)" "<</Duplex true/Tumble false>>setpagedevice"
+      Choice "DuplexTumble/Short-Edge (Landscape)" "<</Duplex true/Tumble true>>setpagedevice"
+  Group "InstallableOptions/Installable Options"
+    Option "Option1/Duplexer" Boolean AnySetup 10.0
+      *Choice "False/Not Installed" ""
+      Choice "True/Installed" ""
+  *CustomMedia "Letter/US Letter" 612.00 792.00 18.00 36.00 18.00 36.00 "<</PageSize[612 792]/ImagingBBox null>>setpagedevice" "<</PageSize[612 792]/ImagingBBox null>>setpagedevice"
+  CustomMedia "Legal/US Legal" 612.00 1008.00 18.00 36.00 18.00 36.00 "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice" "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice"
+  CustomMedia "Executive/Executive" 522.00 756.00 18.00 36.00 18.00 36.00 "<</PageSize[522 756]/ImagingBBox null>>setpagedevice" "<</PageSize[522 756]/ImagingBBox null>>setpagedevice"
+  CustomMedia "Tabloid/Tabloid" 792.00 1224.00 18.00 36.00 18.00 36.00 "<</PageSize[792 1224]/ImagingBBox null>>setpagedevice" "<</PageSize[792 1224]/ImagingBBox null>>setpagedevice"
+  CustomMedia "A3/A3" 842.00 1191.00 18.00 36.00 18.00 36.00 "<</PageSize[842 1191]/ImagingBBox null>>setpagedevice" "<</PageSize[842 1191]/ImagingBBox null>>setpagedevice"
+  CustomMedia "A4/A4" 595.00 842.00 18.00 36.00 18.00 36.00 "<</PageSize[595 842]/ImagingBBox null>>setpagedevice" "<</PageSize[595 842]/ImagingBBox null>>setpagedevice"
+  CustomMedia "A5/A5" 420.00 595.00 18.00 36.00 18.00 36.00 "<</PageSize[420 595]/ImagingBBox null>>setpagedevice" "<</PageSize[420 595]/ImagingBBox null>>setpagedevice"
+  CustomMedia "B5/JIS B5" 516.00 729.00 18.00 36.00 18.00 36.00 "<</PageSize[516 729]/ImagingBBox null>>setpagedevice" "<</PageSize[516 729]/ImagingBBox null>>setpagedevice"
+  CustomMedia "EnvISOB5/Envelope B5" 499.00 709.00 18.00 36.00 18.00 36.00 "<</PageSize[499 709]/ImagingBBox null>>setpagedevice" "<</PageSize[499 709]/ImagingBBox null>>setpagedevice"
+  CustomMedia "Env10/Envelope #10" 297.00 684.00 18.00 36.00 18.00 36.00 "<</PageSize[297 684]/ImagingBBox null>>setpagedevice" "<</PageSize[297 684]/ImagingBBox null>>setpagedevice"
+  CustomMedia "EnvC5/Envelope C5" 459.00 649.00 18.00 36.00 18.00 36.00 "<</PageSize[459 649]/ImagingBBox null>>setpagedevice" "<</PageSize[459 649]/ImagingBBox null>>setpagedevice"
+  CustomMedia "EnvDL/Envelope DL" 312.00 624.00 18.00 36.00 18.00 36.00 "<</PageSize[312 624]/ImagingBBox null>>setpagedevice" "<</PageSize[312 624]/ImagingBBox null>>setpagedevice"
+  CustomMedia "EnvMonarch/Envelope Monarch" 279.00 540.00 18.00 36.00 18.00 36.00 "<</PageSize[279 540]/ImagingBBox null>>setpagedevice" "<</PageSize[279 540]/ImagingBBox null>>setpagedevice"
+}
+
+// Oki 24-Pin Series
+{
+  Copyright "Copyright (c) 2007-2019 by Apple Inc."
+  Copyright "Copyright (c) 1997-2007 by Easy Software Products."
+  Copyright ""
+  Copyright "Licensed under Apache License v2.0.  See the file \"LICENSE\" for more"
+  Copyright "information."
+  Manufacturer "Oki"
+  ModelName "24-Pin Series"
+  PCFileName "okidat24.ppd"
+  Version "2.3"
+  DriverType ps
+  ModelNumber 1
+  ManualCopies Yes
+  Throughput 1
+  Attribute "NickName" "" "Oki 24-Pin Series"
+  Attribute "ShortNickName" "" "Oki 24-Pin Series"
+  Attribute "Product" "" "(24-Pin Series)"
+  Attribute "PSVersion" "" "(3010.000) 0"
+  Attribute "LanguageLevel" "" "3"
+  Attribute "DefaultColorSpace" "" "Gray"
+  Attribute "FileSystem" "" "False"
+  Attribute "LandscapeOrientation" "" "Plus90"
+  Attribute "TTRasterizer" "" "Type42"
+  Filter "application/vnd.cups-raster 50 rastertoepson"
+  Font "AvantGarde-Book" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-BookOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-DemiOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-DemiItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Light" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-LightItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Symbol" "Special" "(001.005)" "Special" ROM
+  Font "Times-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfChancery-MediumItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfDingbats" "Special" "(001.005)" "Special" ROM
+  Group "General/General"
+    Option "Resolution/Resolution" PickOne AnySetup 10.0
+      Choice "60dpi/60dpi" "<</HWResolution[60 60]/cupsBitsPerColor 1/cupsRowCount 8/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+      *Choice "120x60dpi/120x60dpi" "<</HWResolution[120 60]/cupsBitsPerColor 1/cupsRowCount 8/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+      Choice "180dpi/180dpi" "<</HWResolution[180 180]/cupsBitsPerColor 1/cupsRowCount 24/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+      Choice "360x180dpi/360x180dpi" "<</HWResolution[360 180]/cupsBitsPerColor 1/cupsRowCount 24/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+      Choice "360dpi/360dpi" "<</HWResolution[360 360]/cupsBitsPerColor 1/cupsRowCount 48/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+  *CustomMedia "Letter/US Letter" 612.00 792.00 18.00 18.00 18.00 18.00 "<</PageSize[612 792]/ImagingBBox null>>setpagedevice" "<</PageSize[612 792]/ImagingBBox null>>setpagedevice"
+  CustomMedia "Legal/US Legal" 612.00 1008.00 18.00 18.00 18.00 18.00 "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice" "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice"
+  CustomMedia "A4/A4" 595.00 842.00 18.00 18.00 18.00 18.00 "<</PageSize[595 842]/ImagingBBox null>>setpagedevice" "<</PageSize[595 842]/ImagingBBox null>>setpagedevice"
+  CustomMedia "FanFoldUS/US Fanfold" 1071.00 792.00 18.00 18.00 18.00 18.00 "<</PageSize[1071 792]/ImagingBBox null>>setpagedevice" "<</PageSize[1071 792]/ImagingBBox null>>setpagedevice"
+  VariablePaperSize Yes
+  MinSize 36.00 36.00
+  MaxSize 1080.00 86400.00
+}
+
+// Oki 9-Pin Series
+{
+  Copyright "Copyright (c) 2007-2019 by Apple Inc."
+  Copyright "Copyright (c) 1997-2007 by Easy Software Products."
+  Copyright ""
+  Copyright "Licensed under Apache License v2.0.  See the file \"LICENSE\" for more"
+  Copyright "information."
+  Manufacturer "Oki"
+  ModelName "9-Pin Series"
+  PCFileName "okidata9.ppd"
+  Version "2.3"
+  DriverType ps
+  ManualCopies Yes
+  Throughput 1
+  Attribute "NickName" "" "Oki 9-Pin Series"
+  Attribute "ShortNickName" "" "Oki 9-Pin Series"
+  Attribute "Product" "" "(9-Pin Series)"
+  Attribute "PSVersion" "" "(3010.000) 0"
+  Attribute "LanguageLevel" "" "3"
+  Attribute "DefaultColorSpace" "" "Gray"
+  Attribute "FileSystem" "" "False"
+  Attribute "LandscapeOrientation" "" "Plus90"
+  Attribute "TTRasterizer" "" "Type42"
+  Filter "application/vnd.cups-raster 50 rastertoepson"
+  Font "AvantGarde-Book" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-BookOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-DemiOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-DemiItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Light" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-LightItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Symbol" "Special" "(001.005)" "Special" ROM
+  Font "Times-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfChancery-MediumItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfDingbats" "Special" "(001.005)" "Special" ROM
+  Group "General/General"
+    Option "Resolution/Resolution" PickOne AnySetup 10.0
+      Choice "60x72dpi/60x72dpi" "<</HWResolution[60 72]/cupsBitsPerColor 1/cupsRowCount 8/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+      *Choice "120x72dpi/120x72dpi" "<</HWResolution[120 72]/cupsBitsPerColor 1/cupsRowCount 8/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+      Choice "240x72dpi/240x72dpi" "<</HWResolution[240 72]/cupsBitsPerColor 1/cupsRowCount 8/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+  *CustomMedia "Letter/US Letter" 612.00 792.00 18.00 18.00 18.00 18.00 "<</PageSize[612 792]/ImagingBBox null>>setpagedevice" "<</PageSize[612 792]/ImagingBBox null>>setpagedevice"
+  CustomMedia "Legal/US Legal" 612.00 1008.00 18.00 18.00 18.00 18.00 "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice" "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice"
+  CustomMedia "A4/A4" 595.00 842.00 18.00 18.00 18.00 18.00 "<</PageSize[595 842]/ImagingBBox null>>setpagedevice" "<</PageSize[595 842]/ImagingBBox null>>setpagedevice"
+  CustomMedia "FanFoldUS/US Fanfold" 1071.00 792.00 18.00 18.00 18.00 18.00 "<</PageSize[1071 792]/ImagingBBox null>>setpagedevice" "<</PageSize[1071 792]/ImagingBBox null>>setpagedevice"
+  VariablePaperSize Yes
+  MinSize 36.00 36.00
+  MaxSize 1080.00 86400.00
+}
+
+// Zebra ZPL Label Printer
+{
+  Copyright "Copyright (c) 2007-2019 by Apple Inc."
+  Copyright "Copyright (c) 1997-2007 by Easy Software Products."
+  Copyright ""
+  Copyright "Licensed under Apache License v2.0.  See the file \"LICENSE\" for more"
+  Copyright "information."
+  Manufacturer "Zebra"
+  ModelName "ZPL Label Printer"
+  PCFileName "zebra.ppd"
+  Version "2.3"
+  DriverType ps
+  ModelNumber 18
+  Throughput 8
+  Attribute "NickName" "" "Zebra ZPL Label Printer"
+  Attribute "ShortNickName" "" "Zebra ZPL Label Printer"
+  Attribute "Product" "" "(ZPL Label Printer)"
+  Attribute "PSVersion" "" "(3010.000) 0"
+  Attribute "LanguageLevel" "" "3"
+  Attribute "DefaultColorSpace" "" "Gray"
+  Attribute "FileSystem" "" "False"
+  Attribute "LandscapeOrientation" "" "Plus90"
+  Attribute "TTRasterizer" "" "Type42"
+  Attribute "cupsSNMPSupplies" "" "false"
+  Filter "application/vnd.cups-raster 50 rastertolabel"
+  Font "AvantGarde-Book" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-BookOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-DemiOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-DemiItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Light" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-LightItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Symbol" "Special" "(001.005)" "Special" ROM
+  Font "Times-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfChancery-MediumItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfDingbats" "Special" "(001.005)" "Special" ROM
+  Group "General/General"
+    Option "Resolution/Resolution" PickOne AnySetup 10.0
+      *Choice "203dpi/203dpi" "<</HWResolution[203 203]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+      Choice "300dpi/300dpi" "<</HWResolution[300 300]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+      Choice "600dpi/600dpi" "<</HWResolution[600 600]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+    Option "zeMediaTracking/Media Tracking" PickOne AnySetup 20.0
+      Choice "Continuous/Continuous" ""
+      *Choice "Web/Non-continuous (Web sensing)" ""
+      Choice "Mark/Non-continuous (Mark sensing)" ""
+    Option "MediaType/Media Type" PickOne AnySetup 20.0
+      *Choice "Saved/Printer Default" ""
+      Choice "Thermal/Thermal Transfer Media" "<</MediaType(Thermal)>>setpagedevice"
+      Choice "Direct/Direct Thermal Media" "<</MediaType(Direct)>>setpagedevice"
+  Group "PrinterSettings/Printer Settings"
+    Option "Darkness/Darkness" PickOne AnySetup 20.0
+      *Choice "-1/Printer Default" "<</cupsCompression -1>>setpagedevice"
+      Choice "1/1" "<</cupsCompression 4>>setpagedevice"
+      Choice "2/2" "<</cupsCompression 7>>setpagedevice"
+      Choice "3/3" "<</cupsCompression 10>>setpagedevice"
+      Choice "4/4" "<</cupsCompression 14>>setpagedevice"
+      Choice "5/5" "<</cupsCompression 17>>setpagedevice"
+      Choice "6/6" "<</cupsCompression 20>>setpagedevice"
+      Choice "7/7" "<</cupsCompression 24>>setpagedevice"
+      Choice "8/8" "<</cupsCompression 27>>setpagedevice"
+      Choice "9/9" "<</cupsCompression 30>>setpagedevice"
+      Choice "10/10" "<</cupsCompression 34>>setpagedevice"
+      Choice "11/11" "<</cupsCompression 37>>setpagedevice"
+      Choice "12/12" "<</cupsCompression 40>>setpagedevice"
+      Choice "13/13" "<</cupsCompression 44>>setpagedevice"
+      Choice "14/14" "<</cupsCompression 47>>setpagedevice"
+      Choice "15/15" "<</cupsCompression 50>>setpagedevice"
+      Choice "16/16" "<</cupsCompression 54>>setpagedevice"
+      Choice "17/17" "<</cupsCompression 57>>setpagedevice"
+      Choice "18/18" "<</cupsCompression 60>>setpagedevice"
+      Choice "19/19" "<</cupsCompression 64>>setpagedevice"
+      Choice "20/20" "<</cupsCompression 67>>setpagedevice"
+      Choice "21/21" "<</cupsCompression 70>>setpagedevice"
+      Choice "22/22" "<</cupsCompression 74>>setpagedevice"
+      Choice "23/23" "<</cupsCompression 77>>setpagedevice"
+      Choice "24/24" "<</cupsCompression 80>>setpagedevice"
+      Choice "25/25" "<</cupsCompression 84>>setpagedevice"
+      Choice "26/26" "<</cupsCompression 87>>setpagedevice"
+      Choice "27/27" "<</cupsCompression 90>>setpagedevice"
+      Choice "28/28" "<</cupsCompression 94>>setpagedevice"
+      Choice "29/29" "<</cupsCompression 97>>setpagedevice"
+      Choice "30/30" "<</cupsCompression 100>>setpagedevice"
+    Option "zePrintRate/Print Rate" PickOne AnySetup 20.0
+      *Choice "Default/Printer Default" ""
+      Choice "1/1 inch/sec." ""
+      Choice "2/2 inches/sec." ""
+      Choice "3/3 inches/sec." ""
+      Choice "4/4 inches/sec." ""
+      Choice "5/5 inches/sec." ""
+      Choice "6/6 inches/sec." ""
+      Choice "7/7 inches/sec." ""
+      Choice "8/8 inches/sec." ""
+      Choice "9/9 inches/sec." ""
+      Choice "10/10 inches/sec." ""
+      Choice "11/11 inches/sec." ""
+      Choice "12/12 inches/sec." ""
+    Option "zeLabelTop/Label Top" PickOne AnySetup 20.0
+      *Choice "200/Printer Default" "<</cupsRowStep 200>>setpagedevice"
+      Choice "-120/-120" "<</cupsRowStep -120>>setpagedevice"
+      Choice "-115/-115" "<</cupsRowStep -115>>setpagedevice"
+      Choice "-110/-110" "<</cupsRowStep -110>>setpagedevice"
+      Choice "-105/-105" "<</cupsRowStep -105>>setpagedevice"
+      Choice "-100/-100" "<</cupsRowStep -100>>setpagedevice"
+      Choice "-95/-95" "<</cupsRowStep -95>>setpagedevice"
+      Choice "-90/-90" "<</cupsRowStep -90>>setpagedevice"
+      Choice "-85/-85" "<</cupsRowStep -85>>setpagedevice"
+      Choice "-80/-80" "<</cupsRowStep -80>>setpagedevice"
+      Choice "-75/-75" "<</cupsRowStep -75>>setpagedevice"
+      Choice "-70/-70" "<</cupsRowStep -70>>setpagedevice"
+      Choice "-65/-65" "<</cupsRowStep -65>>setpagedevice"
+      Choice "-60/-60" "<</cupsRowStep -60>>setpagedevice"
+      Choice "-55/-55" "<</cupsRowStep -55>>setpagedevice"
+      Choice "-50/-50" "<</cupsRowStep -50>>setpagedevice"
+      Choice "-45/-45" "<</cupsRowStep -45>>setpagedevice"
+      Choice "-40/-40" "<</cupsRowStep -40>>setpagedevice"
+      Choice "-35/-35" "<</cupsRowStep -35>>setpagedevice"
+      Choice "-30/-30" "<</cupsRowStep -30>>setpagedevice"
+      Choice "-25/-25" "<</cupsRowStep -25>>setpagedevice"
+      Choice "-20/-20" "<</cupsRowStep -20>>setpagedevice"
+      Choice "-15/-15" "<</cupsRowStep -15>>setpagedevice"
+      Choice "-10/-10" "<</cupsRowStep -10>>setpagedevice"
+      Choice "-5/-5" "<</cupsRowStep -5>>setpagedevice"
+      Choice "0/0" "<</cupsRowStep 0>>setpagedevice"
+      Choice "5/5" "<</cupsRowStep 5>>setpagedevice"
+      Choice "10/10" "<</cupsRowStep 10>>setpagedevice"
+      Choice "15/15" "<</cupsRowStep 15>>setpagedevice"
+      Choice "20/20" "<</cupsRowStep 20>>setpagedevice"
+      Choice "25/25" "<</cupsRowStep 25>>setpagedevice"
+      Choice "30/30" "<</cupsRowStep 30>>setpagedevice"
+      Choice "35/35" "<</cupsRowStep 35>>setpagedevice"
+      Choice "40/40" "<</cupsRowStep 40>>setpagedevice"
+      Choice "45/45" "<</cupsRowStep 45>>setpagedevice"
+      Choice "50/50" "<</cupsRowStep 50>>setpagedevice"
+      Choice "55/55" "<</cupsRowStep 55>>setpagedevice"
+      Choice "60/60" "<</cupsRowStep 60>>setpagedevice"
+      Choice "65/65" "<</cupsRowStep 65>>setpagedevice"
+      Choice "70/70" "<</cupsRowStep 70>>setpagedevice"
+      Choice "75/75" "<</cupsRowStep 75>>setpagedevice"
+      Choice "80/80" "<</cupsRowStep 80>>setpagedevice"
+      Choice "85/85" "<</cupsRowStep 85>>setpagedevice"
+      Choice "90/90" "<</cupsRowStep 90>>setpagedevice"
+      Choice "95/95" "<</cupsRowStep 95>>setpagedevice"
+      Choice "100/100" "<</cupsRowStep 100>>setpagedevice"
+      Choice "105/105" "<</cupsRowStep 105>>setpagedevice"
+      Choice "110/110" "<</cupsRowStep 110>>setpagedevice"
+      Choice "115/115" "<</cupsRowStep 115>>setpagedevice"
+      Choice "120/120" "<</cupsRowStep 120>>setpagedevice"
+    Option "zePrintMode/Print Mode" PickOne AnySetup 20.0
+      *Choice "Saved/Printer Default" ""
+      Choice "Tear/Tear-Off" ""
+      Choice "Peel/Peel-Off" ""
+      Choice "Rewind/Rewind" ""
+      Choice "Applicator/Applicator" ""
+      Choice "Cutter/Cutter" ""
+    Option "zeTearOffPosition/Tear-Off Adjust Position" PickOne AnySetup 20.0
+      *Choice "1000/Printer Default" "<</AdvanceDistance 1000>>setpagedevice"
+      Choice "-120/-120" "<</AdvanceDistance -120>>setpagedevice"
+      Choice "-115/-115" "<</AdvanceDistance -115>>setpagedevice"
+      Choice "-110/-110" "<</AdvanceDistance -110>>setpagedevice"
+      Choice "-105/-105" "<</AdvanceDistance -105>>setpagedevice"
+      Choice "-100/-100" "<</AdvanceDistance -100>>setpagedevice"
+      Choice "-95/-95" "<</AdvanceDistance -95>>setpagedevice"
+      Choice "-90/-90" "<</AdvanceDistance -90>>setpagedevice"
+      Choice "-85/-85" "<</AdvanceDistance -85>>setpagedevice"
+      Choice "-80/-80" "<</AdvanceDistance -80>>setpagedevice"
+      Choice "-75/-75" "<</AdvanceDistance -75>>setpagedevice"
+      Choice "-70/-70" "<</AdvanceDistance -70>>setpagedevice"
+      Choice "-65/-65" "<</AdvanceDistance -65>>setpagedevice"
+      Choice "-60/-60" "<</AdvanceDistance -60>>setpagedevice"
+      Choice "-55/-55" "<</AdvanceDistance -55>>setpagedevice"
+      Choice "-50/-50" "<</AdvanceDistance -50>>setpagedevice"
+      Choice "-45/-45" "<</AdvanceDistance -45>>setpagedevice"
+      Choice "-40/-40" "<</AdvanceDistance -40>>setpagedevice"
+      Choice "-35/-35" "<</AdvanceDistance -35>>setpagedevice"
+      Choice "-30/-30" "<</AdvanceDistance -30>>setpagedevice"
+      Choice "-25/-25" "<</AdvanceDistance -25>>setpagedevice"
+      Choice "-20/-20" "<</AdvanceDistance -20>>setpagedevice"
+      Choice "-15/-15" "<</AdvanceDistance -15>>setpagedevice"
+      Choice "-10/-10" "<</AdvanceDistance -10>>setpagedevice"
+      Choice "-5/-5" "<</AdvanceDistance -5>>setpagedevice"
+      Choice "0/0" "<</AdvanceDistance 0>>setpagedevice"
+      Choice "5/5" "<</AdvanceDistance 5>>setpagedevice"
+      Choice "10/10" "<</AdvanceDistance 10>>setpagedevice"
+      Choice "15/15" "<</AdvanceDistance 15>>setpagedevice"
+      Choice "20/20" "<</AdvanceDistance 20>>setpagedevice"
+      Choice "25/25" "<</AdvanceDistance 25>>setpagedevice"
+      Choice "30/30" "<</AdvanceDistance 30>>setpagedevice"
+      Choice "35/35" "<</AdvanceDistance 35>>setpagedevice"
+      Choice "40/40" "<</AdvanceDistance 40>>setpagedevice"
+      Choice "45/45" "<</AdvanceDistance 45>>setpagedevice"
+      Choice "50/50" "<</AdvanceDistance 50>>setpagedevice"
+      Choice "55/55" "<</AdvanceDistance 55>>setpagedevice"
+      Choice "60/60" "<</AdvanceDistance 60>>setpagedevice"
+      Choice "65/65" "<</AdvanceDistance 65>>setpagedevice"
+      Choice "70/70" "<</AdvanceDistance 70>>setpagedevice"
+      Choice "75/75" "<</AdvanceDistance 75>>setpagedevice"
+      Choice "80/80" "<</AdvanceDistance 80>>setpagedevice"
+      Choice "85/85" "<</AdvanceDistance 85>>setpagedevice"
+      Choice "90/90" "<</AdvanceDistance 90>>setpagedevice"
+      Choice "95/95" "<</AdvanceDistance 95>>setpagedevice"
+      Choice "100/100" "<</AdvanceDistance 100>>setpagedevice"
+      Choice "105/105" "<</AdvanceDistance 105>>setpagedevice"
+      Choice "110/110" "<</AdvanceDistance 110>>setpagedevice"
+      Choice "115/115" "<</AdvanceDistance 115>>setpagedevice"
+      Choice "120/120" "<</AdvanceDistance 120>>setpagedevice"
+    Option "zeErrorReprint/Reprint After Error" PickOne AnySetup 20.0
+      *Choice "Saved/Printer Default" ""
+      Choice "Always/Always" ""
+      Choice "Never/Never" ""
+  CustomMedia "w90h18/1.25x0.25\"" 90.00 18.00 0.00 0.00 0.00 0.00 "<</PageSize[90 18]/ImagingBBox null>>setpagedevice" "<</PageSize[90 18]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w90h162/1.25x2.25\"" 90.00 162.00 0.00 0.00 0.00 0.00 "<</PageSize[90 162]/ImagingBBox null>>setpagedevice" "<</PageSize[90 162]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w108h18/1.50x0.25\"" 108.00 18.00 0.00 0.00 0.00 0.00 "<</PageSize[108 18]/ImagingBBox null>>setpagedevice" "<</PageSize[108 18]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w108h36/1.50x0.50\"" 108.00 36.00 0.00 0.00 0.00 0.00 "<</PageSize[108 36]/ImagingBBox null>>setpagedevice" "<</PageSize[108 36]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w108h72/1.50x1.00\"" 108.00 72.00 0.00 0.00 0.00 0.00 "<</PageSize[108 72]/ImagingBBox null>>setpagedevice" "<</PageSize[108 72]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w108h144/1.50x2.00\"" 108.00 144.00 0.00 0.00 0.00 0.00 "<</PageSize[108 144]/ImagingBBox null>>setpagedevice" "<</PageSize[108 144]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w144h26/2.00x0.37\"" 144.00 26.00 0.00 0.00 0.00 0.00 "<</PageSize[144 26]/ImagingBBox null>>setpagedevice" "<</PageSize[144 26]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w144h36/2.00x0.50\"" 144.00 36.00 0.00 0.00 0.00 0.00 "<</PageSize[144 36]/ImagingBBox null>>setpagedevice" "<</PageSize[144 36]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w144h72/2.00x1.00\"" 144.00 72.00 0.00 0.00 0.00 0.00 "<</PageSize[144 72]/ImagingBBox null>>setpagedevice" "<</PageSize[144 72]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w144h90/2.00x1.25\"" 144.00 90.00 0.00 0.00 0.00 0.00 "<</PageSize[144 90]/ImagingBBox null>>setpagedevice" "<</PageSize[144 90]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w144h288/2.00x4.00\"" 144.00 288.00 0.00 0.00 0.00 0.00 "<</PageSize[144 288]/ImagingBBox null>>setpagedevice" "<</PageSize[144 288]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w144h396/2.00x5.50\"" 144.00 396.00 0.00 0.00 0.00 0.00 "<</PageSize[144 396]/ImagingBBox null>>setpagedevice" "<</PageSize[144 396]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w162h36/2.25x0.50\"" 162.00 36.00 0.00 0.00 0.00 0.00 "<</PageSize[162 36]/ImagingBBox null>>setpagedevice" "<</PageSize[162 36]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w162h90/2.25x1.25\"" 162.00 90.00 0.00 0.00 0.00 0.00 "<</PageSize[162 90]/ImagingBBox null>>setpagedevice" "<</PageSize[162 90]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w162h288/2.25x4.00\"" 162.00 288.00 0.00 0.00 0.00 0.00 "<</PageSize[162 288]/ImagingBBox null>>setpagedevice" "<</PageSize[162 288]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w162h396/2.25x5.50\"" 162.00 396.00 0.00 0.00 0.00 0.00 "<</PageSize[162 396]/ImagingBBox null>>setpagedevice" "<</PageSize[162 396]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w171h396/2.38x5.50\"" 171.00 396.00 0.00 0.00 0.00 0.00 "<</PageSize[171 396]/ImagingBBox null>>setpagedevice" "<</PageSize[171 396]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w180h72/2.50x1.00\"" 180.00 72.00 0.00 0.00 0.00 0.00 "<</PageSize[180 72]/ImagingBBox null>>setpagedevice" "<</PageSize[180 72]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w180h144/2.50x2.00\"" 180.00 144.00 0.00 0.00 0.00 0.00 "<</PageSize[180 144]/ImagingBBox null>>setpagedevice" "<</PageSize[180 144]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w198h90/2.75x1.25\"" 198.00 90.00 0.00 0.00 0.00 0.00 "<</PageSize[198 90]/ImagingBBox null>>setpagedevice" "<</PageSize[198 90]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w216h72/3.00x1.00\"" 216.00 72.00 0.00 0.00 0.00 0.00 "<</PageSize[216 72]/ImagingBBox null>>setpagedevice" "<</PageSize[216 72]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w216h90/3.00x1.25\"" 216.00 90.00 0.00 0.00 0.00 0.00 "<</PageSize[216 90]/ImagingBBox null>>setpagedevice" "<</PageSize[216 90]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w216h144/3.00x2.00\"" 216.00 144.00 0.00 0.00 0.00 0.00 "<</PageSize[216 144]/ImagingBBox null>>setpagedevice" "<</PageSize[216 144]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w216h216/3.00x3.00\"" 216.00 216.00 0.00 0.00 0.00 0.00 "<</PageSize[216 216]/ImagingBBox null>>setpagedevice" "<</PageSize[216 216]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w216h360/3.00x5.00\"" 216.00 360.00 0.00 0.00 0.00 0.00 "<</PageSize[216 360]/ImagingBBox null>>setpagedevice" "<</PageSize[216 360]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w234h144/3.25x2.00\"" 234.00 144.00 0.00 0.00 0.00 0.00 "<</PageSize[234 144]/ImagingBBox null>>setpagedevice" "<</PageSize[234 144]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w234h360/3.25x5.00\"" 234.00 360.00 0.00 0.00 0.00 0.00 "<</PageSize[234 360]/ImagingBBox null>>setpagedevice" "<</PageSize[234 360]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w234h396/3.25x5.50\"" 234.00 396.00 0.00 0.00 0.00 0.00 "<</PageSize[234 396]/ImagingBBox null>>setpagedevice" "<</PageSize[234 396]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w234h419/3.25x5.83\"" 234.00 419.00 0.00 0.00 0.00 0.00 "<</PageSize[234 419]/ImagingBBox null>>setpagedevice" "<</PageSize[234 419]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w234h563/3.25x7.83\"" 234.00 563.00 0.00 0.00 0.00 0.00 "<</PageSize[234 563]/ImagingBBox null>>setpagedevice" "<</PageSize[234 563]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w252h72/3.50x1.00\"" 252.00 72.00 0.00 0.00 0.00 0.00 "<</PageSize[252 72]/ImagingBBox null>>setpagedevice" "<</PageSize[252 72]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h72/4.00x1.00\"" 288.00 72.00 0.00 0.00 0.00 0.00 "<</PageSize[288 72]/ImagingBBox null>>setpagedevice" "<</PageSize[288 72]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h144/4.00x2.00\"" 288.00 144.00 0.00 0.00 0.00 0.00 "<</PageSize[288 144]/ImagingBBox null>>setpagedevice" "<</PageSize[288 144]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h180/4.00x2.50\"" 288.00 180.00 0.00 0.00 0.00 0.00 "<</PageSize[288 180]/ImagingBBox null>>setpagedevice" "<</PageSize[288 180]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h216/4.00x3.00\"" 288.00 216.00 0.00 0.00 0.00 0.00 "<</PageSize[288 216]/ImagingBBox null>>setpagedevice" "<</PageSize[288 216]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h288/4.00x4.00\"" 288.00 288.00 0.00 0.00 0.00 0.00 "<</PageSize[288 288]/ImagingBBox null>>setpagedevice" "<</PageSize[288 288]/ImagingBBox null>>setpagedevice"
+  *CustomMedia "w288h360/4.00x5.00\"" 288.00 360.00 0.00 0.00 0.00 0.00 "<</PageSize[288 360]/ImagingBBox null>>setpagedevice" "<</PageSize[288 360]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h432/4.00x6.00\"" 288.00 432.00 0.00 0.00 0.00 0.00 "<</PageSize[288 432]/ImagingBBox null>>setpagedevice" "<</PageSize[288 432]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h468/4.00x6.50\"" 288.00 468.00 0.00 0.00 0.00 0.00 "<</PageSize[288 468]/ImagingBBox null>>setpagedevice" "<</PageSize[288 468]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h936/4.00x13.00\"" 288.00 936.00 0.00 0.00 0.00 0.00 "<</PageSize[288 936]/ImagingBBox null>>setpagedevice" "<</PageSize[288 936]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w432h72/6.00x1.00\"" 432.00 72.00 0.00 0.00 0.00 0.00 "<</PageSize[432 72]/ImagingBBox null>>setpagedevice" "<</PageSize[432 72]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w432h144/6.00x2.00\"" 432.00 144.00 0.00 0.00 0.00 0.00 "<</PageSize[432 144]/ImagingBBox null>>setpagedevice" "<</PageSize[432 144]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w432h216/6.00x3.00\"" 432.00 216.00 0.00 0.00 0.00 0.00 "<</PageSize[432 216]/ImagingBBox null>>setpagedevice" "<</PageSize[432 216]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w432h288/6.00x4.00\"" 432.00 288.00 0.00 0.00 0.00 0.00 "<</PageSize[432 288]/ImagingBBox null>>setpagedevice" "<</PageSize[432 288]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w432h360/6.00x5.00\"" 432.00 360.00 0.00 0.00 0.00 0.00 "<</PageSize[432 360]/ImagingBBox null>>setpagedevice" "<</PageSize[432 360]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w432h432/6.00x6.00\"" 432.00 432.00 0.00 0.00 0.00 0.00 "<</PageSize[432 432]/ImagingBBox null>>setpagedevice" "<</PageSize[432 432]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w432h468/6.00x6.50\"" 432.00 468.00 0.00 0.00 0.00 0.00 "<</PageSize[432 468]/ImagingBBox null>>setpagedevice" "<</PageSize[432 468]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w576h72/8.00x1.00\"" 576.00 72.00 0.00 0.00 0.00 0.00 "<</PageSize[576 72]/ImagingBBox null>>setpagedevice" "<</PageSize[576 72]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w576h144/8.00x2.00\"" 576.00 144.00 0.00 0.00 0.00 0.00 "<</PageSize[576 144]/ImagingBBox null>>setpagedevice" "<</PageSize[576 144]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w576h216/8.00x3.00\"" 576.00 216.00 0.00 0.00 0.00 0.00 "<</PageSize[576 216]/ImagingBBox null>>setpagedevice" "<</PageSize[576 216]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w576h288/8.00x4.00\"" 576.00 288.00 0.00 0.00 0.00 0.00 "<</PageSize[576 288]/ImagingBBox null>>setpagedevice" "<</PageSize[576 288]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w576h360/8.00x5.00\"" 576.00 360.00 0.00 0.00 0.00 0.00 "<</PageSize[576 360]/ImagingBBox null>>setpagedevice" "<</PageSize[576 360]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w576h432/8.00x6.00\"" 576.00 432.00 0.00 0.00 0.00 0.00 "<</PageSize[576 432]/ImagingBBox null>>setpagedevice" "<</PageSize[576 432]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w576h468/8.00x6.50\"" 576.00 468.00 0.00 0.00 0.00 0.00 "<</PageSize[576 468]/ImagingBBox null>>setpagedevice" "<</PageSize[576 468]/ImagingBBox null>>setpagedevice"
+  VariablePaperSize Yes
+  MinSize 36.00 36.00
+  MaxSize 576.00 3600.00
+}
+
+// Zebra CPCL Label Printer
+{
+  Copyright "Copyright (c) 2007-2019 by Apple Inc."
+  Copyright "Copyright (c) 1997-2007 by Easy Software Products."
+  Copyright ""
+  Copyright "Licensed under Apache License v2.0.  See the file \"LICENSE\" for more"
+  Copyright "information."
+  Manufacturer "Zebra"
+  ModelName "CPCL Label Printer"
+  PCFileName "zebracpl.ppd"
+  Version "2.3"
+  DriverType ps
+  ModelNumber 19
+  Throughput 8
+  Attribute "NickName" "" "Zebra CPCL Label Printer"
+  Attribute "ShortNickName" "" "Zebra CPCL Label Printer"
+  Attribute "Product" "" "(CPCL Label Printer)"
+  Attribute "PSVersion" "" "(3010.000) 0"
+  Attribute "LanguageLevel" "" "3"
+  Attribute "DefaultColorSpace" "" "Gray"
+  Attribute "FileSystem" "" "False"
+  Attribute "LandscapeOrientation" "" "Plus90"
+  Attribute "TTRasterizer" "" "Type42"
+  Attribute "cupsSNMPSupplies" "" "false"
+  Filter "application/vnd.cups-raster 50 rastertolabel"
+  Font "AvantGarde-Book" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-BookOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-DemiOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-DemiItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Light" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-LightItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Symbol" "Special" "(001.005)" "Special" ROM
+  Font "Times-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfChancery-MediumItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfDingbats" "Special" "(001.005)" "Special" ROM
+  Group "General/General"
+    Option "Resolution/Resolution" PickOne AnySetup 10.0
+      *Choice "203dpi/203dpi" "<</HWResolution[203 203]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+    Option "zeMediaTracking/Media Tracking" PickOne AnySetup 20.0
+      Choice "Continuous/Continuous" ""
+      *Choice "Web/Non-continuous (Web sensing)" ""
+      Choice "Mark/Non-continuous (Mark sensing)" ""
+  Group "PrinterSettings/Printer Settings"
+    Option "Darkness/Darkness" PickOne AnySetup 20.0
+      *Choice "-1/Printer Default" "<</cupsCompression -1>>setpagedevice"
+      Choice "1/1" "<</cupsCompression 4>>setpagedevice"
+      Choice "2/2" "<</cupsCompression 7>>setpagedevice"
+      Choice "3/3" "<</cupsCompression 10>>setpagedevice"
+      Choice "4/4" "<</cupsCompression 14>>setpagedevice"
+      Choice "5/5" "<</cupsCompression 17>>setpagedevice"
+      Choice "6/6" "<</cupsCompression 20>>setpagedevice"
+      Choice "7/7" "<</cupsCompression 24>>setpagedevice"
+      Choice "8/8" "<</cupsCompression 27>>setpagedevice"
+      Choice "9/9" "<</cupsCompression 30>>setpagedevice"
+      Choice "10/10" "<</cupsCompression 34>>setpagedevice"
+      Choice "11/11" "<</cupsCompression 37>>setpagedevice"
+      Choice "12/12" "<</cupsCompression 40>>setpagedevice"
+      Choice "13/13" "<</cupsCompression 44>>setpagedevice"
+      Choice "14/14" "<</cupsCompression 47>>setpagedevice"
+      Choice "15/15" "<</cupsCompression 50>>setpagedevice"
+      Choice "16/16" "<</cupsCompression 54>>setpagedevice"
+      Choice "17/17" "<</cupsCompression 57>>setpagedevice"
+      Choice "18/18" "<</cupsCompression 60>>setpagedevice"
+      Choice "19/19" "<</cupsCompression 64>>setpagedevice"
+      Choice "20/20" "<</cupsCompression 67>>setpagedevice"
+      Choice "21/21" "<</cupsCompression 70>>setpagedevice"
+      Choice "22/22" "<</cupsCompression 74>>setpagedevice"
+      Choice "23/23" "<</cupsCompression 77>>setpagedevice"
+      Choice "24/24" "<</cupsCompression 80>>setpagedevice"
+      Choice "25/25" "<</cupsCompression 84>>setpagedevice"
+      Choice "26/26" "<</cupsCompression 87>>setpagedevice"
+      Choice "27/27" "<</cupsCompression 90>>setpagedevice"
+      Choice "28/28" "<</cupsCompression 94>>setpagedevice"
+      Choice "29/29" "<</cupsCompression 97>>setpagedevice"
+      Choice "30/30" "<</cupsCompression 100>>setpagedevice"
+    Option "zePrintRate/Print Rate" PickOne AnySetup 20.0
+      *Choice "Default/Printer Default" ""
+      Choice "1/1 inch/sec." ""
+      Choice "2/2 inches/sec." ""
+      Choice "3/3 inches/sec." ""
+      Choice "4/4 inches/sec." ""
+    Option "zeTearOffPosition/Tear-Off Adjust Position" PickOne AnySetup 20.0
+      *Choice "1000/Printer Default" "<</AdvanceDistance 1000>>setpagedevice"
+      Choice "-120/-120" "<</AdvanceDistance -120>>setpagedevice"
+      Choice "-115/-115" "<</AdvanceDistance -115>>setpagedevice"
+      Choice "-110/-110" "<</AdvanceDistance -110>>setpagedevice"
+      Choice "-105/-105" "<</AdvanceDistance -105>>setpagedevice"
+      Choice "-100/-100" "<</AdvanceDistance -100>>setpagedevice"
+      Choice "-95/-95" "<</AdvanceDistance -95>>setpagedevice"
+      Choice "-90/-90" "<</AdvanceDistance -90>>setpagedevice"
+      Choice "-85/-85" "<</AdvanceDistance -85>>setpagedevice"
+      Choice "-80/-80" "<</AdvanceDistance -80>>setpagedevice"
+      Choice "-75/-75" "<</AdvanceDistance -75>>setpagedevice"
+      Choice "-70/-70" "<</AdvanceDistance -70>>setpagedevice"
+      Choice "-65/-65" "<</AdvanceDistance -65>>setpagedevice"
+      Choice "-60/-60" "<</AdvanceDistance -60>>setpagedevice"
+      Choice "-55/-55" "<</AdvanceDistance -55>>setpagedevice"
+      Choice "-50/-50" "<</AdvanceDistance -50>>setpagedevice"
+      Choice "-45/-45" "<</AdvanceDistance -45>>setpagedevice"
+      Choice "-40/-40" "<</AdvanceDistance -40>>setpagedevice"
+      Choice "-35/-35" "<</AdvanceDistance -35>>setpagedevice"
+      Choice "-30/-30" "<</AdvanceDistance -30>>setpagedevice"
+      Choice "-25/-25" "<</AdvanceDistance -25>>setpagedevice"
+      Choice "-20/-20" "<</AdvanceDistance -20>>setpagedevice"
+      Choice "-15/-15" "<</AdvanceDistance -15>>setpagedevice"
+      Choice "-10/-10" "<</AdvanceDistance -10>>setpagedevice"
+      Choice "-5/-5" "<</AdvanceDistance -5>>setpagedevice"
+      Choice "0/0" "<</AdvanceDistance 0>>setpagedevice"
+      Choice "5/5" "<</AdvanceDistance 5>>setpagedevice"
+      Choice "10/10" "<</AdvanceDistance 10>>setpagedevice"
+      Choice "15/15" "<</AdvanceDistance 15>>setpagedevice"
+      Choice "20/20" "<</AdvanceDistance 20>>setpagedevice"
+      Choice "25/25" "<</AdvanceDistance 25>>setpagedevice"
+      Choice "30/30" "<</AdvanceDistance 30>>setpagedevice"
+      Choice "35/35" "<</AdvanceDistance 35>>setpagedevice"
+      Choice "40/40" "<</AdvanceDistance 40>>setpagedevice"
+      Choice "45/45" "<</AdvanceDistance 45>>setpagedevice"
+      Choice "50/50" "<</AdvanceDistance 50>>setpagedevice"
+      Choice "55/55" "<</AdvanceDistance 55>>setpagedevice"
+      Choice "60/60" "<</AdvanceDistance 60>>setpagedevice"
+      Choice "65/65" "<</AdvanceDistance 65>>setpagedevice"
+      Choice "70/70" "<</AdvanceDistance 70>>setpagedevice"
+      Choice "75/75" "<</AdvanceDistance 75>>setpagedevice"
+      Choice "80/80" "<</AdvanceDistance 80>>setpagedevice"
+      Choice "85/85" "<</AdvanceDistance 85>>setpagedevice"
+      Choice "90/90" "<</AdvanceDistance 90>>setpagedevice"
+      Choice "95/95" "<</AdvanceDistance 95>>setpagedevice"
+      Choice "100/100" "<</AdvanceDistance 100>>setpagedevice"
+      Choice "105/105" "<</AdvanceDistance 105>>setpagedevice"
+      Choice "110/110" "<</AdvanceDistance 110>>setpagedevice"
+      Choice "115/115" "<</AdvanceDistance 115>>setpagedevice"
+      Choice "120/120" "<</AdvanceDistance 120>>setpagedevice"
+    Option "zeErrorReprint/Reprint After Error" PickOne AnySetup 20.0
+      *Choice "Saved/Printer Default" ""
+      Choice "Always/Always" ""
+      Choice "Never/Never" ""
+  CustomMedia "w144h72/2.00x1.00\"" 144.00 72.00 0.00 0.00 0.00 0.00 "<</PageSize[144 72]/ImagingBBox null>>setpagedevice" "<</PageSize[144 72]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w144h90/2.00x1.25\"" 144.00 90.00 0.00 0.00 0.00 0.00 "<</PageSize[144 90]/ImagingBBox null>>setpagedevice" "<</PageSize[144 90]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w144h144/2.00x2.00\"" 144.00 144.00 0.00 0.00 0.00 0.00 "<</PageSize[144 144]/ImagingBBox null>>setpagedevice" "<</PageSize[144 144]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w144h216/2.00x3.00\"" 144.00 216.00 0.00 0.00 0.00 0.00 "<</PageSize[144 216]/ImagingBBox null>>setpagedevice" "<</PageSize[144 216]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w209h72/2.9 x 1\"" 209.00 72.00 0.00 0.00 0.00 0.00 "<</PageSize[209 72]/ImagingBBox null>>setpagedevice" "<</PageSize[209 72]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h144/4.00x2.00\"" 288.00 144.00 0.00 0.00 1.00 0.00 "<</PageSize[288 144]/ImagingBBox null>>setpagedevice" "<</PageSize[288 144]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h216/4.00x3.00\"" 288.00 216.00 0.00 0.00 1.00 0.00 "<</PageSize[288 216]/ImagingBBox null>>setpagedevice" "<</PageSize[288 216]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h288/4.00x4.00\"" 288.00 288.00 0.00 0.00 1.00 0.00 "<</PageSize[288 288]/ImagingBBox null>>setpagedevice" "<</PageSize[288 288]/ImagingBBox null>>setpagedevice"
+  *CustomMedia "w288h360/4.00x5.00\"" 288.00 360.00 0.00 0.00 1.00 0.00 "<</PageSize[288 360]/ImagingBBox null>>setpagedevice" "<</PageSize[288 360]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h432/4.00x6.00\"" 288.00 432.00 0.00 0.00 1.00 0.00 "<</PageSize[288 432]/ImagingBBox null>>setpagedevice" "<</PageSize[288 432]/ImagingBBox null>>setpagedevice"
+  VariablePaperSize Yes
+  HWMargins 0.00 0.00 1.00 0.00
+  MinSize 36.00 36.00
+  MaxSize 288.00 3600.00
+}
+
+// Zebra EPL1 Label Printer
+{
+  Copyright "Copyright (c) 2007-2019 by Apple Inc."
+  Copyright "Copyright (c) 1997-2007 by Easy Software Products."
+  Copyright ""
+  Copyright "Licensed under Apache License v2.0.  See the file \"LICENSE\" for more"
+  Copyright "information."
+  Manufacturer "Zebra"
+  ModelName "EPL1 Label Printer"
+  PCFileName "zebraep1.ppd"
+  Version "2.3"
+  DriverType ps
+  ModelNumber 16
+  Throughput 8
+  Attribute "NickName" "" "Zebra EPL1 Label Printer"
+  Attribute "ShortNickName" "" "Zebra EPL1 Label Printer"
+  Attribute "Product" "" "(EPL1 Label Printer)"
+  Attribute "PSVersion" "" "(3010.000) 0"
+  Attribute "LanguageLevel" "" "3"
+  Attribute "DefaultColorSpace" "" "Gray"
+  Attribute "FileSystem" "" "False"
+  Attribute "LandscapeOrientation" "" "Plus90"
+  Attribute "TTRasterizer" "" "Type42"
+  Attribute "cupsSNMPSupplies" "" "false"
+  Filter "application/vnd.cups-raster 50 rastertolabel"
+  Font "AvantGarde-Book" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-BookOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-DemiOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-DemiItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Light" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-LightItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Symbol" "Special" "(001.005)" "Special" ROM
+  Font "Times-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfChancery-MediumItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfDingbats" "Special" "(001.005)" "Special" ROM
+  Group "General/General"
+    Option "Resolution/Resolution" PickOne AnySetup 10.0
+      *Choice "203dpi/203dpi" "<</HWResolution[203 203]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+      Choice "300dpi/300dpi" "<</HWResolution[300 300]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+      Choice "600dpi/600dpi" "<</HWResolution[600 600]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+  Group "PrinterSettings/Printer Settings"
+    Option "Darkness/Darkness" PickOne AnySetup 20.0
+      *Choice "-1/Printer Default" "<</cupsCompression -1>>setpagedevice"
+      Choice "1/1" "<</cupsCompression 4>>setpagedevice"
+      Choice "2/2" "<</cupsCompression 7>>setpagedevice"
+      Choice "3/3" "<</cupsCompression 10>>setpagedevice"
+      Choice "4/4" "<</cupsCompression 14>>setpagedevice"
+      Choice "5/5" "<</cupsCompression 17>>setpagedevice"
+      Choice "6/6" "<</cupsCompression 20>>setpagedevice"
+      Choice "7/7" "<</cupsCompression 24>>setpagedevice"
+      Choice "8/8" "<</cupsCompression 27>>setpagedevice"
+      Choice "9/9" "<</cupsCompression 30>>setpagedevice"
+      Choice "10/10" "<</cupsCompression 34>>setpagedevice"
+      Choice "11/11" "<</cupsCompression 37>>setpagedevice"
+      Choice "12/12" "<</cupsCompression 40>>setpagedevice"
+      Choice "13/13" "<</cupsCompression 44>>setpagedevice"
+      Choice "14/14" "<</cupsCompression 47>>setpagedevice"
+      Choice "15/15" "<</cupsCompression 50>>setpagedevice"
+      Choice "16/16" "<</cupsCompression 54>>setpagedevice"
+      Choice "17/17" "<</cupsCompression 57>>setpagedevice"
+      Choice "18/18" "<</cupsCompression 60>>setpagedevice"
+      Choice "19/19" "<</cupsCompression 64>>setpagedevice"
+      Choice "20/20" "<</cupsCompression 67>>setpagedevice"
+      Choice "21/21" "<</cupsCompression 70>>setpagedevice"
+      Choice "22/22" "<</cupsCompression 74>>setpagedevice"
+      Choice "23/23" "<</cupsCompression 77>>setpagedevice"
+      Choice "24/24" "<</cupsCompression 80>>setpagedevice"
+      Choice "25/25" "<</cupsCompression 84>>setpagedevice"
+      Choice "26/26" "<</cupsCompression 87>>setpagedevice"
+      Choice "27/27" "<</cupsCompression 90>>setpagedevice"
+      Choice "28/28" "<</cupsCompression 94>>setpagedevice"
+      Choice "29/29" "<</cupsCompression 97>>setpagedevice"
+      Choice "30/30" "<</cupsCompression 100>>setpagedevice"
+    Option "zePrintRate/Print Rate" PickOne AnySetup 20.0
+      *Choice "Default/Printer Default" ""
+      Choice "1/1 inch/sec." ""
+      Choice "1.5/1.5 inch/sec." ""
+      Choice "2/2 inches/sec." ""
+      Choice "2.5/2.5 inches/sec." ""
+  CustomMedia "w90h18/1.25x0.25\"" 90.00 18.00 0.00 0.00 0.00 0.00 "<</PageSize[90 18]/ImagingBBox null>>setpagedevice" "<</PageSize[90 18]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w90h162/1.25x2.25\"" 90.00 162.00 0.00 0.00 0.00 0.00 "<</PageSize[90 162]/ImagingBBox null>>setpagedevice" "<</PageSize[90 162]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w108h18/1.50x0.25\"" 108.00 18.00 0.00 0.00 0.00 0.00 "<</PageSize[108 18]/ImagingBBox null>>setpagedevice" "<</PageSize[108 18]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w108h36/1.50x0.50\"" 108.00 36.00 0.00 0.00 0.00 0.00 "<</PageSize[108 36]/ImagingBBox null>>setpagedevice" "<</PageSize[108 36]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w108h72/1.50x1.00\"" 108.00 72.00 0.00 0.00 0.00 0.00 "<</PageSize[108 72]/ImagingBBox null>>setpagedevice" "<</PageSize[108 72]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w108h144/1.50x2.00\"" 108.00 144.00 0.00 0.00 0.00 0.00 "<</PageSize[108 144]/ImagingBBox null>>setpagedevice" "<</PageSize[108 144]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w144h26/2.00x0.37\"" 144.00 26.00 0.00 0.00 0.00 0.00 "<</PageSize[144 26]/ImagingBBox null>>setpagedevice" "<</PageSize[144 26]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w144h36/2.00x0.50\"" 144.00 36.00 0.00 0.00 0.00 0.00 "<</PageSize[144 36]/ImagingBBox null>>setpagedevice" "<</PageSize[144 36]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w144h72/2.00x1.00\"" 144.00 72.00 0.00 0.00 0.00 0.00 "<</PageSize[144 72]/ImagingBBox null>>setpagedevice" "<</PageSize[144 72]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w144h90/2.00x1.25\"" 144.00 90.00 0.00 0.00 0.00 0.00 "<</PageSize[144 90]/ImagingBBox null>>setpagedevice" "<</PageSize[144 90]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w144h288/2.00x4.00\"" 144.00 288.00 0.00 0.00 0.00 0.00 "<</PageSize[144 288]/ImagingBBox null>>setpagedevice" "<</PageSize[144 288]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w144h396/2.00x5.50\"" 144.00 396.00 0.00 0.00 0.00 0.00 "<</PageSize[144 396]/ImagingBBox null>>setpagedevice" "<</PageSize[144 396]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w162h36/2.25x0.50\"" 162.00 36.00 0.00 0.00 0.00 0.00 "<</PageSize[162 36]/ImagingBBox null>>setpagedevice" "<</PageSize[162 36]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w162h90/2.25x1.25\"" 162.00 90.00 0.00 0.00 0.00 0.00 "<</PageSize[162 90]/ImagingBBox null>>setpagedevice" "<</PageSize[162 90]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w162h288/2.25x4.00\"" 162.00 288.00 0.00 0.00 0.00 0.00 "<</PageSize[162 288]/ImagingBBox null>>setpagedevice" "<</PageSize[162 288]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w162h396/2.25x5.50\"" 162.00 396.00 0.00 0.00 0.00 0.00 "<</PageSize[162 396]/ImagingBBox null>>setpagedevice" "<</PageSize[162 396]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w171h396/2.38x5.50\"" 171.00 396.00 0.00 0.00 0.00 0.00 "<</PageSize[171 396]/ImagingBBox null>>setpagedevice" "<</PageSize[171 396]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w180h72/2.50x1.00\"" 180.00 72.00 0.00 0.00 0.00 0.00 "<</PageSize[180 72]/ImagingBBox null>>setpagedevice" "<</PageSize[180 72]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w180h144/2.50x2.00\"" 180.00 144.00 0.00 0.00 0.00 0.00 "<</PageSize[180 144]/ImagingBBox null>>setpagedevice" "<</PageSize[180 144]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w198h90/2.75x1.25\"" 198.00 90.00 0.00 0.00 0.00 0.00 "<</PageSize[198 90]/ImagingBBox null>>setpagedevice" "<</PageSize[198 90]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w216h72/3.00x1.00\"" 216.00 72.00 0.00 0.00 0.00 0.00 "<</PageSize[216 72]/ImagingBBox null>>setpagedevice" "<</PageSize[216 72]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w216h90/3.00x1.25\"" 216.00 90.00 0.00 0.00 0.00 0.00 "<</PageSize[216 90]/ImagingBBox null>>setpagedevice" "<</PageSize[216 90]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w216h144/3.00x2.00\"" 216.00 144.00 0.00 0.00 0.00 0.00 "<</PageSize[216 144]/ImagingBBox null>>setpagedevice" "<</PageSize[216 144]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w216h216/3.00x3.00\"" 216.00 216.00 0.00 0.00 0.00 0.00 "<</PageSize[216 216]/ImagingBBox null>>setpagedevice" "<</PageSize[216 216]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w216h360/3.00x5.00\"" 216.00 360.00 0.00 0.00 0.00 0.00 "<</PageSize[216 360]/ImagingBBox null>>setpagedevice" "<</PageSize[216 360]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w234h144/3.25x2.00\"" 234.00 144.00 0.00 0.00 0.00 0.00 "<</PageSize[234 144]/ImagingBBox null>>setpagedevice" "<</PageSize[234 144]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w234h360/3.25x5.00\"" 234.00 360.00 0.00 0.00 0.00 0.00 "<</PageSize[234 360]/ImagingBBox null>>setpagedevice" "<</PageSize[234 360]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w234h396/3.25x5.50\"" 234.00 396.00 0.00 0.00 0.00 0.00 "<</PageSize[234 396]/ImagingBBox null>>setpagedevice" "<</PageSize[234 396]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w234h419/3.25x5.83\"" 234.00 419.00 0.00 0.00 0.00 0.00 "<</PageSize[234 419]/ImagingBBox null>>setpagedevice" "<</PageSize[234 419]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w234h563/3.25x7.83\"" 234.00 563.00 0.00 0.00 0.00 0.00 "<</PageSize[234 563]/ImagingBBox null>>setpagedevice" "<</PageSize[234 563]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w252h72/3.50x1.00\"" 252.00 72.00 0.00 0.00 0.00 0.00 "<</PageSize[252 72]/ImagingBBox null>>setpagedevice" "<</PageSize[252 72]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h72/4.00x1.00\"" 288.00 72.00 0.00 0.00 0.00 0.00 "<</PageSize[288 72]/ImagingBBox null>>setpagedevice" "<</PageSize[288 72]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h144/4.00x2.00\"" 288.00 144.00 0.00 0.00 0.00 0.00 "<</PageSize[288 144]/ImagingBBox null>>setpagedevice" "<</PageSize[288 144]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h180/4.00x2.50\"" 288.00 180.00 0.00 0.00 0.00 0.00 "<</PageSize[288 180]/ImagingBBox null>>setpagedevice" "<</PageSize[288 180]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h216/4.00x3.00\"" 288.00 216.00 0.00 0.00 0.00 0.00 "<</PageSize[288 216]/ImagingBBox null>>setpagedevice" "<</PageSize[288 216]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h288/4.00x4.00\"" 288.00 288.00 0.00 0.00 0.00 0.00 "<</PageSize[288 288]/ImagingBBox null>>setpagedevice" "<</PageSize[288 288]/ImagingBBox null>>setpagedevice"
+  *CustomMedia "w288h360/4.00x5.00\"" 288.00 360.00 0.00 0.00 0.00 0.00 "<</PageSize[288 360]/ImagingBBox null>>setpagedevice" "<</PageSize[288 360]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h432/4.00x6.00\"" 288.00 432.00 0.00 0.00 0.00 0.00 "<</PageSize[288 432]/ImagingBBox null>>setpagedevice" "<</PageSize[288 432]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h468/4.00x6.50\"" 288.00 468.00 0.00 0.00 0.00 0.00 "<</PageSize[288 468]/ImagingBBox null>>setpagedevice" "<</PageSize[288 468]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h936/4.00x13.00\"" 288.00 936.00 0.00 0.00 0.00 0.00 "<</PageSize[288 936]/ImagingBBox null>>setpagedevice" "<</PageSize[288 936]/ImagingBBox null>>setpagedevice"
+  VariablePaperSize Yes
+  MinSize 36.00 36.00
+  MaxSize 288.00 3600.00
+}
+
+// Zebra EPL2 Label Printer
+{
+  Copyright "Copyright (c) 2007-2019 by Apple Inc."
+  Copyright "Copyright (c) 1997-2007 by Easy Software Products."
+  Copyright ""
+  Copyright "Licensed under Apache License v2.0.  See the file \"LICENSE\" for more"
+  Copyright "information."
+  Manufacturer "Zebra"
+  ModelName "EPL2 Label Printer"
+  PCFileName "zebraep2.ppd"
+  Version "2.3"
+  DriverType ps
+  ModelNumber 17
+  Throughput 8
+  Attribute "NickName" "" "Zebra EPL2 Label Printer"
+  Attribute "ShortNickName" "" "Zebra EPL2 Label Printer"
+  Attribute "Product" "" "(EPL2 Label Printer)"
+  Attribute "PSVersion" "" "(3010.000) 0"
+  Attribute "LanguageLevel" "" "3"
+  Attribute "DefaultColorSpace" "" "Gray"
+  Attribute "FileSystem" "" "False"
+  Attribute "LandscapeOrientation" "" "Plus90"
+  Attribute "TTRasterizer" "" "Type42"
+  Attribute "cupsSNMPSupplies" "" "false"
+  Filter "application/vnd.cups-raster 50 rastertolabel"
+  Font "AvantGarde-Book" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-BookOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "AvantGarde-DemiOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Demi" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-DemiItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-Light" "Standard" "(1.05)" "Standard" ROM
+  Font "Bookman-LightItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Courier-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-BoldOblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Narrow-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "Helvetica-Oblique" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "NewCenturySchlbk-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Palatino-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "Symbol" "Special" "(001.005)" "Special" ROM
+  Font "Times-Bold" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-BoldItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Italic" "Standard" "(1.05)" "Standard" ROM
+  Font "Times-Roman" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfChancery-MediumItalic" "Standard" "(1.05)" "Standard" ROM
+  Font "ZapfDingbats" "Special" "(001.005)" "Special" ROM
+  Group "General/General"
+    Option "Resolution/Resolution" PickOne AnySetup 10.0
+      *Choice "203dpi/203dpi" "<</HWResolution[203 203]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+      Choice "300dpi/300dpi" "<</HWResolution[300 300]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+      Choice "600dpi/600dpi" "<</HWResolution[600 600]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+    Option "MediaType/Media Type" PickOne AnySetup 20.0
+      *Choice "Saved/Printer Default" ""
+      Choice "Thermal/Thermal Transfer Media" "<</MediaType(Thermal)>>setpagedevice"
+      Choice "Direct/Direct Thermal Media" "<</MediaType(Direct)>>setpagedevice"
+  Group "PrinterSettings/Printer Settings"
+    Option "Darkness/Darkness" PickOne AnySetup 20.0
+      *Choice "-1/Printer Default" "<</cupsCompression -1>>setpagedevice"
+      Choice "1/1" "<</cupsCompression 4>>setpagedevice"
+      Choice "2/2" "<</cupsCompression 7>>setpagedevice"
+      Choice "3/3" "<</cupsCompression 10>>setpagedevice"
+      Choice "4/4" "<</cupsCompression 14>>setpagedevice"
+      Choice "5/5" "<</cupsCompression 17>>setpagedevice"
+      Choice "6/6" "<</cupsCompression 20>>setpagedevice"
+      Choice "7/7" "<</cupsCompression 24>>setpagedevice"
+      Choice "8/8" "<</cupsCompression 27>>setpagedevice"
+      Choice "9/9" "<</cupsCompression 30>>setpagedevice"
+      Choice "10/10" "<</cupsCompression 34>>setpagedevice"
+      Choice "11/11" "<</cupsCompression 37>>setpagedevice"
+      Choice "12/12" "<</cupsCompression 40>>setpagedevice"
+      Choice "13/13" "<</cupsCompression 44>>setpagedevice"
+      Choice "14/14" "<</cupsCompression 47>>setpagedevice"
+      Choice "15/15" "<</cupsCompression 50>>setpagedevice"
+      Choice "16/16" "<</cupsCompression 54>>setpagedevice"
+      Choice "17/17" "<</cupsCompression 57>>setpagedevice"
+      Choice "18/18" "<</cupsCompression 60>>setpagedevice"
+      Choice "19/19" "<</cupsCompression 64>>setpagedevice"
+      Choice "20/20" "<</cupsCompression 67>>setpagedevice"
+      Choice "21/21" "<</cupsCompression 70>>setpagedevice"
+      Choice "22/22" "<</cupsCompression 74>>setpagedevice"
+      Choice "23/23" "<</cupsCompression 77>>setpagedevice"
+      Choice "24/24" "<</cupsCompression 80>>setpagedevice"
+      Choice "25/25" "<</cupsCompression 84>>setpagedevice"
+      Choice "26/26" "<</cupsCompression 87>>setpagedevice"
+      Choice "27/27" "<</cupsCompression 90>>setpagedevice"
+      Choice "28/28" "<</cupsCompression 94>>setpagedevice"
+      Choice "29/29" "<</cupsCompression 97>>setpagedevice"
+      Choice "30/30" "<</cupsCompression 100>>setpagedevice"
+    Option "zePrintRate/Print Rate" PickOne AnySetup 20.0
+      *Choice "Default/Printer Default" ""
+      Choice "1/1 inch/sec." ""
+      Choice "1.5/1.5 inch/sec." ""
+      Choice "2/2 inches/sec." ""
+      Choice "2.5/2.5 inches/sec." ""
+      Choice "3/3 inches/sec." ""
+      Choice "4/4 inches/sec." ""
+      Choice "5/5 inches/sec." ""
+      Choice "6/6 inches/sec." ""
+  CustomMedia "w90h18/1.25x0.25\"" 90.00 18.00 0.00 0.00 0.00 0.00 "<</PageSize[90 18]/ImagingBBox null>>setpagedevice" "<</PageSize[90 18]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w90h162/1.25x2.25\"" 90.00 162.00 0.00 0.00 0.00 0.00 "<</PageSize[90 162]/ImagingBBox null>>setpagedevice" "<</PageSize[90 162]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w108h18/1.50x0.25\"" 108.00 18.00 0.00 0.00 0.00 0.00 "<</PageSize[108 18]/ImagingBBox null>>setpagedevice" "<</PageSize[108 18]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w108h36/1.50x0.50\"" 108.00 36.00 0.00 0.00 0.00 0.00 "<</PageSize[108 36]/ImagingBBox null>>setpagedevice" "<</PageSize[108 36]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w108h72/1.50x1.00\"" 108.00 72.00 0.00 0.00 0.00 0.00 "<</PageSize[108 72]/ImagingBBox null>>setpagedevice" "<</PageSize[108 72]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w108h144/1.50x2.00\"" 108.00 144.00 0.00 0.00 0.00 0.00 "<</PageSize[108 144]/ImagingBBox null>>setpagedevice" "<</PageSize[108 144]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w144h26/2.00x0.37\"" 144.00 26.00 0.00 0.00 0.00 0.00 "<</PageSize[144 26]/ImagingBBox null>>setpagedevice" "<</PageSize[144 26]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w144h36/2.00x0.50\"" 144.00 36.00 0.00 0.00 0.00 0.00 "<</PageSize[144 36]/ImagingBBox null>>setpagedevice" "<</PageSize[144 36]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w144h72/2.00x1.00\"" 144.00 72.00 0.00 0.00 0.00 0.00 "<</PageSize[144 72]/ImagingBBox null>>setpagedevice" "<</PageSize[144 72]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w144h90/2.00x1.25\"" 144.00 90.00 0.00 0.00 0.00 0.00 "<</PageSize[144 90]/ImagingBBox null>>setpagedevice" "<</PageSize[144 90]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w144h288/2.00x4.00\"" 144.00 288.00 0.00 0.00 0.00 0.00 "<</PageSize[144 288]/ImagingBBox null>>setpagedevice" "<</PageSize[144 288]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w144h396/2.00x5.50\"" 144.00 396.00 0.00 0.00 0.00 0.00 "<</PageSize[144 396]/ImagingBBox null>>setpagedevice" "<</PageSize[144 396]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w162h36/2.25x0.50\"" 162.00 36.00 0.00 0.00 0.00 0.00 "<</PageSize[162 36]/ImagingBBox null>>setpagedevice" "<</PageSize[162 36]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w162h90/2.25x1.25\"" 162.00 90.00 0.00 0.00 0.00 0.00 "<</PageSize[162 90]/ImagingBBox null>>setpagedevice" "<</PageSize[162 90]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w162h288/2.25x4.00\"" 162.00 288.00 0.00 0.00 0.00 0.00 "<</PageSize[162 288]/ImagingBBox null>>setpagedevice" "<</PageSize[162 288]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w162h396/2.25x5.50\"" 162.00 396.00 0.00 0.00 0.00 0.00 "<</PageSize[162 396]/ImagingBBox null>>setpagedevice" "<</PageSize[162 396]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w171h396/2.38x5.50\"" 171.00 396.00 0.00 0.00 0.00 0.00 "<</PageSize[171 396]/ImagingBBox null>>setpagedevice" "<</PageSize[171 396]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w180h72/2.50x1.00\"" 180.00 72.00 0.00 0.00 0.00 0.00 "<</PageSize[180 72]/ImagingBBox null>>setpagedevice" "<</PageSize[180 72]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w180h144/2.50x2.00\"" 180.00 144.00 0.00 0.00 0.00 0.00 "<</PageSize[180 144]/ImagingBBox null>>setpagedevice" "<</PageSize[180 144]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w198h90/2.75x1.25\"" 198.00 90.00 0.00 0.00 0.00 0.00 "<</PageSize[198 90]/ImagingBBox null>>setpagedevice" "<</PageSize[198 90]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w216h72/3.00x1.00\"" 216.00 72.00 0.00 0.00 0.00 0.00 "<</PageSize[216 72]/ImagingBBox null>>setpagedevice" "<</PageSize[216 72]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w216h90/3.00x1.25\"" 216.00 90.00 0.00 0.00 0.00 0.00 "<</PageSize[216 90]/ImagingBBox null>>setpagedevice" "<</PageSize[216 90]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w216h144/3.00x2.00\"" 216.00 144.00 0.00 0.00 0.00 0.00 "<</PageSize[216 144]/ImagingBBox null>>setpagedevice" "<</PageSize[216 144]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w216h216/3.00x3.00\"" 216.00 216.00 0.00 0.00 0.00 0.00 "<</PageSize[216 216]/ImagingBBox null>>setpagedevice" "<</PageSize[216 216]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w216h360/3.00x5.00\"" 216.00 360.00 0.00 0.00 0.00 0.00 "<</PageSize[216 360]/ImagingBBox null>>setpagedevice" "<</PageSize[216 360]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w234h144/3.25x2.00\"" 234.00 144.00 0.00 0.00 0.00 0.00 "<</PageSize[234 144]/ImagingBBox null>>setpagedevice" "<</PageSize[234 144]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w234h360/3.25x5.00\"" 234.00 360.00 0.00 0.00 0.00 0.00 "<</PageSize[234 360]/ImagingBBox null>>setpagedevice" "<</PageSize[234 360]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w234h396/3.25x5.50\"" 234.00 396.00 0.00 0.00 0.00 0.00 "<</PageSize[234 396]/ImagingBBox null>>setpagedevice" "<</PageSize[234 396]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w234h419/3.25x5.83\"" 234.00 419.00 0.00 0.00 0.00 0.00 "<</PageSize[234 419]/ImagingBBox null>>setpagedevice" "<</PageSize[234 419]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w234h563/3.25x7.83\"" 234.00 563.00 0.00 0.00 0.00 0.00 "<</PageSize[234 563]/ImagingBBox null>>setpagedevice" "<</PageSize[234 563]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w252h72/3.50x1.00\"" 252.00 72.00 0.00 0.00 0.00 0.00 "<</PageSize[252 72]/ImagingBBox null>>setpagedevice" "<</PageSize[252 72]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h72/4.00x1.00\"" 288.00 72.00 0.00 0.00 0.00 0.00 "<</PageSize[288 72]/ImagingBBox null>>setpagedevice" "<</PageSize[288 72]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h144/4.00x2.00\"" 288.00 144.00 0.00 0.00 0.00 0.00 "<</PageSize[288 144]/ImagingBBox null>>setpagedevice" "<</PageSize[288 144]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h180/4.00x2.50\"" 288.00 180.00 0.00 0.00 0.00 0.00 "<</PageSize[288 180]/ImagingBBox null>>setpagedevice" "<</PageSize[288 180]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h216/4.00x3.00\"" 288.00 216.00 0.00 0.00 0.00 0.00 "<</PageSize[288 216]/ImagingBBox null>>setpagedevice" "<</PageSize[288 216]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h288/4.00x4.00\"" 288.00 288.00 0.00 0.00 0.00 0.00 "<</PageSize[288 288]/ImagingBBox null>>setpagedevice" "<</PageSize[288 288]/ImagingBBox null>>setpagedevice"
+  *CustomMedia "w288h360/4.00x5.00\"" 288.00 360.00 0.00 0.00 0.00 0.00 "<</PageSize[288 360]/ImagingBBox null>>setpagedevice" "<</PageSize[288 360]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h432/4.00x6.00\"" 288.00 432.00 0.00 0.00 0.00 0.00 "<</PageSize[288 432]/ImagingBBox null>>setpagedevice" "<</PageSize[288 432]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h468/4.00x6.50\"" 288.00 468.00 0.00 0.00 0.00 0.00 "<</PageSize[288 468]/ImagingBBox null>>setpagedevice" "<</PageSize[288 468]/ImagingBBox null>>setpagedevice"
+  CustomMedia "w288h936/4.00x13.00\"" 288.00 936.00 0.00 0.00 0.00 0.00 "<</PageSize[288 936]/ImagingBBox null>>setpagedevice" "<</PageSize[288 936]/ImagingBBox null>>setpagedevice"
+  VariablePaperSize Yes
+  MinSize 36.00 36.00
+  MaxSize 288.00 3600.00
+}

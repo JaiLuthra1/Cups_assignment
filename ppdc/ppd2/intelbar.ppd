@@ -1,0 +1,201 @@
+*PPD-Adobe: "4.3"
+*%%%% PPD file for IntelliBar Label Printer with CUPS.
+*%%%% Created by the CUPS PPD Compiler CUPS v2.3.1.
+*% Copyright (c) 2007-2019 by Apple Inc.
+*% Copyright (c) 1997-2007 by Easy Software Products.
+*% 
+*% Licensed under Apache License v2.0.  See the file "LICENSE" for more
+*% information.
+*FormatVersion: "4.3"
+*FileVersion: "2.3"
+*LanguageVersion: English
+*LanguageEncoding: ISOLatin1
+*PCFileName: "intelbar.ppd"
+*Product: "(IntelliBar Label Printer)"
+*Manufacturer: "Intellitech"
+*ModelName: "Intellitech IntelliBar Label Printer"
+*ShortNickName: "IntelliBar Label Printer"
+*NickName: "Intellitech IntelliBar Label Printer, 2.3"
+*PSVersion: "(3010.000) 0"
+*LanguageLevel: "3"
+*ColorDevice: False
+*DefaultColorSpace: Gray
+*FileSystem: False
+*Throughput: "8"
+*LandscapeOrientation: Plus90
+*TTRasterizer: Type42
+*% Driver-defined attributes...
+*cupsSNMPSupplies: "false"
+*cupsVersion: 2.3
+*cupsModelNumber: 32
+*cupsManualCopies: False
+*cupsFilter: "application/vnd.cups-raster 50 rastertolabel"
+*UIConstraints: *inPrintMode Standard *inCutInterval
+*UIConstraints: *inCutInterval *inPrintMode Standard
+*UIConstraints: *inPrintMode Tear *inCutInterval
+*UIConstraints: *inCutInterval *inPrintMode Tear
+*UIConstraints: *inPrintMode Standard *inTearInterval
+*UIConstraints: *inTearInterval *inPrintMode Standard
+*UIConstraints: *inPrintMode Cut *inTearInterval
+*UIConstraints: *inTearInterval *inPrintMode Cut
+*OpenUI *PageSize/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: w288h432
+*PageSize w288h432/4.00x6.00": "<</PageSize[288 432]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageSize
+*OpenUI *PageRegion/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: w288h432
+*PageRegion w288h432/4.00x6.00": "<</PageSize[288 432]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+*DefaultImageableArea: w288h432
+*ImageableArea w288h432/4.00x6.00": "0 5.760000228882 288 426.239990234375"
+*DefaultPaperDimension: w288h432
+*PaperDimension w288h432/4.00x6.00": "288 432"
+*MaxMediaWidth: "630"
+*MaxMediaHeight: "7128"
+*HWMargins: 0 5.760000228882 0 5.760000228882
+*CustomPageSize True: "pop pop pop <</PageSize[5 -2 roll]/ImagingBBox null>>setpagedevice"
+*ParamCustomPageSize Width: 1 points 36 630
+*ParamCustomPageSize Height: 2 points 36 7128
+*ParamCustomPageSize WidthOffset: 3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation: 5 int 0 0
+*OpenUI *Resolution/Resolution: PickOne
+*OrderDependency: 10 AnySetup *Resolution
+*DefaultResolution: 300dpi
+*Resolution 300dpi/300dpi: "<</HWResolution[300 300]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+*CloseUI: *Resolution
+*OpenGroup: PrinterSettings/Printer Settings
+*OpenUI *inPrintDensity/Print Density: PickOne
+*OrderDependency: 20 DocumentSetup *inPrintDensity
+*DefaultinPrintDensity: Default
+*inPrintDensity Default/Printer Default: "<</cupsCompression -1>>setpagedevice"
+*inPrintDensity -15/-15: "<</cupsCompression 0>>setpagedevice"
+*inPrintDensity -14/-14: "<</cupsCompression 4>>setpagedevice"
+*inPrintDensity -13/-13: "<</cupsCompression 7>>setpagedevice"
+*inPrintDensity -12/-12: "<</cupsCompression 10>>setpagedevice"
+*inPrintDensity -11/-11: "<</cupsCompression 14>>setpagedevice"
+*inPrintDensity -10/-10: "<</cupsCompression 17>>setpagedevice"
+*inPrintDensity -9/-9: "<</cupsCompression 20>>setpagedevice"
+*inPrintDensity -8/-8: "<</cupsCompression 24>>setpagedevice"
+*inPrintDensity -7/-7: "<</cupsCompression 27>>setpagedevice"
+*inPrintDensity -6/-6: "<</cupsCompression 30>>setpagedevice"
+*inPrintDensity -5/-5: "<</cupsCompression 34>>setpagedevice"
+*inPrintDensity -4/-4: "<</cupsCompression 37>>setpagedevice"
+*inPrintDensity -3/-3: "<</cupsCompression 40>>setpagedevice"
+*inPrintDensity -2/-2: "<</cupsCompression 44>>setpagedevice"
+*inPrintDensity -1/-1: "<</cupsCompression 47>>setpagedevice"
+*inPrintDensity 0/0: "<</cupsCompression 50>>setpagedevice"
+*inPrintDensity 1/1: "<</cupsCompression 54>>setpagedevice"
+*inPrintDensity 2/2: "<</cupsCompression 57>>setpagedevice"
+*inPrintDensity 3/3: "<</cupsCompression 60>>setpagedevice"
+*inPrintDensity 4/4: "<</cupsCompression 64>>setpagedevice"
+*inPrintDensity 5/5: "<</cupsCompression 67>>setpagedevice"
+*inPrintDensity 6/6: "<</cupsCompression 70>>setpagedevice"
+*inPrintDensity 7/7: "<</cupsCompression 74>>setpagedevice"
+*inPrintDensity 8/8: "<</cupsCompression 77>>setpagedevice"
+*inPrintDensity 9/9: "<</cupsCompression 80>>setpagedevice"
+*inPrintDensity 10/10: "<</cupsCompression 84>>setpagedevice"
+*inPrintDensity 11/11: "<</cupsCompression 87>>setpagedevice"
+*inPrintDensity 12/12: "<</cupsCompression 90>>setpagedevice"
+*inPrintDensity 13/13: "<</cupsCompression 94>>setpagedevice"
+*inPrintDensity 14/14: "<</cupsCompression 97>>setpagedevice"
+*inPrintDensity 15/15: "<</cupsCompression 100>>setpagedevice"
+*CloseUI: *inPrintDensity
+*OpenUI *inPrintRate/Print Speed: PickOne
+*OrderDependency: 20 DocumentSetup *inPrintRate
+*DefaultinPrintRate: Default
+*inPrintRate Default/Printer Default: "<</cupsRowFeed 0>>setpagedevice"
+*inPrintRate 15/15 mm/sec.: "<</cupsRowFeed 15>>setpagedevice"
+*inPrintRate 20/20 mm/sec.: "<</cupsRowFeed 20>>setpagedevice"
+*inPrintRate 30/30 mm/sec.: "<</cupsRowFeed 30>>setpagedevice"
+*inPrintRate 40/40 mm/sec.: "<</cupsRowFeed 40>>setpagedevice"
+*inPrintRate 60/60 mm/sec.: "<</cupsRowFeed 60>>setpagedevice"
+*inPrintRate 80/80 mm/sec.: "<</cupsRowFeed 80>>setpagedevice"
+*inPrintRate 100/100 mm/sec.: "<</cupsRowFeed 100>>setpagedevice"
+*inPrintRate 120/120 mm/sec.: "<</cupsRowFeed 120>>setpagedevice"
+*inPrintRate 150/150 mm/sec.: "<</cupsRowFeed 150>>setpagedevice"
+*inPrintRate 200/200 mm/sec.: "<</cupsRowFeed 200>>setpagedevice"
+*inPrintRate 250/250 mm/sec.: "<</cupsRowFeed 250>>setpagedevice"
+*inPrintRate 300/300 mm/sec.: "<</cupsRowFeed 300>>setpagedevice"
+*CloseUI: *inPrintRate
+*OpenUI *inPrintMode/Print Mode: PickOne
+*OrderDependency: 20 DocumentSetup *inPrintMode
+*DefaultinPrintMode: Standard
+*inPrintMode Standard/Standard: ""
+*inPrintMode Tear/Tear: ""
+*inPrintMode Cut/Cut: ""
+*CloseUI: *inPrintMode
+*OpenUI *inTearInterval/Print and Tear: PickOne
+*OrderDependency: 20 DocumentSetup *inTearInterval
+*DefaultinTearInterval: None
+*inTearInterval None/Disabled: "<</cupsRowCount 0>>setpagedevice"
+*inTearInterval 1/Every Label: "<</cupsRowCount 1>>setpagedevice"
+*inTearInterval 2/Every 2 Labels: "<</cupsRowCount 2>>setpagedevice"
+*inTearInterval 3/Every 3 Labels: "<</cupsRowCount 3>>setpagedevice"
+*inTearInterval 4/Every 4 Labels: "<</cupsRowCount 4>>setpagedevice"
+*inTearInterval 5/Every 5 Labels: "<</cupsRowCount 5>>setpagedevice"
+*inTearInterval 6/Every 6 Labels: "<</cupsRowCount 6>>setpagedevice"
+*inTearInterval 7/Every 7 Labels: "<</cupsRowCount 7>>setpagedevice"
+*inTearInterval 8/Every 8 Labels: "<</cupsRowCount 8>>setpagedevice"
+*inTearInterval 9/Every 9 Labels: "<</cupsRowCount 9>>setpagedevice"
+*inTearInterval 10/Every 10 Labels: "<</cupsRowCount 10>>setpagedevice"
+*CloseUI: *inTearInterval
+*CustominTearInterval True: "<</cupsRowCount 2 1 roll>>setpagedevice"
+*ParamCustominTearInterval Interval/Interval: 1 int 1 99
+*OpenUI *inCutInterval/Print and Cut: PickOne
+*OrderDependency: 20 DocumentSetup *inCutInterval
+*DefaultinCutInterval: None
+*inCutInterval None/Disabled: "<</cupsRowStep 0>>setpagedevice"
+*inCutInterval 1/Every Label: "<</cupsRowStep 1>>setpagedevice"
+*inCutInterval 2/Every 2 Labels: "<</cupsRowStep 2>>setpagedevice"
+*inCutInterval 3/Every 3 Labels: "<</cupsRowStep 3>>setpagedevice"
+*inCutInterval 4/Every 4 Labels: "<</cupsRowStep 4>>setpagedevice"
+*inCutInterval 5/Every 5 Labels: "<</cupsRowStep 5>>setpagedevice"
+*inCutInterval 6/Every 6 Labels: "<</cupsRowStep 6>>setpagedevice"
+*inCutInterval 7/Every 7 Labels: "<</cupsRowStep 7>>setpagedevice"
+*inCutInterval 8/Every 8 Labels: "<</cupsRowStep 8>>setpagedevice"
+*inCutInterval 9/Every 9 Labels: "<</cupsRowStep 9>>setpagedevice"
+*inCutInterval 10/Every 10 Labels: "<</cupsRowStep 10>>setpagedevice"
+*CloseUI: *inCutInterval
+*CustominCutInterval True: "<</cupsRowStep 2 1 roll>>setpagedevice"
+*ParamCustominCutInterval Interval/Interval: 1 int 1 99
+*CloseGroup: PrinterSettings
+*DefaultFont: Courier
+*Font AvantGarde-Book: Standard "(1.05)" Standard ROM
+*Font AvantGarde-BookOblique: Standard "(1.05)" Standard ROM
+*Font AvantGarde-Demi: Standard "(1.05)" Standard ROM
+*Font AvantGarde-DemiOblique: Standard "(1.05)" Standard ROM
+*Font Bookman-Demi: Standard "(1.05)" Standard ROM
+*Font Bookman-DemiItalic: Standard "(1.05)" Standard ROM
+*Font Bookman-Light: Standard "(1.05)" Standard ROM
+*Font Bookman-LightItalic: Standard "(1.05)" Standard ROM
+*Font Courier: Standard "(1.05)" Standard ROM
+*Font Courier-Bold: Standard "(1.05)" Standard ROM
+*Font Courier-BoldOblique: Standard "(1.05)" Standard ROM
+*Font Courier-Oblique: Standard "(1.05)" Standard ROM
+*Font Helvetica: Standard "(1.05)" Standard ROM
+*Font Helvetica-Bold: Standard "(1.05)" Standard ROM
+*Font Helvetica-BoldOblique: Standard "(1.05)" Standard ROM
+*Font Helvetica-Narrow: Standard "(1.05)" Standard ROM
+*Font Helvetica-Narrow-Bold: Standard "(1.05)" Standard ROM
+*Font Helvetica-Narrow-BoldOblique: Standard "(1.05)" Standard ROM
+*Font Helvetica-Narrow-Oblique: Standard "(1.05)" Standard ROM
+*Font Helvetica-Oblique: Standard "(1.05)" Standard ROM
+*Font NewCenturySchlbk-Bold: Standard "(1.05)" Standard ROM
+*Font NewCenturySchlbk-BoldItalic: Standard "(1.05)" Standard ROM
+*Font NewCenturySchlbk-Italic: Standard "(1.05)" Standard ROM
+*Font NewCenturySchlbk-Roman: Standard "(1.05)" Standard ROM
+*Font Palatino-Bold: Standard "(1.05)" Standard ROM
+*Font Palatino-BoldItalic: Standard "(1.05)" Standard ROM
+*Font Palatino-Italic: Standard "(1.05)" Standard ROM
+*Font Palatino-Roman: Standard "(1.05)" Standard ROM
+*Font Symbol: Special "(001.005)" Special ROM
+*Font Times-Bold: Standard "(1.05)" Standard ROM
+*Font Times-BoldItalic: Standard "(1.05)" Standard ROM
+*Font Times-Italic: Standard "(1.05)" Standard ROM
+*Font Times-Roman: Standard "(1.05)" Standard ROM
+*Font ZapfChancery-MediumItalic: Standard "(1.05)" Standard ROM
+*Font ZapfDingbats: Special "(001.005)" Special ROM
+*% End of intelbar.ppd, 10232 bytes.
